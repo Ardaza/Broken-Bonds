@@ -1319,7 +1319,7 @@ shape = SubResource("RectangleShape2D_yuv18")
 [node name="Enemy" type="Node2D" parent="."]
 
 [node name="Vampire_Female" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(153, 157)
+position = Vector2(160, 180)
 
 [node name="Enemy_Slime" parent="Enemy" instance=ExtResource("5_8c2ny")]
 position = Vector2(271, 262)

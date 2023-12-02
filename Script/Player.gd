@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var range = false
 var att_cd = true
-var darah = 250
+var darah = 100
 var alive = true
 
 var attack_ip = false
@@ -136,23 +136,30 @@ func curent_camera():
 	if global.cur_scenes == "world":
 		$World.enabled = true
 		$Cliff_bawah_camera.enabled = false
+		$Cliff_side_camera.enabled = false
 	elif global.cur_scenes == "cliff_bawah":
 		$World.enabled = false
 		$Cliff_bawah_camera.enabled = true
+		$Cliff_side_camera.enabled = false
+	elif global.cur_scenes == "cliff_side":
+		$World.enabled = false
+		$Cliff_bawah_camera.enabled = false
+		$Cliff_side_camera.enabled = true
+		
 
 func update_health():
 	var bardarah = $Health_Bar
 	bardarah.value = darah
 	
-	if darah >= 250:
+	if darah >= 100:
 		bardarah.visible = false
 	else:
 		bardarah.visible = true
 
 func _on_regen_timeout():
-	if darah < 500:
+	if darah < 100:
 		darah += 10
-		if darah > 500:
-			darah = 500
+		if darah > 100:
+			darah = 100
 	if darah <= 0:
 		darah = 0

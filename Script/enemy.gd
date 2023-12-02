@@ -4,7 +4,7 @@ var kecepatan = 100
 var kejar = false
 var player = null
 
-var darah = 100
+var darah = 50
 var att_zone = false
 var can_take_damage = true
 
@@ -49,7 +49,7 @@ func _on_enemy_hit_box_body_exited(body):
 func deal_with_damage():
 	if att_zone and global.cur_att == true:
 		if can_take_damage == true:
-			darah = darah - 20
+			darah = darah - 15
 			$take_damage_cd.start()
 			can_take_damage = false
 			print("Darah slime: ", darah)
@@ -64,7 +64,7 @@ func update_health():
 	var bardarah = $Health_Bar
 	bardarah.value = darah
 	
-	if darah >= 100:
+	if darah >= 50:
 		bardarah.visible = false
 	else:
 		bardarah.visible = true

@@ -4,7 +4,7 @@ var kecepatan = 40
 var kejar = false
 var player = null
 
-var darah = 70
+var darah = 40
 var att_zone = false
 var can_take_damage = true
 
@@ -63,7 +63,7 @@ func update_health():
 	var bardarah = $Health_Bar
 	bardarah.value = darah
 	
-	if darah >= 70:
+	if darah >= 40:
 		bardarah.visible = false
 	else:
 		bardarah.visible = true

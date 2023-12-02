@@ -9,7 +9,7 @@ var transition_scene2 = false
 
 var player_exit_cliffbawah_posx = 873
 var player_exit_cliffbawah_posy = 649
-var player_exit_cliffside_posx = 1141
+var player_exit_cliffside_posx = 1144
 var player_exit_cliffside_posy = 99
 var player_start_posx = 10
 var player_start_posy = 140

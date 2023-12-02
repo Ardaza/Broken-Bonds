@@ -1375,6 +1375,9 @@ position = Vector2(232, 443)
 [node name="Orang_Tua" parent="." instance=ExtResource("15_5l8vb")]
 position = Vector2(308, 358)
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1144, 96)
+
 [connection signal="body_entered" from="Cliff_kanan" to="." method="_on_cliffside_transition_point_body_entered"]
 [connection signal="body_exited" from="Cliff_kanan" to="." method="_on_cliffside_transition_point_body_exited"]
 [connection signal="body_entered" from="Cliff_bawah" to="." method="_on_cliff_bawah_body_entered"]

@@ -1,6 +1,6 @@
-Timer
-AudioStreamPlayer2D
 Camera2D
+AudioStreamPlayer2D
+Timer
 Node2D
 Node
 ProgressBar

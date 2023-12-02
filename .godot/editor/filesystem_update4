@@ -8,3 +8,5 @@ res://Script/enemy.gd
 res://Scene/vampire_female.tscn
 res://Scene/enemy.tscn
 res://Script/Vampire_Female.gd
+res://Audio/default_bus_layout.tres
+res://Script/global.gd

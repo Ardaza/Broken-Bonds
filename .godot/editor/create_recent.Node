@@ -1,8 +1,9 @@
+Timer
+AudioStreamPlayer2D
 Camera2D
 Node2D
 Node
 ProgressBar
-Timer
 CollisionShape2D
 Area2D
 CollisionPolygon2D

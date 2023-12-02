@@ -7,7 +7,9 @@ var alive = true
 
 var attack_ip = false
 
-const speed = 90
+@onready var pukul = $Pukul
+
+const speed = 70
 var directions = "none"
 
 func _physics_process(delta):
@@ -116,16 +118,24 @@ func attack():
 			$AnimatedSprite2D.flip_h = false
 			$AnimatedSprite2D.play("Side_Att")
 			$deal_att_timer.start()
+			pukul.play()
+			pukul.play()
 		if dir == "left":
 			$AnimatedSprite2D.flip_h = true
 			$AnimatedSprite2D.play("Side_Att")
 			$deal_att_timer.start()
+			pukul.play()
+			pukul.play()
 		if dir == "down":
 			$AnimatedSprite2D.play("Front_Att")
 			$deal_att_timer.start()
+			pukul.play()
+			pukul.play()
 		if dir == "up":
 			$AnimatedSprite2D.play("Back_Att")
 			$deal_att_timer.start()
+			pukul.play()
+			pukul.play()
 
 func _on_deal_att_timer_timeout():
 	$deal_att_timer.stop()
@@ -151,7 +161,7 @@ func update_health():
 	var bardarah = $Health_Bar
 	bardarah.value = darah
 	
-	if darah >= 160:
+	if darah >= 150:
 		bardarah.visible = false
 	else:
 		bardarah.visible = true

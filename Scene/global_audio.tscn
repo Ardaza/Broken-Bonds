@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://db8myim807xmx"]
+
+[ext_resource type="AudioStream" uid="uid://dyc0d6utkhn61" path="res://Audio/Music/mix_7m14s (audio-joiner.com).mp3" id="1_yko8t"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_yko8t")
+volume_db = -7.0
+autoplay = true

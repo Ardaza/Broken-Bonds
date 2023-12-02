@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://b02w6uu671yge"]
 
-[ext_resource type="Script" path="res://Oranf_Mabok.gd" id="1_teprg"]
+[ext_resource type="Script" path="res://Script/Oranf_Mabok.gd" id="1_teprg"]
 [ext_resource type="Texture2D" uid="uid://b48e31gjjivb1" path="res://sprites/characters/VillageDrunkardIdleSide.png" id="2_xoew8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x21j2"]

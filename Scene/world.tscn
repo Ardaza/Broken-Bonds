@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dskdaqc4bj3nf"]
+[gd_scene load_steps=25 format=3 uid="uid://dskdaqc4bj3nf"]
 
 [ext_resource type="Texture2D" uid="uid://shba0fgkfvti" path="res://sprites/tilesets/plains.png" id="1_i6ro1"]
 [ext_resource type="Script" path="res://Script/world.gd" id="1_rk3tc"]
@@ -11,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://bw4aoaba1mdbp" path="res://sprites/tilesets/decor_16x16.png" id="7_7dqny"]
 [ext_resource type="PackedScene" uid="uid://dab3d7vt3300f" path="res://Scene/vampire_female.tscn" id="9_1njd1"]
 [ext_resource type="PackedScene" uid="uid://s1s4unbyysgs" path="res://Scene/dwarf_king.tscn" id="11_vcvh7"]
+[ext_resource type="PackedScene" uid="uid://cugwjtk4s2ewj" path="res://Scene/anak_kecil.tscn" id="12_orknk"]
+[ext_resource type="PackedScene" uid="uid://clel174td2qac" path="res://Scene/anak_kecil_cewe.tscn" id="13_s70an"]
+[ext_resource type="PackedScene" uid="uid://b02w6uu671yge" path="res://Scene/oranf_mabok.tscn" id="14_vg0ue"]
+[ext_resource type="PackedScene" uid="uid://q3ek7jkup53i" path="res://Scene/orang_tuas.tscn" id="15_5l8vb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l2oj5"]
 texture = ExtResource("1_i6ro1")
@@ -1358,6 +1362,18 @@ position = Vector2(708, 29)
 
 [node name="Dwarf_King" parent="NPC" instance=ExtResource("11_vcvh7")]
 position = Vector2(618, 203)
+
+[node name="Anak_Kecil" parent="." instance=ExtResource("12_orknk")]
+position = Vector2(161, 257)
+
+[node name="Anak_Kecil_Cewe" parent="." instance=ExtResource("13_s70an")]
+position = Vector2(173, 257)
+
+[node name="Oranf_Mabok" parent="." instance=ExtResource("14_vg0ue")]
+position = Vector2(232, 443)
+
+[node name="Orang_Tua" parent="." instance=ExtResource("15_5l8vb")]
+position = Vector2(308, 358)
 
 [connection signal="body_entered" from="Cliff_kanan" to="." method="_on_cliffside_transition_point_body_entered"]
 [connection signal="body_exited" from="Cliff_kanan" to="." method="_on_cliffside_transition_point_body_exited"]

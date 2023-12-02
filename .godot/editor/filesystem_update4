@@ -2,6 +2,9 @@ res://Scene/world.tscn
 res://Scene/player.tscn
 res://Scene/cliff_bawah.tscn
 res://Scene/cliff_side.tscn
+res://Scene/global_audio.tscn
+res://Script/Player.gd
+res://Script/enemy.gd
 res://Scene/vampire_female.tscn
 res://Scene/enemy.tscn
-res://Script/Player.gd
+res://Script/Vampire_Female.gd

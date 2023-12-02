@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://chxkc5yg7606s"]
+[gd_scene load_steps=27 format=3 uid="uid://chxkc5yg7606s"]
 
 [ext_resource type="Texture2D" uid="uid://bxckkvqeotl2n" path="res://sprites/objects/chest_01.png" id="1_bge01"]
 [ext_resource type="Script" path="res://Script/cliff_bawah.gd" id="1_mxliw"]
@@ -13,12 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://bngu2u105lst8" path="res://sprites/tilesets/walls/wooden_door.png" id="9_ljqne"]
 [ext_resource type="Texture2D" uid="uid://qy3cbepj8ohf" path="res://sprites/tilesets/walls/walls.png" id="10_7sx78"]
 [ext_resource type="Texture2D" uid="uid://bpnlke0ti2fe5" path="res://sprites/tilesets/floors/wooden.png" id="11_ofxoh"]
-[ext_resource type="PackedScene" uid="uid://dab3d7vt3300f" path="res://Scene/vampire_female.tscn" id="13_usrbe"]
-[ext_resource type="PackedScene" uid="uid://cywg5fdsddyli" path="res://Scene/enemy.tscn" id="14_sbpy2"]
-[ext_resource type="PackedScene" uid="uid://cugwjtk4s2ewj" path="res://Scene/anak_kecil.tscn" id="15_ai4ce"]
-[ext_resource type="PackedScene" uid="uid://q3ek7jkup53i" path="res://Scene/orang_tuas.tscn" id="16_ml2nv"]
-[ext_resource type="PackedScene" uid="uid://clel174td2qac" path="res://Scene/anak_kecil_cewe.tscn" id="17_hr4qe"]
-[ext_resource type="PackedScene" uid="uid://b02w6uu671yge" path="res://Scene/oranf_mabok.tscn" id="18_15nr6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lm5wh"]
 texture = ExtResource("1_bge01")
@@ -1368,8 +1362,7 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array(262147, 3, 0, 262148, 3, 0, 327684, 3, 0, 327683, 3, 0)
 
 [node name="Player" parent="." instance=ExtResource("7_a2hnw")]
-visible = false
-position = Vector2(169, 29)
+position = Vector2(162, 25)
 
 [node name="Collison" type="StaticBody2D" parent="."]
 visible = false
@@ -1414,54 +1407,6 @@ polygon = PackedVector2Array(1, 0, 0, 673, 1152, 656, 1152, 0, 922, 0, 922, -11,
 
 [node name="karakter" type="Node2D" parent="."]
 visible = false
-
-[node name="Anak_Kecil" parent="karakter" instance=ExtResource("15_ai4ce")]
-position = Vector2(438, 164)
-
-[node name="Anak_Kecil3" parent="karakter" instance=ExtResource("15_ai4ce")]
-position = Vector2(861, 131)
-
-[node name="Anak_Kecil2" parent="karakter" instance=ExtResource("15_ai4ce")]
-position = Vector2(664, 182)
-
-[node name="Enemy_Slime5" parent="karakter" instance=ExtResource("14_sbpy2")]
-position = Vector2(465, 441)
-
-[node name="Enemy_Slime4" parent="karakter" instance=ExtResource("14_sbpy2")]
-position = Vector2(36, 223)
-
-[node name="Enemy_Slime3" parent="karakter" instance=ExtResource("14_sbpy2")]
-position = Vector2(153, 252)
-
-[node name="Enemy_Slime2" parent="karakter" instance=ExtResource("14_sbpy2")]
-position = Vector2(69, 366)
-
-[node name="Enemy_Slime" parent="karakter" instance=ExtResource("14_sbpy2")]
-position = Vector2(250, 493)
-
-[node name="Orang_Tua" parent="karakter" instance=ExtResource("16_ml2nv")]
-position = Vector2(366, 88)
-
-[node name="Orang_Tua2" parent="karakter" instance=ExtResource("16_ml2nv")]
-position = Vector2(838, 213)
-
-[node name="Vampire_Female" parent="karakter" instance=ExtResource("13_usrbe")]
-position = Vector2(116, 441)
-
-[node name="Anak_Kecil_Cewe" parent="karakter" instance=ExtResource("17_hr4qe")]
-position = Vector2(417, 166)
-
-[node name="Anak_Kecil_Cewe2" parent="karakter" instance=ExtResource("17_hr4qe")]
-position = Vector2(632, 279)
-
-[node name="Anak_Kecil_Cewe3" parent="karakter" instance=ExtResource("17_hr4qe")]
-position = Vector2(843, 156)
-
-[node name="Oranf_Mabok" parent="karakter" instance=ExtResource("18_15nr6")]
-position = Vector2(754, 198)
-
-[node name="Oranf_Mabok2" parent="karakter" instance=ExtResource("18_15nr6")]
-position = Vector2(504, 67)
 
 [node name="Kembali" type="Area2D" parent="."]
 visible = false

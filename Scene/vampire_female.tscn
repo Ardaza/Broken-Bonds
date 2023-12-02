@@ -1,0 +1,168 @@
+[gd_scene load_steps=20 format=3 uid="uid://dab3d7vt3300f"]
+
+[ext_resource type="Script" path="res://Script/Vampire_Female.gd" id="1_jb3g3"]
+[ext_resource type="Texture2D" uid="uid://ck8de0f7j4aoa" path="res://sprites/characters/vampire .png" id="2_xxscr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ws3gr"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(260, 288, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_627e1"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(208, 288, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcycd"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(156, 288, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g1d3"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(260, 360, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ccxc"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(208, 360, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tscjo"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(156, 360, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4kwj"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(260, 432, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hwkf"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(208, 432, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ute5g"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(156, 432, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgab7"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(260, 144, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bk01t"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(208, 144, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oagyf"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(156, 144, 52, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4cj86"]
+atlas = ExtResource("2_xxscr")
+region = Rect2(208, 144, 52, 72)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6swyo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ws3gr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_627e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcycd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8g1d3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ccxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tscjo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4kwj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hwkf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ute5g")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgab7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bk01t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oagyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4cj86")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 4.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gj5am"]
+radius = 89.6939
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_phsyi"]
+radius = 15.0
+height = 54.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_elfsj"]
+radius = 18.0
+height = 56.0
+
+[node name="Vampire_Female" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_jb3g3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -35)
+sprite_frames = SubResource("SpriteFrames_6swyo")
+animation = &"walk"
+frame_progress = 0.455868
+
+[node name="Detection_Area" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detection_Area"]
+visible = false
+position = Vector2(0, -29)
+shape = SubResource("CircleShape2D_gj5am")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -28)
+shape = SubResource("CapsuleShape2D_phsyi")
+
+[node name="Enemy_HitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy_HitBox"]
+position = Vector2(0, -28)
+shape = SubResource("CapsuleShape2D_elfsj")
+
+[node name="take_damage_cd" type="Timer" parent="."]
+wait_time = 0.8
+
+[node name="Health_Bar" type="ProgressBar" parent="."]
+modulate = Color(0.541176, 0.0117647, 0.0117647, 1)
+offset_left = -14.0
+offset_top = -64.0
+offset_right = 126.0
+offset_bottom = -17.0
+scale = Vector2(0.2, 0.2)
+max_value = 70.0
+show_percentage = false
+
+[connection signal="body_entered" from="Detection_Area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="Detection_Area" to="." method="_on_detection_area_body_exited"]
+[connection signal="body_entered" from="Enemy_HitBox" to="." method="_on_enemy_hit_box_body_entered"]
+[connection signal="body_exited" from="Enemy_HitBox" to="." method="_on_enemy_hit_box_body_exited"]
+[connection signal="timeout" from="take_damage_cd" to="." method="_on_take_damage_cd_timeout"]

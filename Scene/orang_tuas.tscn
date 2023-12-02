@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://q3ek7jkup53i"]
+
+[ext_resource type="Script" path="res://Script/orang_tuas.gd" id="1_igydx"]
+[ext_resource type="Texture2D" uid="uid://csj4odk0r4wcr" path="res://sprites/characters/OverworkedVillagerIdleSide.png" id="1_vmrgu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjq6y"]
+atlas = ExtResource("1_vmrgu")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t0vip"]
+atlas = ExtResource("1_vmrgu")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkla4"]
+atlas = ExtResource("1_vmrgu")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7hao"]
+atlas = ExtResource("1_vmrgu")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hr3k2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjq6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t0vip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkla4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7hao")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 4.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hogra"]
+radius = 4.0
+height = 16.0
+
+[node name="Orang_Tua" type="CharacterBody2D"]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_igydx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_hr3k2")
+animation = &"Idle"
+frame_progress = 0.017939
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("CapsuleShape2D_hogra")

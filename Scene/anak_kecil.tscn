@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://cugwjtk4s2ewj"]
+
+[ext_resource type="Texture2D" uid="uid://cayf07i3kgvx7" path="res://sprites/characters/PlayfulChildIdleSide.png" id="1_7cor7"]
+[ext_resource type="Script" path="res://Script/anak_kecil.gd" id="1_ysexn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6x7d"]
+atlas = ExtResource("1_7cor7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovk7t"]
+atlas = ExtResource("1_7cor7")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u68uq"]
+atlas = ExtResource("1_7cor7")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c8uig"]
+atlas = ExtResource("1_7cor7")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cnlwb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6x7d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovk7t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u68uq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c8uig")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 4.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iuiuw"]
+radius = 3.0
+height = 8.0
+
+[node name="Anak_Kecil" type="CharacterBody2D"]
+script = ExtResource("1_ysexn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cnlwb")
+animation = &"Idle"
+frame_progress = 0.919785
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_iuiuw")

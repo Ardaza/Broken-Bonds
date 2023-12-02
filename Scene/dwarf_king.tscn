@@ -1,0 +1,82 @@
+[gd_scene load_steps=13 format=3 uid="uid://s1s4unbyysgs"]
+
+[ext_resource type="Script" path="res://Script/dwarf_king.gd" id="1_bapkc"]
+[ext_resource type="Texture2D" uid="uid://b5fuvl6vk38du" path="res://sprites/characters/DwarfKingIdleSide.png" id="1_dhtte"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1uqjj"]
+atlas = ExtResource("1_dhtte")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1he5"]
+atlas = ExtResource("1_dhtte")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hsxf7"]
+atlas = ExtResource("1_dhtte")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btyss"]
+atlas = ExtResource("1_dhtte")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ob11"]
+atlas = ExtResource("1_dhtte")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cwbe4"]
+atlas = ExtResource("1_dhtte")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6nls"]
+atlas = ExtResource("1_dhtte")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tneph"]
+atlas = ExtResource("1_dhtte")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gw0lb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1uqjj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1he5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hsxf7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btyss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ob11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cwbe4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6nls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tneph")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lwh13"]
+height = 32.0
+
+[node name="Dwarf_King" type="CharacterBody2D"]
+script = ExtResource("1_bapkc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gw0lb")
+animation = &"idle"
+frame_progress = 0.426345
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_lwh13")

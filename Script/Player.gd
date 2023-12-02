@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var range = false
 var att_cd = true
-var darah = 100
+var darah = 150
 var alive = true
 
 var attack_ip = false
@@ -151,15 +151,15 @@ func update_health():
 	var bardarah = $Health_Bar
 	bardarah.value = darah
 	
-	if darah >= 100:
+	if darah >= 160:
 		bardarah.visible = false
 	else:
 		bardarah.visible = true
 
 func _on_regen_timeout():
-	if darah < 100:
+	if darah < 150:
 		darah += 10
-		if darah > 100:
-			darah = 100
+		if darah > 150:
+			darah = 150
 	if darah <= 0:
 		darah = 0

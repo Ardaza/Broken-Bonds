@@ -1,40 +1,42 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701535525
-::res://Audio/::1701534659
-default_bus_layout.tres::AudioBusLayout::7488647667375957084::1701534139::0::1::::<><>::
-::res://Audio/Music/::1701539651
-mix_7m14s (audio-joiner.com).mp3::AudioStreamMP3::8849447996097946660::1701539651::1701539651::1::::<><>::
+::res://::1701586229
+::res://Audio/::1701542546
+default_bus_layout.tres::AudioBusLayout::7488647667375957084::1701542546::0::1::::<><>::
+::res://Audio/Music/::1701588372
+Bgm.mp3::AudioStreamMP3::7642575143801570223::1701586179::1701586250::1::::<><>::
+mix_7m14s (audio-joiner.com).mp3::AudioStreamMP3::8849447996097946660::1701539651::1701540197::1::::<><>::
+mix_19m51s (audio-joiner.com).mp3::AudioStreamMP3::8439513355706983743::1701588372::1701588372::1::::<><>::
 NOCTIS.mp3::AudioStreamMP3::1378057215385835584::1701534173::1701534663::1::::<><>::
 Valse di Fantastica (1).mp3::AudioStreamMP3::3084369814165344165::1701534364::1701534510::1::::<><>::
 ::res://Audio/SFX/::1701535779
 270419__littlerobotsoundfactory__footstep_dirt_04.mp3::AudioStreamMP3::3386351769924994978::1701535779::1701535779::1::::<><>::
 punch-140236.mp3::AudioStreamMP3::3471096831801739845::1701535522::1701535550::1::::<><>::
-::res://Scene/::1701537077
+::res://Scene/::1701588153
 anak_kecil.tscn::PackedScene::6190357367391659549::1700759078::0::1::::<><>::uid://cayf07i3kgvx7
 anak_kecil_cewe.tscn::PackedScene::5553892202397650282::1700759078::0::1::::<><>::res://Script/Anak_Kecil_Cewe.gd<>uid://bm4go54civeyl
 Area2D.gd::GDScript::-1::1700761983::0::1::::<>Area2D<>::
-cliff_bawah.tscn::PackedScene::5312256315803712076::1701537077::0::1::::<><>::uid://bxckkvqeotl2n::::res://sprites/objects/chest_01.png<>res://Script/cliff_bawah.gd<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://bsehs8bbmh30e::::res://sprites/tilesets/floors/flooring.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://bngu2u105lst8::::res://sprites/tilesets/walls/wooden_door.png<>uid://qy3cbepj8ohf::::res://sprites/tilesets/walls/walls.png<>uid://bpnlke0ti2fe5::::res://sprites/tilesets/floors/wooden.png
-cliff_side.tscn::PackedScene::7184461525177853194::1701537077::0::1::::<><>::res://Script/cliff_side.gd<>uid://dab3d7vt3300f::::res://Scene/vampire_female.tscn<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://cywg5fdsddyli::::res://Scene/enemy.tscn<>res://Scene/Area2D.gd
+cliff_bawah.tscn::PackedScene::5312256315803712076::1701588152::0::1::::<><>::uid://bxckkvqeotl2n::::res://sprites/objects/chest_01.png<>res://Script/cliff_bawah.gd<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://bsehs8bbmh30e::::res://sprites/tilesets/floors/flooring.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://bngu2u105lst8::::res://sprites/tilesets/walls/wooden_door.png<>uid://qy3cbepj8ohf::::res://sprites/tilesets/walls/walls.png<>uid://bpnlke0ti2fe5::::res://sprites/tilesets/floors/wooden.png
+cliff_side.tscn::PackedScene::7184461525177853194::1701588152::0::1::::<><>::res://Script/cliff_side.gd<>uid://dab3d7vt3300f::::res://Scene/vampire_female.tscn<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://cywg5fdsddyli::::res://Scene/enemy.tscn<>res://Scene/Area2D.gd
 dwarf_king.tscn::PackedScene::1318218771611107526::1700759078::0::1::::<><>::res://Script/dwarf_king.gd<>uid://b5fuvl6vk38du
-enemy.tscn::PackedScene::6503208069135196710::1701533981::0::1::::<><>::uid://qvnmidifjru1
-global_audio.tscn::PackedScene::7298347263826739515::1701537077::0::1::::<><>::uid://bj7dec7vivp2l::::res://Audio/Music/Valse di Fantastica (1).mp3
+enemy.tscn::PackedScene::6503208069135196710::1701588153::0::1::::<><>::uid://qvnmidifjru1::::res://sprites/characters/slime.png<>res://Script/enemy.gd
+global_audio.tscn::PackedScene::7298347263826739515::1701588153::0::1::::<><>::uid://dg5edjaeuwmtj::::res://Audio/Music/Bgm.mp3
 oranf_mabok.tscn::PackedScene::4198272190270840544::1701534232::0::1::::<><>::res://Script/Oranf_Mabok.gd<>uid://b48e31gjjivb1
 orang_tuas.tscn::PackedScene::1181086496364457200::1700759078::0::1::::<><>::res://Script/orang_tuas.gd<>uid://csj4odk0r4wcr
-player.tscn::PackedScene::34738401063412573::1701537077::0::1::::<><>::res://Script/Player.gd<>uid://cvmn4qmbx2stg::::res://sprites/characters/player.png<>uid://bppoptc5rxfub::::res://Audio/SFX/punch-140236.mp3
-vampire_female.tscn::PackedScene::7163033576102456699::1701533981::0::1::::<><>::res://Script/Vampire_Female.gd<>uid://ck8de0f7j4aoa
-world.tscn::PackedScene::8443488009865344551::1701537077::0::1::::<><>::uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>res://Script/world.gd<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://cywg5fdsddyli::::res://Scene/enemy.tscn<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dab3d7vt3300f::::res://Scene/vampire_female.tscn<>uid://s1s4unbyysgs::::res://Scene/dwarf_king.tscn
-::res://Script/::1701537077
+player.tscn::PackedScene::34738401063412573::1701588152::0::1::::<><>::res://Script/Player.gd<>uid://cvmn4qmbx2stg::::res://sprites/characters/player.png<>uid://bppoptc5rxfub::::res://Audio/SFX/punch-140236.mp3
+vampire_female.tscn::PackedScene::7163033576102456699::1701588153::0::1::::<><>::res://Script/Vampire_Female.gd<>uid://ck8de0f7j4aoa::::res://sprites/characters/vampire .png
+world.tscn::PackedScene::8443488009865344551::1701588152::0::1::::<><>::uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>res://Script/world.gd<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://cywg5fdsddyli::::res://Scene/enemy.tscn<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dab3d7vt3300f::::res://Scene/vampire_female.tscn<>uid://s1s4unbyysgs::::res://Scene/dwarf_king.tscn<>uid://cugwjtk4s2ewj::::res://Scene/anak_kecil.tscn<>uid://clel174td2qac::::res://Scene/anak_kecil_cewe.tscn<>uid://b02w6uu671yge::::res://Scene/oranf_mabok.tscn<>uid://q3ek7jkup53i::::res://Scene/orang_tuas.tscn
+::res://Script/::1701542799
 anak_kecil.gd::GDScript::-1::1700758255::0::1::::<>CharacterBody2D<>::
 Anak_Kecil_Cewe.gd::GDScript::-1::1700759045::0::1::::<>CharacterBody2D<>::
 cliff_bawah.gd::GDScript::-1::1700760946::0::1::::<>Node2D<>::
 cliff_side.gd::GDScript::-1::1700762663::0::1::::<>Node2D<>::
 dwarf_king.gd::GDScript::-1::1700214624::0::1::::<>CharacterBody2D<>::
-enemy.gd::GDScript::-1::1701514202::0::1::::<>CharacterBody2D<>::
-global.gd::GDScript::-1::1700763396::0::1::::<>Node<>::
+enemy.gd::GDScript::-1::1701540486::0::1::::<>CharacterBody2D<>::
+global.gd::GDScript::-1::1701542799::0::1::::<>Node<>::
 Oranf_Mabok.gd::GDScript::-1::1700759203::0::1::::<>CharacterBody2D<>::
 orang_tuas.gd::GDScript::-1::1700758399::0::1::::<>CharacterBody2D<>::
-Player.gd::GDScript::-1::1701537077::0::1::::<>CharacterBody2D<>::
-Vampire_Female.gd::GDScript::-1::1701514486::0::1::::<>CharacterBody2D<>::
+Player.gd::GDScript::-1::1701540305::0::1::::<>CharacterBody2D<>::
+Vampire_Female.gd::GDScript::-1::1701540341::0::1::::<>CharacterBody2D<>::
 world.gd::GDScript::-1::1700762729::0::1::::<>Node2D<>::
 ::res://sprites/::1700138378
 icon.svg::CompressedTexture2D::4118066081892649745::1699075587::1699075927::1::::<><>::

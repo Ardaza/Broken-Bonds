@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701623075
+::res://::1701627435
 export_presets.cfg::TextFile::-1::1701623036::0::1::::<><>::
 ::res://Audio/::1701597600
 518883__beezlefm__simple-slash-attack-sound.wav::AudioStreamWAV::3776636121520905177::1701597584::1701597600::1::::<><>::
@@ -30,7 +30,7 @@ orang_tuas.tscn::PackedScene::1181086496364457200::1700759078::0::1::::<><>::res
 player.tscn::PackedScene::34738401063412573::1701622921::0::1::::<><>::res://Script/Player.gd<>uid://cvmn4qmbx2stg::::res://sprites/characters/player.png<>uid://bt2ov615rhop2::::res://Audio/518883__beezlefm__simple-slash-attack-sound.wav<>uid://hqh32182i51d::::res://Audio/SFX/678593__redswan_studios__player-hurt-2.mp3<>uid://d2gvnpni1mo5b::::res://Audio/SFX/414073__inspectorj__dialogue-pained-yelp-loud-a.mp3
 vampire_female.tscn::PackedScene::7163033576102456699::1701622922::0::1::::<><>::res://Script/Vampire_Female.gd<>uid://ck8de0f7j4aoa::::res://sprites/characters/vampire .png
 world.tscn::PackedScene::8443488009865344551::1701622968::0::1::::<><>::uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>res://Script/world.gd<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://cywg5fdsddyli::::res://Scene/enemy.tscn<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dab3d7vt3300f::::res://Scene/vampire_female.tscn<>uid://s1s4unbyysgs::::res://Scene/dwarf_king.tscn<>uid://cugwjtk4s2ewj::::res://Scene/anak_kecil.tscn<>uid://clel174td2qac::::res://Scene/anak_kecil_cewe.tscn<>uid://b02w6uu671yge::::res://Scene/oranf_mabok.tscn<>uid://q3ek7jkup53i::::res://Scene/orang_tuas.tscn
-::res://Script/::1701622968
+::res://Script/::1701625317
 anak_kecil.gd::GDScript::-1::1700758255::0::1::::<>CharacterBody2D<>::
 Anak_Kecil_Cewe.gd::GDScript::-1::1700759045::0::1::::<>CharacterBody2D<>::
 cliff_bawah.gd::GDScript::-1::1700760946::0::1::::<>Node2D<>::
@@ -42,7 +42,7 @@ Oranf_Mabok.gd::GDScript::-1::1700759203::0::1::::<>CharacterBody2D<>::
 orang_tuas.gd::GDScript::-1::1700758399::0::1::::<>CharacterBody2D<>::
 Player.gd::GDScript::-1::1701621166::0::1::::<>CharacterBody2D<>::
 Vampire_Female.gd::GDScript::-1::1701540341::0::1::::<>CharacterBody2D<>::
-world.gd::GDScript::-1::1701622968::0::1::::<>Node2D<>::
+world.gd::GDScript::-1::1701625317::0::1::::<>Node2D<>::
 ::res://sprites/::1700138378
 icon.svg::CompressedTexture2D::4118066081892649745::1699075587::1699075927::1::::<><>::
 ::res://sprites/characters/::1700759118
@@ -97,7 +97,7 @@ wooden.png::CompressedTexture2D::3466776243514385842::1699075705::1699075705::1:
 walls.png::CompressedTexture2D::1174270271088663203::1699075705::1699075705::1::::<><>::
 wooden_door.png::CompressedTexture2D::3312525565610989383::1699075705::1699075705::1::::<><>::
 wooden_door_b.png::CompressedTexture2D::6724925661200624107::1699075705::1699075705::1::::<><>::
-::res://Trest/::1701623036
+::res://Trest/::1701623084
 index.apple-touch-icon.png::CompressedTexture2D::4748688228787060101::1701623036::1701623084::1::::<><>::
 index.icon.png::CompressedTexture2D::5401284783985580569::1701623036::1701623084::1::::<><>::
 index.png::CompressedTexture2D::2516300305930689601::1701623036::1701623084::1::::<><>::

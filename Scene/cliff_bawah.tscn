@@ -1412,6 +1412,33 @@ polygon = PackedVector2Array(1, 0, 0, 673, 1152, 656, 1152, 0, 922, 0, 922, -11,
 [node name="karakter" type="Node2D" parent="."]
 visible = false
 
+[node name="Oranf_Mabok" parent="karakter" instance=ExtResource("14_36a6i")]
+position = Vector2(437, 164)
+
+[node name="Orang_Tua" parent="karakter" instance=ExtResource("15_b5gsf")]
+position = Vector2(363, 88)
+
+[node name="Anak_Kecil_Cewe" parent="karakter" instance=ExtResource("16_4uob7")]
+position = Vector2(383, 108)
+
+[node name="Anak_Kecil" parent="karakter" instance=ExtResource("17_ye1k3")]
+position = Vector2(643, 183)
+
+[node name="Anak_Kecil_Cewe2" parent="karakter" instance=ExtResource("16_4uob7")]
+position = Vector2(655, 183)
+
+[node name="Oranf_Mabok2" parent="karakter" instance=ExtResource("14_36a6i")]
+position = Vector2(756, 120)
+
+[node name="Oranf_Mabok3" parent="karakter" instance=ExtResource("14_36a6i")]
+position = Vector2(705, 231)
+
+[node name="Orang_Tua2" parent="karakter" instance=ExtResource("15_b5gsf")]
+position = Vector2(835, 206)
+
+[node name="Anak_Kecil_Cewe3" parent="karakter" instance=ExtResource("16_4uob7")]
+position = Vector2(838, 160)
+
 [node name="Kembali" type="Area2D" parent="."]
 visible = false
 
@@ -1420,33 +1447,6 @@ position = Vector2(159, -8)
 shape = SubResource("RectangleShape2D_6257g")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-
-[node name="Oranf_Mabok" parent="." instance=ExtResource("14_36a6i")]
-position = Vector2(437, 164)
-
-[node name="Orang_Tua" parent="." instance=ExtResource("15_b5gsf")]
-position = Vector2(363, 88)
-
-[node name="Anak_Kecil_Cewe" parent="." instance=ExtResource("16_4uob7")]
-position = Vector2(383, 108)
-
-[node name="Anak_Kecil" parent="." instance=ExtResource("17_ye1k3")]
-position = Vector2(643, 183)
-
-[node name="Anak_Kecil_Cewe2" parent="." instance=ExtResource("16_4uob7")]
-position = Vector2(655, 183)
-
-[node name="Oranf_Mabok2" parent="." instance=ExtResource("14_36a6i")]
-position = Vector2(756, 120)
-
-[node name="Oranf_Mabok3" parent="." instance=ExtResource("14_36a6i")]
-position = Vector2(705, 231)
-
-[node name="Orang_Tua2" parent="." instance=ExtResource("15_b5gsf")]
-position = Vector2(835, 206)
-
-[node name="Anak_Kecil_Cewe3" parent="." instance=ExtResource("16_4uob7")]
-position = Vector2(838, 160)
 
 [connection signal="body_entered" from="Kembali" to="." method="_on_kembali_body_entered"]
 [connection signal="body_exited" from="Kembali" to="." method="_on_kembali_body_exited"]

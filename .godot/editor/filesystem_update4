@@ -1,10 +1,8 @@
-res://Scene/global_audio.tscn
 res://Scene/world.tscn
+res://Scene/cliff_bawah.tres
 res://Scene/player.tscn
 res://Scene/cliff_bawah.tscn
 res://Scene/cliff_side.tscn
+res://Scene/global_audio.tscn
 res://Scene/vampire_female.tscn
 res://Scene/enemy.tscn
-res://Audio/default_bus_layout.tres
-res://Script/enemy.gd
-res://Script/Player.gd

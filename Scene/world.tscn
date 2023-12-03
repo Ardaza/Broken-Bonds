@@ -1308,10 +1308,10 @@ polygon = PackedVector2Array(1, 1, 209, 1, 209, -15, 352, -15, 354, -16, 353, -3
 position = Vector2(608, 224)
 polygon = PackedVector2Array(1, -1, 1, 45, 1, 47, 17, 47, 17, 64, 33, 63, 32, 112, 49, 111, 49, 128, 65, 127, 65, 145, 81, 144, 81, 160, 176, 160, 176, 177, 271, 176, 275, 175, 259, 47, 69, -16, 49, -16, 49, -1)
 
-[node name="Cliff_kanan" type="Area2D" parent="."]
+[node name="Cliff_side" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Cliff_kanan"]
-position = Vector2(1173, 101)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cliff_side"]
+position = Vector2(1171, 102)
 shape = SubResource("RectangleShape2D_tifnc")
 
 [node name="Cliff_bawah" type="Area2D" parent="."]
@@ -1375,8 +1375,7 @@ position = Vector2(232, 443)
 [node name="Orang_Tua" parent="NPC" instance=ExtResource("15_5l8vb")]
 position = Vector2(308, 358)
 
-[connection signal="body_entered" from="Cliff_kanan" to="." method="_on_cliff_kanan_body_entered"]
-[connection signal="body_exited" from="Cliff_kanan" to="." method="_on_cliffside_transition_point_body_exited"]
-[connection signal="body_exited" from="Cliff_kanan" to="." method="_on_cliff_kanan_body_exited"]
+[connection signal="body_entered" from="Cliff_side" to="." method="_on_cliff_side_body_entered"]
+[connection signal="body_exited" from="Cliff_side" to="." method="_on_cliff_side_body_exited"]
 [connection signal="body_entered" from="Cliff_bawah" to="." method="_on_cliff_bawah_body_entered"]
 [connection signal="body_exited" from="Cliff_bawah" to="." method="_on_cliff_bawah_body_exited"]

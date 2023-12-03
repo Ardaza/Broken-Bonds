@@ -9,3 +9,4 @@ res://Scene/enemy.tscn
 res://Script/world.gd
 res://Script/Player.gd
 res://Script/global.gd
+res://Script/cliff_side.gd

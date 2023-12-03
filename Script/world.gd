@@ -19,16 +19,14 @@ func _process(delta):
 	change_scene1()
 	change_scene2()
 
-
-func _on_cliffside_transition_point_body_entered(body):
+func _on_cliff_kanan_body_entered(body):
 	if body.has_method("player"):
 		global.transition_scene1 = true
 
-
-func _on_cliffside_transition_point_body_exited(body):
+func _on_cliff_kanan_body_exited(body):
 	if body.has_method("player"):
 		global.transition_scene1 = false
-		
+
 func change_scene1():
 	if global.transition_scene1 == true:
 		if global.cur_scenes == 'world':
@@ -40,7 +38,6 @@ func change_scene1():
 func _on_cliff_bawah_body_entered(body):
 	if body.has_method("player"):
 		global.transition_scene2 = true
-
 
 func _on_cliff_bawah_body_exited(body):
 	if body.has_method("player"):

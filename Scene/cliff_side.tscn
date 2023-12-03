@@ -51,7 +51,7 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("4_ttdqs")]
-position = Vector2(-27, 555)
+position = Vector2(-20, 554)
 
 [node name="Karakter" type="Node2D" parent="."]
 
@@ -122,7 +122,7 @@ position = Vector2(671, 225)
 script = ExtResource("5_klgy8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-55, 553)
+position = Vector2(-54, 553)
 shape = SubResource("RectangleShape2D_cah0v")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

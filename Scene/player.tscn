@@ -436,12 +436,10 @@ frame_progress = 0.307201
 offset = Vector2(0, -15)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_g8obm")
 
 [node name="Player_Hitbox" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player_Hitbox"]
 position = Vector2(-1, -6)
@@ -458,7 +456,6 @@ limit_left = 0
 limit_top = 0
 limit_right = 1152
 limit_bottom = 648
-limit_smoothed = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 
@@ -467,12 +464,16 @@ limit_left = 0
 limit_top = 0
 limit_right = 1152
 limit_bottom = 648
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
 
 [node name="Cliff_side_camera" type="Camera2D" parent="."]
 limit_left = 0
 limit_top = 0
 limit_right = 1152
 limit_bottom = 648
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
 
 [node name="Health_Bar" type="ProgressBar" parent="."]
 modulate = Color(0.160784, 1, 0.321569, 1)

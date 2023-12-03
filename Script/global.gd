@@ -2,7 +2,6 @@ extends Node
 
 var cur_att = false
 
-
 var cur_scenes = "world"
 var transition_scene1 = false
 var transition_scene2 = false

@@ -1410,10 +1410,9 @@ polygon = PackedVector2Array(0, 0, 87, 0, 87, 29, 90, 32, 110, 32, 110, 87, -2, 
 polygon = PackedVector2Array(1, 0, 0, 673, 1152, 656, 1152, 0, 922, 0, 922, -11, 866, -11, 866, 0, 4, -1, 3, -19, 1209, -29, 1246, 749, -27, 719, -10, -15, 0, -14, 3, -6)
 
 [node name="karakter" type="Node2D" parent="."]
-visible = false
 
 [node name="Oranf_Mabok" parent="karakter" instance=ExtResource("14_36a6i")]
-position = Vector2(437, 164)
+position = Vector2(437, 171)
 
 [node name="Orang_Tua" parent="karakter" instance=ExtResource("15_b5gsf")]
 position = Vector2(363, 88)

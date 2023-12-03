@@ -25,7 +25,7 @@ func _physics_process(delta):
 		alive = false
 		darah = 0
 		mati.play()
-		await get_tree().change_scene_to_file("res://Scene/world.tscn")
+		get_tree().change_scene_to_file("res://Scene/world.tscn")
 	
 func playerMovement(delta):
 	
@@ -147,11 +147,11 @@ func curent_camera():
 		$World.enabled = true
 		$Cliff_bawah_camera.enabled = false
 		$Cliff_side_camera.enabled = false
-	if global.cur_scenes == "cliff_bawah":
+	elif global.cur_scenes == "cliff_bawah":
 		$World.enabled = false
 		$Cliff_bawah_camera.enabled = true
 		$Cliff_side_camera.enabled = false
-	if global.cur_scenes == "cliff_side":
+	elif global.cur_scenes == "cliff_side":
 		$World.enabled = false
 		$Cliff_bawah_camera.enabled = false
 		$Cliff_side_camera.enabled = true

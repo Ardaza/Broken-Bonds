@@ -1311,7 +1311,7 @@ polygon = PackedVector2Array(1, -1, 1, 45, 1, 47, 17, 47, 17, 64, 33, 63, 32, 11
 [node name="Cliff_kanan" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cliff_kanan"]
-position = Vector2(1175, 95.5)
+position = Vector2(1173, 101)
 shape = SubResource("RectangleShape2D_tifnc")
 
 [node name="Cliff_bawah" type="Area2D" parent="."]
@@ -1363,22 +1363,20 @@ position = Vector2(708, 29)
 [node name="Dwarf_King" parent="NPC" instance=ExtResource("11_vcvh7")]
 position = Vector2(618, 203)
 
-[node name="Anak_Kecil" parent="." instance=ExtResource("12_orknk")]
+[node name="Anak_Kecil" parent="NPC" instance=ExtResource("12_orknk")]
 position = Vector2(161, 257)
 
-[node name="Anak_Kecil_Cewe" parent="." instance=ExtResource("13_s70an")]
+[node name="Anak_Kecil_Cewe" parent="NPC" instance=ExtResource("13_s70an")]
 position = Vector2(173, 257)
 
-[node name="Oranf_Mabok" parent="." instance=ExtResource("14_vg0ue")]
+[node name="Oranf_Mabok" parent="NPC" instance=ExtResource("14_vg0ue")]
 position = Vector2(232, 443)
 
-[node name="Orang_Tua" parent="." instance=ExtResource("15_5l8vb")]
+[node name="Orang_Tua" parent="NPC" instance=ExtResource("15_5l8vb")]
 position = Vector2(308, 358)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(1144, 96)
-
-[connection signal="body_entered" from="Cliff_kanan" to="." method="_on_cliffside_transition_point_body_entered"]
+[connection signal="body_entered" from="Cliff_kanan" to="." method="_on_cliff_kanan_body_entered"]
 [connection signal="body_exited" from="Cliff_kanan" to="." method="_on_cliffside_transition_point_body_exited"]
+[connection signal="body_exited" from="Cliff_kanan" to="." method="_on_cliff_kanan_body_exited"]
 [connection signal="body_entered" from="Cliff_bawah" to="." method="_on_cliff_bawah_body_entered"]
 [connection signal="body_exited" from="Cliff_bawah" to="." method="_on_cliff_bawah_body_exited"]

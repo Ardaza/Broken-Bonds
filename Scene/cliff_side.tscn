@@ -12,6 +12,9 @@ size = Vector2(37, 43.5)
 [node name="cliff_kanan" type="Node2D"]
 script = ExtResource("1_4xpcp")
 
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
 [node name="Enemy_Slime" parent="." instance=ExtResource("5_c3rgu")]
 position = Vector2(109, 95)
 

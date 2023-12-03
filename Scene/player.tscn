@@ -1,8 +1,10 @@
-[gd_scene load_steps=58 format=3 uid="uid://q3evwxdhw66"]
+[gd_scene load_steps=60 format=3 uid="uid://q3evwxdhw66"]
 
 [ext_resource type="Script" path="res://Script/Player.gd" id="1_j6fba"]
 [ext_resource type="Texture2D" uid="uid://cvmn4qmbx2stg" path="res://sprites/characters/player.png" id="2_fhusx"]
-[ext_resource type="AudioStream" uid="uid://bppoptc5rxfub" path="res://Audio/SFX/punch-140236.mp3" id="3_14upm"]
+[ext_resource type="AudioStream" uid="uid://bt2ov615rhop2" path="res://Audio/518883__beezlefm__simple-slash-attack-sound.wav" id="3_kjuig"]
+[ext_resource type="AudioStream" uid="uid://hqh32182i51d" path="res://Audio/SFX/678593__redswan_studios__player-hurt-2.mp3" id="4_8lfow"]
+[ext_resource type="AudioStream" uid="uid://d2gvnpni1mo5b" path="res://Audio/SFX/414073__inspectorj__dialogue-pained-yelp-loud-a.mp3" id="5_owq7g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cpvoo"]
 atlas = ExtResource("2_fhusx")
@@ -449,7 +451,7 @@ shape = SubResource("CircleShape2D_2pxpd")
 wait_time = 0.8
 
 [node name="deal_att_timer" type="Timer" parent="."]
-wait_time = 0.8
+wait_time = 0.5
 
 [node name="World" type="Camera2D" parent="."]
 limit_left = 0
@@ -474,6 +476,7 @@ limit_bottom = 648
 
 [node name="Health_Bar" type="ProgressBar" parent="."]
 modulate = Color(0.160784, 1, 0.321569, 1)
+y_sort_enabled = true
 offset_left = -9.0
 offset_top = -25.0
 offset_right = 81.0
@@ -488,11 +491,18 @@ wait_time = 3.5
 autostart = true
 
 [node name="Pukul" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_14upm")
-volume_db = -10.0
+stream = ExtResource("3_kjuig")
+volume_db = 10.0
+
+[node name="kena" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_8lfow")
+
+[node name="mati" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_owq7g")
 
 [connection signal="body_entered" from="Player_Hitbox" to="." method="_on_player_hitbox_body_entered"]
 [connection signal="body_exited" from="Player_Hitbox" to="." method="_on_player_hitbox_body_exited"]
 [connection signal="timeout" from="Att_cd" to="." method="_on_att_cd_timeout"]
 [connection signal="timeout" from="deal_att_timer" to="." method="_on_deal_att_timer_timeout"]
 [connection signal="timeout" from="Regen" to="." method="_on_regen_timeout"]
+[connection signal="finished" from="mati" to="." method="_on_mati_finished"]

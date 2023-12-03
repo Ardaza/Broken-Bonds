@@ -1,5 +1,7 @@
-Camera2D
 AudioStreamPlayer2D
+AudioListener2D
+TileMap
+Camera2D
 Timer
 Node2D
 Node
@@ -10,6 +12,5 @@ CollisionPolygon2D
 AnimatedSprite2D
 CharacterBody2D
 StaticBody2D
-TileMap
 Polygon2D
 ColorRect

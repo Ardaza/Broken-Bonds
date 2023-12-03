@@ -3,7 +3,7 @@ extends CharacterBody2D
 var kecepatan = 100
 var kejar = false
 var player = null
-
+@onready var pukul = $pukul
 var darah = 50
 var att_zone = false
 var can_take_damage = true

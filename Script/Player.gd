@@ -8,6 +8,8 @@ var alive = true
 var attack_ip = false
 
 @onready var pukul = $Pukul
+@onready var kena = $kena
+@onready var mati = $mati
 
 const speed = 70
 var directions = "none"
@@ -22,8 +24,8 @@ func _physics_process(delta):
 	if darah <= 0:
 		alive = false
 		darah = 0
-		print("Player tewas...")
-		self.queue_free()
+		mati.play()
+		await get_tree().change_scene_to_file("res://Scene/world.tscn")
 	
 func playerMovement(delta):
 	
@@ -101,6 +103,7 @@ func _on_player_hitbox_body_exited(body):
 		
 func enemy_att():
 	if range and att_cd == true:
+		kena.play()
 		darah = darah - 10
 		att_cd = false
 		$Att_cd.start()
@@ -112,30 +115,27 @@ func _on_att_cd_timeout():
 func attack():
 	var dir = directions
 	if Input.is_action_just_pressed("attack"):
+		pukul.play()
 		global.cur_att = true
 		attack_ip = true
 		if dir == "right":
 			$AnimatedSprite2D.flip_h = false
 			$AnimatedSprite2D.play("Side_Att")
 			$deal_att_timer.start()
-			pukul.play()
-			pukul.play()
+			
 		if dir == "left":
 			$AnimatedSprite2D.flip_h = true
 			$AnimatedSprite2D.play("Side_Att")
 			$deal_att_timer.start()
-			pukul.play()
-			pukul.play()
+			
 		if dir == "down":
 			$AnimatedSprite2D.play("Front_Att")
 			$deal_att_timer.start()
-			pukul.play()
-			pukul.play()
+			
 		if dir == "up":
 			$AnimatedSprite2D.play("Back_Att")
 			$deal_att_timer.start()
-			pukul.play()
-			pukul.play()
+			
 
 func _on_deal_att_timer_timeout():
 	$deal_att_timer.stop()

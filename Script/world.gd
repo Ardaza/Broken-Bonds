@@ -1,6 +1,5 @@
 extends Node2D
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	if global.first_loading == true:
 		$Player.position.x = global.player_start_posx
@@ -12,8 +11,6 @@ func _ready():
 		$Player.position.x = global.player_exit_cliffside_posx
 		$Player.position.y = global.player_exit_cliffside_posy
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	change_scene1()
 	change_scene2()
@@ -30,6 +27,8 @@ func change_scene1():
 	if global.transition_scene1 == true:
 		if global.cur_scenes == 'world':
 			get_tree().change_scene_to_file("res://Scene/cliff_side.tscn")
+			global.first_loading = false
+			global.bawah_loading = false
 			global.finish_changescenes()
 
 func _on_cliff_bawah_body_entered(body):
@@ -44,4 +43,13 @@ func change_scene2():
 	if global.transition_scene2 == true:
 		if global.cur_scenes == 'world':
 			get_tree().change_scene_to_file("res://Scene/cliff_bawah.tscn")
+			global.first_loading = false
+			global.side_loading = false
+			global.finish_changescenes()
+			
+func change_scene3():
+	if global.transition_scene3 == true:
+		if global.cur_scenes == 'menu':
+			get_tree().change_scene_to_file("res://Scene/world.tscn")
+			global.first_loading = true
 			global.finish_changescenes()

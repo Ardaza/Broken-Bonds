@@ -12,3 +12,4 @@ res://Scene/menu.tscn
 res://Script/world.gd
 res://Script/cliff_bawah.gd
 res://Script/cliff_side.gd
+res://Script/global.gd

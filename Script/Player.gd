@@ -22,15 +22,24 @@ func _physics_process(delta):
 	update_health()
 	
 	if darah <= 0:
-		alive = false
-		darah = 0
-		mati.play()
-		global.first_loading = true
-		global.bawah_loading == true
-		global.side_loading == true
-		global.transition_scene1 == true
-		global.transition_scene2 == true
-		get_tree().change_scene_to_file("res://Scene/menu.tscn")
+		self.queue_free()
+		if global.cur_scenes == 'world':
+			get_tree().change_scene_to_file("res://Scene/world.tscn")
+			global.bawah_loading = false
+			global.side_loading = false
+			global.finish_changescenes()
+			
+		if global.cur_scenes == 'cliff_side':
+			get_tree().change_scene_to_file("res://Scene/cliff_side.tscn")
+			global.bawah_loading = false
+			global.first_loading = false
+			global.finish_changescenes()
+			
+		if global.cur_scenes == 'cliff_bawah':
+			get_tree().change_scene_to_file("res://Scene/cliff_bawah.tscn")
+			global.side_loading = false
+			global.first_loading = false
+			global.finish_changescenes()
 	
 func playerMovement(delta):
 	

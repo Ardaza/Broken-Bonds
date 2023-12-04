@@ -25,7 +25,12 @@ func _physics_process(delta):
 		alive = false
 		darah = 0
 		mati.play()
-		get_tree().change_scene_to_file("res://Scene/world.tscn")
+		global.first_loading = true
+		global.bawah_loading == true
+		global.side_loading == true
+		global.transition_scene1 == true
+		global.transition_scene2 == true
+		get_tree().change_scene_to_file("res://Scene/menu.tscn")
 	
 func playerMovement(delta):
 	

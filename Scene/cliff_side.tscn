@@ -15,6 +15,7 @@
 size = Vector2(37, 43.5)
 
 [node name="cliff_kanan" type="Node2D"]
+y_sort_enabled = true
 position = Vector2(37, 1)
 script = ExtResource("1_4xpcp")
 

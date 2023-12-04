@@ -1,15 +1,2 @@
-res://Scene/world.tscn
-res://Scene/cliff_bawah.tres
-res://Scene/player.tscn
-res://Scene/cliff_bawah.tscn
 res://Scene/cliff_side.tscn
-res://Scene/global_audio.tscn
-res://Scene/vampire_female.tscn
-res://Scene/enemy.tscn
-res://Button.gd
-res://Script/Player.gd
-res://Scene/menu.tscn
-res://Script/world.gd
-res://Script/cliff_bawah.gd
-res://Script/cliff_side.gd
-res://Script/global.gd
+res://Scene/cliff_bawah.tres

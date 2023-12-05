@@ -1,3 +1,6 @@
 res://Scene/world.tscn
 res://Scene/player.tscn
 res://Scene/cliff_bawah.tscn
+res://Scene/cliff_bawah.tres
+res://Scene/cliff_side.tscn
+res://Scene/menu.tscn

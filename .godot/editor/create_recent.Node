@@ -1,14 +1,14 @@
+Node2D
+Area2D
 Camera2D
 Button
 AudioStreamPlayer2D
 AudioListener2D
 TileMap
 Timer
-Node2D
 Node
 ProgressBar
 CollisionShape2D
-Area2D
 CollisionPolygon2D
 AnimatedSprite2D
 CharacterBody2D

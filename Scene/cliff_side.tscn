@@ -167,13 +167,13 @@ position = Vector2(244, 803)
 [node name="Dwarf_King" parent="Karakter NPC" instance=ExtResource("9_m6mbj")]
 position = Vector2(388, 241)
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Kembali" type="Area2D" parent="."]
 position = Vector2(-29, -351)
 script = ExtResource("5_klgy8")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kembali"]
 position = Vector2(11, 904)
 shape = SubResource("RectangleShape2D_cah0v")
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Kembali" to="." method="_on_kembali_body_entered"]
+[connection signal="body_exited" from="Kembali" to="." method="_on_kembali_body_exited"]

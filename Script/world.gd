@@ -46,10 +46,3 @@ func change_scene2():
 			global.first_loading = false
 			global.side_loading = false
 			global.finish_changescenes()
-			
-func change_scene3():
-	if global.transition_scene3 == true:
-		if global.cur_scenes == 'menu':
-			get_tree().change_scene_to_file("res://Scene/world.tscn")
-			global.first_loading = true
-			global.finish_changescenes()

@@ -15,8 +15,7 @@
 size = Vector2(37, 43.5)
 
 [node name="cliff_kanan" type="Node2D"]
-y_sort_enabled = true
-position = Vector2(37, 1)
+position = Vector2(29, 351)
 script = ExtResource("1_4xpcp")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -78,7 +77,7 @@ position = Vector2(805, 97)
 position = Vector2(523, 117)
 
 [node name="Vampire_Female7" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(316, 110)
+position = Vector2(320, 121)
 
 [node name="Vampire_Female8" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(138, -200)
@@ -132,7 +131,7 @@ position = Vector2(205, 40)
 position = Vector2(49, 22)
 
 [node name="Enemy_Slime13" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(-30, 73)
+position = Vector2(-11, 50)
 
 [node name="Enemy_Slime14" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
 position = Vector2(671, 225)

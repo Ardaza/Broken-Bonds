@@ -57,119 +57,122 @@ layer_4/tile_data = PackedInt32Array()
 position = Vector2(19, 556)
 
 [node name="Karakter Enemies" type="Node2D" parent="."]
+position = Vector2(-29, -351)
 
 [node name="Vampire_Female" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(324, 366)
+position = Vector2(355, 709)
 
 [node name="Vampire_Female2" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(198, 239)
+position = Vector2(229, 582)
 
 [node name="Vampire_Female3" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(44, 78)
+position = Vector2(75, 421)
 
 [node name="Vampire_Female4" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(131, 567)
+position = Vector2(162, 910)
 
 [node name="Vampire_Female5" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(805, 97)
+position = Vector2(836, 440)
 
 [node name="Vampire_Female6" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(523, 117)
+position = Vector2(554, 460)
 
 [node name="Vampire_Female7" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(320, 121)
+position = Vector2(351, 464)
 
 [node name="Vampire_Female8" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(138, -200)
+position = Vector2(169, 143)
 
 [node name="Vampire_Female9" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(199, -250)
+position = Vector2(230, 93)
 
 [node name="Vampire_Female10" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(278, -264)
+position = Vector2(309, 79)
 
 [node name="Vampire_Female11" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(365, -223)
+position = Vector2(396, 120)
 
 [node name="Vampire_Female12" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
-position = Vector2(702, -92)
+position = Vector2(733, 251)
 
 [node name="Enemy_Slime" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(122, 181)
+position = Vector2(153, 524)
 
 [node name="Enemy_Slime2" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(412, 124)
+position = Vector2(443, 467)
 
 [node name="Enemy_Slime3" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(63, 396)
+position = Vector2(94, 739)
 
 [node name="Enemy_Slime4" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(80, 309)
+position = Vector2(111, 652)
 
 [node name="Enemy_Slime5" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(254, 505)
+position = Vector2(285, 848)
 
 [node name="Enemy_Slime6" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(173, 593)
+position = Vector2(204, 936)
 
 [node name="Enemy_Slime7" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(428, 527)
+position = Vector2(459, 870)
 
 [node name="Enemy_Slime8" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(384, 190)
+position = Vector2(415, 533)
 
 [node name="Enemy_Slime9" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(804, 161)
+position = Vector2(835, 504)
 
 [node name="Enemy_Slime10" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(842, 24)
+position = Vector2(873, 367)
 
 [node name="Enemy_Slime11" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(205, 40)
+position = Vector2(236, 383)
 
 [node name="Enemy_Slime12" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(49, 22)
+position = Vector2(80, 365)
 
 [node name="Enemy_Slime13" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(-11, 50)
+position = Vector2(20, 393)
 
 [node name="Enemy_Slime14" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(671, 225)
+position = Vector2(702, 568)
 
 [node name="Enemy_Slime15" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(350, -323)
+position = Vector2(381, 20)
 
 [node name="Enemy_Slime16" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(241, -87)
+position = Vector2(272, 256)
 
 [node name="Enemy_Slime17" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(95, -308)
+position = Vector2(126, 35)
 
 [node name="Enemy_Slime18" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(4, -249)
+position = Vector2(35, 94)
 
 [node name="Enemy_Slime19" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
-position = Vector2(39, -162)
+position = Vector2(70, 181)
 
 [node name="Karakter NPC" type="Node2D" parent="."]
+position = Vector2(-29, -351)
 
 [node name="Anak_Kecil" parent="Karakter NPC" instance=ExtResource("6_e4itx")]
-position = Vector2(227, 460)
+position = Vector2(249, 814)
 
 [node name="Orang_Tua" parent="Karakter NPC" instance=ExtResource("7_cs0af")]
-position = Vector2(209, 456)
+position = Vector2(231, 810)
 
 [node name="Anak_Kecil_Cewe" parent="Karakter NPC" instance=ExtResource("8_mvn5w")]
-position = Vector2(222, 449)
+position = Vector2(244, 803)
 
 [node name="Dwarf_King" parent="Karakter NPC" instance=ExtResource("9_m6mbj")]
-position = Vector2(366, -113)
+position = Vector2(388, 241)
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-29, -351)
 script = ExtResource("5_klgy8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-19, 553)
+position = Vector2(11, 904)
 shape = SubResource("RectangleShape2D_cah0v")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://damhbcuiahnmg"]
+[gd_scene load_steps=11 format=3 uid="uid://damhbcuiahnmg"]
 
 [ext_resource type="Script" path="res://Script/cliff_side.gd" id="1_4xpcp"]
 [ext_resource type="PackedScene" uid="uid://dab3d7vt3300f" path="res://Scene/vampire_female.tscn" id="1_qmj3i"]
 [ext_resource type="TileSet" uid="uid://smr0jr1homuh" path="res://Scene/cliff_bawah.tres" id="2_jldif"]
 [ext_resource type="PackedScene" uid="uid://q3evwxdhw66" path="res://Scene/player.tscn" id="4_ttdqs"]
+[ext_resource type="PackedScene" uid="uid://cywg5fdsddyli" path="res://Scene/enemy.tscn" id="5_c3rgu"]
 [ext_resource type="PackedScene" uid="uid://cugwjtk4s2ewj" path="res://Scene/anak_kecil.tscn" id="6_e4itx"]
 [ext_resource type="PackedScene" uid="uid://q3ek7jkup53i" path="res://Scene/orang_tuas.tscn" id="7_cs0af"]
 [ext_resource type="PackedScene" uid="uid://clel174td2qac" path="res://Scene/anak_kecil_cewe.tscn" id="8_mvn5w"]
@@ -91,6 +92,66 @@ position = Vector2(366, -240)
 
 [node name="Vampire_Female12" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(21, 68)
+
+[node name="Enemy_Slime" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(162, 508)
+
+[node name="Enemy_Slime2" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(65, 601)
+
+[node name="Enemy_Slime3" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(437, 534)
+
+[node name="Enemy_Slime4" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(228, 406)
+
+[node name="Enemy_Slime5" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(250, 263)
+
+[node name="Enemy_Slime6" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(18, 306)
+
+[node name="Enemy_Slime7" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(18, 178)
+
+[node name="Enemy_Slime8" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(101, 61)
+
+[node name="Enemy_Slime9" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(17, -151)
+
+[node name="Enemy_Slime10" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(11, -249)
+
+[node name="Enemy_Slime11" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(133, -319)
+
+[node name="Enemy_Slime12" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(278, -320)
+
+[node name="Enemy_Slime13" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(469, -273)
+
+[node name="Enemy_Slime14" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(630, -14)
+
+[node name="Enemy_Slime15" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(895, 43)
+
+[node name="Enemy_Slime16" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(593, 175)
+
+[node name="Enemy_Slime17" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(412, 131)
+
+[node name="Enemy_Slime18" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(474, 93)
+
+[node name="Enemy_Slime19" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(902, 189)
+
+[node name="Enemy_Slime20" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(819, 158)
 
 [node name="Karakter NPC" type="Node2D" parent="."]
 

@@ -2,10 +2,12 @@ extends Node
 
 var cur_att = false
 
+var kenalan = false
+var udah_kenal = true
+
 var cur_scenes = "world"
 var transition_scene1 = false
 var transition_scene2 = false
-var transition_scene3 = false
 
 var player_exit_cliffbawah_posx = 873
 var player_exit_cliffbawah_posy = 649
@@ -32,10 +34,3 @@ func finish_changescenes():
 			cur_scenes = "cliff_bawah"
 		else:
 			cur_scenes = "world"
-		
-	if transition_scene3 == true:
-		transition_scene3 = false
-		if cur_scenes == "menu":
-			cur_scenes = "world"
-		else:
-			cur_scenes = "menu"

@@ -7,6 +7,8 @@ var alive = true
 
 var attack_ip = false
 
+var npc_in_range = false
+
 @onready var pukul = $Pukul
 @onready var kena = $kena
 @onready var mati = $mati
@@ -20,6 +22,13 @@ func _physics_process(delta):
 	attack()
 	curent_camera()
 	update_health()
+	
+	if npc_in_range == true:
+		if Input.is_action_just_pressed("ui_accept"):
+			scale.x *= 0.3
+			scale.y *= 0.3
+			DialogueManager.show_example_dialogue_balloon(load("res://Globon.dialogue"), "start")
+			return 
 	
 	if darah <= 0:
 		self.queue_free()
@@ -110,10 +119,16 @@ func player():
 func _on_player_hitbox_body_entered(body):
 	if body.has_method("enemy"):
 		range = true
+	
+	if body.has_method("npc"):
+		npc_in_range = true
 
 func _on_player_hitbox_body_exited(body):
 	if body.has_method("enemy"):
 		range = false
+		
+	if body.has_method("npc"):
+		npc_in_range = false
 		
 func enemy_att():
 	if range and att_cd == true:

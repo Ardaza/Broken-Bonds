@@ -4,3 +4,7 @@ res://Scene/cliff_bawah.tscn
 res://Scene/cliff_bawah.tres
 res://Scene/cliff_side.tscn
 res://Scene/menu.tscn
+res://Script/global.gd
+res://Script/Player.gd
+res://Script/dwarf_king.gd
+res://Script/world.gd

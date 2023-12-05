@@ -1,6 +1,9 @@
 extends Node2D
 
 func _ready():
+	
+	
+	
 	if global.first_loading == true:
 		$Player.position.x = global.player_start_posx
 		$Player.position.y = global.player_start_posy

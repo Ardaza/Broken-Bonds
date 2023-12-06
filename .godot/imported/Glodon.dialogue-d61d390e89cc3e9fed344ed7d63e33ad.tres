@@ -454,9 +454,9 @@ lines = {
 "next_id": "49",
 "parent_id": "12",
 "tags": PackedStringArray(),
-"text": "imana tubuh dari Orcus sudah kembali ‘hidup’",
+"text": "dimana tubuh dari Orcus sudah kembali ‘hidup’",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "imana tubuh dari Orcus sudah kembali ‘hidup’",
+"translation_key": "dimana tubuh dari Orcus sudah kembali ‘hidup’",
 "type": "dialogue"
 },
 "49": {
@@ -573,9 +573,9 @@ lines = {
 "next_id": "60",
 "parent_id": "12",
 "tags": PackedStringArray(),
-"text": "namun ia hanya dapat menemukan monster-monster yang memenuhi lab",
+"text": "namun ia hanya dapat menemukan monster-monster",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "namun ia hanya dapat menemukan monster-monster yang memenuhi lab",
+"translation_key": "namun ia hanya dapat menemukan monster-monster",
 "type": "dialogue"
 },
 "6": {

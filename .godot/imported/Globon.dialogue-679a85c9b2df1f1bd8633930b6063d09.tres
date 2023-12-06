@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_65kvj"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_dpcgb"]
 
 [resource]
-script = ExtResource("1_65kvj")
+script = ExtResource("1_dpcgb")
 using_states = PackedStringArray()
 titles = {
 "start": "3"
@@ -17,79 +17,57 @@ lines = {
 "text": "start",
 "type": "title"
 },
-"11": {
-"id": "11",
-"is_snippet": false,
-"next_id": "end",
-"type": "goto"
-},
 "3": {
-"character": "",
+"character": "Glodon",
 "character_replacements": Array[Dictionary]([]),
 "id": "3",
 "next_id": "4",
-"tags": PackedStringArray(),
-"text": "scale.x *= 0.3",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "scale.x *= 0.3",
-"type": "dialogue"
-},
-"4": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
-"id": "4",
-"next_id": "6",
-"tags": PackedStringArray(),
-"text": "scale.y *= 0.3",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "scale.y *= 0.3",
-"type": "dialogue"
-},
-"6": {
-"character": "Glodon",
-"character_replacements": Array[Dictionary]([]),
-"id": "6",
-"next_id": "7",
 "tags": PackedStringArray(),
 "text": "[[Hello|Hi|Howdy]]... welcome to Broken Bonds",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "[[Hello|Hi|Howdy]]... welcome to Broken Bonds",
 "type": "dialogue"
 },
-"7": {
+"4": {
 "character": "",
 "character_replacements": Array[Dictionary]([]),
-"id": "7",
-"next_id": "8",
-"next_id_after": "8",
-"responses": PackedStringArray("7"),
+"id": "4",
+"next_id": "5",
+"next_id_after": "5",
+"responses": PackedStringArray("4"),
 "tags": PackedStringArray(),
 "text": "Hello",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Hello",
 "type": "response"
 },
-"8": {
+"5": {
 "character": "Glodon",
 "character_replacements": Array[Dictionary]([]),
-"id": "8",
-"next_id": "9",
+"id": "5",
+"next_id": "6",
 "tags": PackedStringArray(),
 "text": "Press E for slash, up down left right to walk",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Press E for slash, up down left right to walk",
 "type": "dialogue"
 },
-"9": {
+"6": {
 "character": "Glodon",
 "character_replacements": Array[Dictionary]([]),
-"id": "9",
-"next_id": "11",
+"id": "6",
+"next_id": "8",
 "tags": PackedStringArray(),
 "text": "Broken bonds is in early stage of development, you may found bug and you can report to us to fix it",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Broken bonds is in early stage of development, you may found bug and you can report to us to fix it",
 "type": "dialogue"
+},
+"8": {
+"id": "8",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
 }
 }
 metadata/dialogue_manager_version = "2.30.0"

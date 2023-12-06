@@ -7,7 +7,8 @@ var alive = true
 
 var attack_ip = false
 
-var npc_in_range = false
+var dwarf_king = false
+var kang_grot = false
 
 @onready var pukul = $Pukul
 @onready var kena = $kena
@@ -23,9 +24,14 @@ func _physics_process(delta):
 	curent_camera()
 	update_health()
 	
-	if npc_in_range == true:
+	if dwarf_king == true:
 		if Input.is_action_just_pressed("ui_accept"):
 			DialogueManager.show_example_dialogue_balloon(load("res://Glodon.dialogue"), "start")
+			return 
+	
+	if kang_grot == true:
+		if Input.is_action_just_pressed("ui_accept"):
+			DialogueManager.show_example_dialogue_balloon(load("res://Lomort.dialogue"), "start")
 			return 
 	
 	if darah <= 0:
@@ -117,15 +123,21 @@ func _on_player_hitbox_body_entered(body):
 	if body.has_method("enemy"):
 		range = true
 	
-	if body.has_method("npc"):
-		npc_in_range = true
+	if body.has_method("dwarf_king"):
+		dwarf_king = true
+		
+	if body.has_method("kang_grot"):
+		kang_grot = true
 
 func _on_player_hitbox_body_exited(body):
 	if body.has_method("enemy"):
 		range = false
 		
-	if body.has_method("npc"):
-		npc_in_range = false
+	if body.has_method("dwarf_king"):
+		dwarf_king = false
+		
+	if body.has_method("kang_grot"):
+		kang_grot = false
 		
 func enemy_att():
 	if range and att_cd == true:

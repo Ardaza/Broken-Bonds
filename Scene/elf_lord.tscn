@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://dus2335us737r"]
+
+[ext_resource type="Texture2D" uid="uid://cyhpbodd3eigv" path="res://sprites/characters/ElfLordIdleSide.png" id="1_b6pqq"]
+[ext_resource type="Script" path="res://Script/elf_lord.gd" id="1_m4fn7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcdaf"]
+atlas = ExtResource("1_b6pqq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnvuh"]
+atlas = ExtResource("1_b6pqq")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q5bon"]
+atlas = ExtResource("1_b6pqq")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewne1"]
+atlas = ExtResource("1_b6pqq")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0hc5p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcdaf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnvuh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q5bon")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ewne1")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s8hh3"]
+radius = 4.0
+height = 16.0
+
+[node name="elf_lord" type="CharacterBody2D"]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_m4fn7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0hc5p")
+animation = &"idle"
+frame_progress = 0.589769
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.666667, 0)
+shape = SubResource("CapsuleShape2D_s8hh3")

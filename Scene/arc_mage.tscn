@@ -1,0 +1,82 @@
+[gd_scene load_steps=13 format=3 uid="uid://cwhkaf5j0auq7"]
+
+[ext_resource type="Texture2D" uid="uid://bgtbwbfyt6ojm" path="res://sprites/characters/ElfArchmageIdleSide.png" id="1_6sbec"]
+[ext_resource type="Script" path="res://Script/arc_mage.gd" id="1_yn6yl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26vya"]
+atlas = ExtResource("1_6sbec")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8g831"]
+atlas = ExtResource("1_6sbec")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6oiv"]
+atlas = ExtResource("1_6sbec")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pap70"]
+atlas = ExtResource("1_6sbec")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2v2qx"]
+atlas = ExtResource("1_6sbec")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7sxfx"]
+atlas = ExtResource("1_6sbec")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sx7pc"]
+atlas = ExtResource("1_6sbec")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4rnu"]
+atlas = ExtResource("1_6sbec")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s0lp8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26vya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8g831")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6oiv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pap70")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2v2qx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7sxfx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sx7pc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4rnu")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_woem5"]
+radius = 7.0
+
+[node name="arc_mage" type="CharacterBody2D"]
+script = ExtResource("1_yn6yl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_s0lp8")
+animation = &"idle"
+frame_progress = 0.758888
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_woem5")

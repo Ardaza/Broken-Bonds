@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://2fg22eqdao28"
+path="res://.godot/imported/Lomort.dialogue-30e195d65a2e0b5f5a4a1af4eef1e8fd.tres"
+
+[deps]
+
+source_file="res://Lomort.dialogue"
+dest_files=["res://.godot/imported/Lomort.dialogue-30e195d65a2e0b5f5a4a1af4eef1e8fd.tres"]
+
+[params]
+
+defaults=true

@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8kjlu"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_gc0pj"]
 
 [resource]
-script = ExtResource("1_8kjlu")
+script = ExtResource("1_gc0pj")
 using_states = PackedStringArray()
 titles = {
 "start": "3"
 }
-character_names = PackedStringArray("Glodon")
+character_names = PackedStringArray("Glodon the native Isekai")
 first_title = "3"
 lines = {
 "1": {
@@ -17,8 +17,224 @@ lines = {
 "text": "start",
 "type": "title"
 },
+"11": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "11",
+"next_id": "12",
+"tags": PackedStringArray(),
+"text": "Want to read the story?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Want to read the story?",
+"type": "dialogue"
+},
+"12": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "12",
+"next_id": "13",
+"next_id_after": "70",
+"responses": PackedStringArray("12", "68"),
+"tags": PackedStringArray(),
+"text": "Yes",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Yes",
+"type": "response"
+},
+"13": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Di balik bukit-bukit hijau yang memeluk kerajaan Luminis",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Di balik bukit-bukit hijau yang memeluk kerajaan Luminis",
+"type": "dialogue"
+},
+"14": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "14",
+"next_id": "15",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "terbentanglah tanah damai dan penuh keajaiban",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "terbentanglah tanah damai dan penuh keajaiban",
+"type": "dialogue"
+},
+"15": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "15",
+"next_id": "16",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Raja Luminis, pemimpin bijaksana, memimpin dengan keadilan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Raja Luminis, pemimpin bijaksana, memimpin dengan keadilan",
+"type": "dialogue"
+},
+"16": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "16",
+"next_id": "17",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "menciptakan kebahagiaan dan kemakmuran bagi penduduknya",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "menciptakan kebahagiaan dan kemakmuran bagi penduduknya",
+"type": "dialogue"
+},
+"17": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "17",
+"next_id": "18",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Desa-desa berwarna-warni, istana yang bersinar",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Desa-desa berwarna-warni, istana yang bersinar",
+"type": "dialogue"
+},
+"18": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "18",
+"next_id": "19",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "dan kehidupan seni yang kreatif memperindah setiap sudut kerajaan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "dan kehidupan seni yang kreatif memperindah setiap sudut kerajaan",
+"type": "dialogue"
+},
+"19": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "19",
+"next_id": "20",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Malam pun tiba dengan lampu-lampu kecil yang bersinar di sepanjang jalan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Malam pun tiba dengan lampu-lampu kecil yang bersinar di sepanjang jalan",
+"type": "dialogue"
+},
+"20": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "20",
+"next_id": "22",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "menciptakan atmosfer kedamaian yang abadi di kerajaan Luminis",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "menciptakan atmosfer kedamaian yang abadi di kerajaan Luminis",
+"type": "dialogue"
+},
+"22": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "22",
+"next_id": "23",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Sayang kedamaian tak berlangsung selamanya",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Sayang kedamaian tak berlangsung selamanya",
+"type": "dialogue"
+},
+"23": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "23",
+"next_id": "24",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Kehidupan damai mereka terguncang",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Kehidupan damai mereka terguncang",
+"type": "dialogue"
+},
+"24": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "24",
+"next_id": "25",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "oleh serangan mendadak dari kerajaan tetangga",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "oleh serangan mendadak dari kerajaan tetangga",
+"type": "dialogue"
+},
+"25": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "25",
+"next_id": "26",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Pasukan musuh dengan niat ganasnya merebut kendali",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Pasukan musuh dengan niat ganasnya merebut kendali",
+"type": "dialogue"
+},
+"26": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "merubah desa-desa yang penuh keceriaan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "merubah desa-desa yang penuh keceriaan",
+"type": "dialogue"
+},
+"27": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "27",
+"next_id": "28",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "menjadi medan pertempuran yang penuh kekacauan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "menjadi medan pertempuran yang penuh kekacauan",
+"type": "dialogue"
+},
+"28": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "28",
+"next_id": "29",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Tanah subur di sekitar istana yang bersinar",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tanah subur di sekitar istana yang bersinar",
+"type": "dialogue"
+},
+"29": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "29",
+"next_id": "31",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "sekarang menjadi saksi bisu dari perubahan tragis ini",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "sekarang menjadi saksi bisu dari perubahan tragis ini",
+"type": "dialogue"
+},
 "3": {
-"character": "Glodon",
+"character": "Glodon the native Isekai",
 "character_replacements": Array[Dictionary]([]),
 "id": "3",
 "next_id": "4",
@@ -28,8 +244,104 @@ lines = {
 "translation_key": "This game is still in the development stage",
 "type": "dialogue"
 },
+"31": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "32",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Korban berjatuhan, banyak hal yang dihancurkan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Korban berjatuhan, banyak hal yang dihancurkan",
+"type": "dialogue"
+},
+"32": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "32",
+"next_id": "33",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Tak luput pula tali persahabatan antara Caelus dan Orcus",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tak luput pula tali persahabatan antara Caelus dan Orcus",
+"type": "dialogue"
+},
+"33": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "33",
+"next_id": "34",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Tragedi melanda saat Orcus gugur membela kerajaan Luminis yang diserang",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tragedi melanda saat Orcus gugur membela kerajaan Luminis yang diserang",
+"type": "dialogue"
+},
+"34": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "34",
+"next_id": "35",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Caelus, si sahabat setia, terpukul oleh kehilangan yang mendalam",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Caelus, si sahabat setia, terpukul oleh kehilangan yang mendalam",
+"type": "dialogue"
+},
+"35": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "35",
+"next_id": "37",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "merasakan kehancuran yang menusuk hati",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "merasakan kehancuran yang menusuk hati",
+"type": "dialogue"
+},
+"37": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "37",
+"next_id": "38",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Dalam asa yang membakar hatinya, Caelus melarikan diri dari medan perang",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dalam asa yang membakar hatinya, Caelus melarikan diri dari medan perang",
+"type": "dialogue"
+},
+"38": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "38",
+"next_id": "39",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "memimpin langkahnya dengan beban berat yang tak terlupakan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "memimpin langkahnya dengan beban berat yang tak terlupakan",
+"type": "dialogue"
+},
+"39": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "39",
+"next_id": "40",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "jasad tak bernyawa sahabatnya, Orcus",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "jasad tak bernyawa sahabatnya, Orcus",
+"type": "dialogue"
+},
 "4": {
-"character": "Glodon",
+"character": "Glodon the native Isekai",
 "character_replacements": Array[Dictionary]([]),
 "id": "4",
 "next_id": "5",
@@ -39,8 +351,128 @@ lines = {
 "translation_key": "what you are playing is the demo version",
 "type": "dialogue"
 },
+"40": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "40",
+"next_id": "41",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Dengan tekad yang membara, niatan suci memandu Caelus",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Dengan tekad yang membara, niatan suci memandu Caelus",
+"type": "dialogue"
+},
+"41": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "41",
+"next_id": "42",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "mendorongnya untuk membawa jasad yang terbaring dingin itu melalui",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "mendorongnya untuk membawa jasad yang terbaring dingin itu melalui",
+"type": "dialogue"
+},
+"42": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "42",
+"next_id": "43",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "perjalanan sulit menembus medan perang yang telah menjadi saksi tragedi",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "perjalanan sulit menembus medan perang yang telah menjadi saksi tragedi",
+"type": "dialogue"
+},
+"43": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "43",
+"next_id": "44",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Langkah-langkahnya yang dipandu oleh cahaya redup melintasi Hutan Luminis",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Langkah-langkahnya yang dipandu oleh cahaya redup melintasi Hutan Luminis",
+"type": "dialogue"
+},
+"44": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "44",
+"next_id": "45",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Hutan Luminis mengarahkan ke suatu tempat yang penuh harapan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Hutan Luminis mengarahkan ke suatu tempat yang penuh harapan",
+"type": "dialogue"
+},
+"45": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "45",
+"next_id": "46",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Jerih payahnya berbuah hasil, Caelus sudah semakin dekat dengan tujuannya",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Jerih payahnya berbuah hasil, Caelus sudah semakin dekat dengan tujuannya",
+"type": "dialogue"
+},
+"46": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "46",
+"next_id": "47",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "membawa sahabatnya kembali ke alam kehidupan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "membawa sahabatnya kembali ke alam kehidupan",
+"type": "dialogue"
+},
+"47": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "47",
+"next_id": "48",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Malam-malam tanpa lelap mulai terbalaskan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Malam-malam tanpa lelap mulai terbalaskan",
+"type": "dialogue"
+},
+"48": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "48",
+"next_id": "49",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "imana tubuh dari Orcus sudah kembali ‘hidup’",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "imana tubuh dari Orcus sudah kembali ‘hidup’",
+"type": "dialogue"
+},
+"49": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "49",
+"next_id": "50",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Bagian terakhir dari ritual yang harus dilaksanakan",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Bagian terakhir dari ritual yang harus dilaksanakan",
+"type": "dialogue"
+},
 "5": {
-"character": "Glodon",
+"character": "Glodon the native Isekai",
 "character_replacements": Array[Dictionary]([]),
 "id": "5",
 "next_id": "6",
@@ -50,22 +482,259 @@ lines = {
 "translation_key": "If you find a problem, let the developer know",
 "type": "dialogue"
 },
+"50": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "50",
+"next_id": "52",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "tinggalah memanggil jiwanya kembali ke tubuhnya",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "tinggalah memanggil jiwanya kembali ke tubuhnya",
+"type": "dialogue"
+},
+"52": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "52",
+"next_id": "53",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Namun, harapan harus pupus",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Namun, harapan harus pupus",
+"type": "dialogue"
+},
+"53": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "53",
+"next_id": "54",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Malam yang tenang telah membawa Caelus lengah",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Malam yang tenang telah membawa Caelus lengah",
+"type": "dialogue"
+},
+"54": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "54",
+"next_id": "55",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Jasad Orcus secara tiba-tiba hilang dari pandangannya",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Jasad Orcus secara tiba-tiba hilang dari pandangannya",
+"type": "dialogue"
+},
+"55": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "55",
+"next_id": "56",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "meninggalkan tabung kaca yang pecah berantakan ke lantai",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "meninggalkan tabung kaca yang pecah berantakan ke lantai",
+"type": "dialogue"
+},
+"56": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "56",
+"next_id": "57",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "meninggalkan tabung kaca yang pecah berantakan ke lantai",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "meninggalkan tabung kaca yang pecah berantakan ke lantai",
+"type": "dialogue"
+},
+"57": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "57",
+"next_id": "58",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Caelus dengan segera bergegas mencari kemana hilangnya Orcus",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Caelus dengan segera bergegas mencari kemana hilangnya Orcus",
+"type": "dialogue"
+},
+"58": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "58",
+"next_id": "60",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "namun ia hanya dapat menemukan monster-monster yang memenuhi lab",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "namun ia hanya dapat menemukan monster-monster yang memenuhi lab",
+"type": "dialogue"
+},
 "6": {
-"character": "Glodon",
+"character": "Glodon the native Isekai",
 "character_replacements": Array[Dictionary]([]),
 "id": "6",
+"next_id": "7",
+"tags": PackedStringArray(),
+"text": "To interact press Enter",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "To interact press Enter",
+"type": "dialogue"
+},
+"60": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "60",
+"next_id": "61",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Pertarungan pecah dimana Caelus berupaya membasmi",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Pertarungan pecah dimana Caelus berupaya membasmi",
+"type": "dialogue"
+},
+"61": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "61",
+"next_id": "62",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "semua monster yang menghalanginya",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "semua monster yang menghalanginya",
+"type": "dialogue"
+},
+"62": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "62",
+"next_id": "63",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Ditengah upayanya, ia melihatnya",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ditengah upayanya, ia melihatnya",
+"type": "dialogue"
+},
+"63": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "63",
+"next_id": "64",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Orcus berdiri di jauh sana, menatapnya dengan mata merah menyala",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Orcus berdiri di jauh sana, menatapnya dengan mata merah menyala",
+"type": "dialogue"
+},
+"64": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "64",
+"next_id": "65",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Caelus tercengang melihat sahabatnya",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Caelus tercengang melihat sahabatnya",
+"type": "dialogue"
+},
+"65": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "65",
+"next_id": "66",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "Ia berusaha untuk berseru memanggil namanya",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Ia berusaha untuk berseru memanggil namanya",
+"type": "dialogue"
+},
+"66": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "66",
+"next_id": "70",
+"parent_id": "12",
+"tags": PackedStringArray(),
+"text": "namun Orcus sudah menghilang dalam kedipan mata",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "namun Orcus sudah menghilang dalam kedipan mata",
+"type": "dialogue"
+},
+"68": {
+"character": "",
+"character_replacements": Array[Dictionary]([]),
+"id": "68",
+"next_id": "69",
+"next_id_after": "70",
+"tags": PackedStringArray(),
+"text": "No",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "No",
+"type": "response"
+},
+"69": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "69",
+"next_id": "70",
+"parent_id": "68",
+"tags": PackedStringArray(),
+"text": "Okay then, have fun >///<",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Okay then, have fun >///<",
+"type": "dialogue"
+},
+"7": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "7",
 "next_id": "8",
+"tags": PackedStringArray(),
+"text": "To attack press E",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "To attack press E",
+"type": "dialogue"
+},
+"70": {
+"id": "70",
+"is_snippet": false,
+"next_id": "end",
+"type": "goto"
+},
+"8": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "8",
+"next_id": "9",
+"tags": PackedStringArray(),
+"text": "To move you can use up down left and right",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "To move you can use up down left and right",
+"type": "dialogue"
+},
+"9": {
+"character": "Glodon the native Isekai",
+"character_replacements": Array[Dictionary]([]),
+"id": "9",
+"next_id": "11",
 "tags": PackedStringArray(),
 "text": "Thank you >///<",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Thank you >///<",
 "type": "dialogue"
-},
-"8": {
-"id": "8",
-"is_snippet": false,
-"next_id": "end",
-"type": "goto"
 }
 }
 metadata/dialogue_manager_version = "2.30.0"

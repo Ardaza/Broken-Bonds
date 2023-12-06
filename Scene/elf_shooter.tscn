@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://vr4i11ewf5u4"]
+
+[ext_resource type="Script" path="res://Script/elf_shooter.gd" id="1_phe3q"]
+[ext_resource type="Texture2D" uid="uid://bmvmj5m4niw4l" path="res://sprites/characters/ElfSharpshooterIdleSide.png" id="1_sgmmm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fthpx"]
+atlas = ExtResource("1_sgmmm")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvjft"]
+atlas = ExtResource("1_sgmmm")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ntcxt"]
+atlas = ExtResource("1_sgmmm")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ska4n"]
+atlas = ExtResource("1_sgmmm")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6vt7l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fthpx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvjft")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ntcxt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ska4n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2q4r2"]
+radius = 5.0
+height = 16.0
+
+[node name="elf_shooter" type="CharacterBody2D"]
+script = ExtResource("1_phe3q")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6vt7l")
+animation = &"idle"
+frame_progress = 0.592448
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("CapsuleShape2D_2q4r2")

@@ -1369,6 +1369,7 @@ layer_4/tile_data = PackedInt32Array(262147, 3, 0, 262148, 3, 0, 327684, 3, 0, 3
 position = Vector2(162, 25)
 
 [node name="Collison" type="StaticBody2D" parent="."]
+visible = false
 
 [node name="1" type="CollisionPolygon2D" parent="Collison"]
 position = Vector2(0, 177)
@@ -1409,13 +1410,16 @@ polygon = PackedVector2Array(0, 0, 87, 0, 87, 29, 90, 32, 110, 32, 110, 87, -2, 
 position = Vector2(462, 677)
 polygon = PackedVector2Array(0, 0, 0, 6, -449, 5, -448, 502, -459, 502, -459, -5, 0, -5)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collison"]
+[node name="11" type="CollisionPolygon2D" parent="Collison"]
 position = Vector2(720, 960)
 polygon = PackedVector2Array(0, 0, -272, 0, -272, 48, -288, 48, -288, 128, -304, 128, -304, 144, -336, 144, -336, 160, -352, 160, -352, 176, -368, 176, -368, 192, -400, 192, -400, 208, -448, 208, -448, 211, -455, 212, -460, 220, -461, 226, -472, 228, -477, 237, -477, 242, -488, 244, -492, 252, -493, 259, -544, 259, -550, 244, -556, 242, -561, 240, -567, 226, -607, 227, -615, 210, -664, 212, -669, 221, -670, 226, -720, 227, -720, 544, 271, 543, 270, 332, 261, 332, 259, 332, 259, 449, 207, 449, 206, 395, 202, 388, 191, 386, 187, 372, 159, 371, 155, 356, 152, 354, 128, 355, 122, 340, 121, 339, 80, 339, 80, 272, 112, 272, 112, 256, 129, 257, 128, 209, 80, 208, 80, 192, 48, 192, 48, 176, 32, 176, 32, 112, 16, 112, 16, 48, 0, 48, 0, 12, 259, 11, 259, 234, 270, 234, 270, 1, 5, 1)
 
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collison"]
+[node name="12" type="CollisionPolygon2D" parent="Collison"]
 position = Vector2(128, 793)
 polygon = PackedVector2Array(2, 0, 222, 0, 224, 2, 224, 87, 215, 87, 215, 7, 9, 7, 9, 8, 9, 87, 0, 87, 0, 2)
+
+[node name="13" type="CollisionPolygon2D" parent="Collison"]
+polygon = PackedVector2Array(0, 0, 2096, 0, 2096, 1504, 0, 1504, 0, 1, -114, 366, -169, 1557, -62, 1759, 2120, 1749, 2586, 1584, 2471, 363, 2264, -203, 1500, -245, 143, -290, -44, -143, -1, -3, 1, -1)
 
 [node name="karakter" type="Node2D" parent="."]
 
@@ -1457,6 +1461,15 @@ shape = SubResource("RectangleShape2D_6257g")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(993, 1423)
+
+[node name="Anak_Kecil" parent="." instance=ExtResource("17_ye1k3")]
+position = Vector2(81, 1181)
+
+[node name="Anak_Kecil_Cewe" parent="." instance=ExtResource("16_4uob7")]
+position = Vector2(272, 1177)
+
+[node name="Oranf_Mabok" parent="." instance=ExtResource("14_36a6i")]
+position = Vector2(101, 1191)
 
 [connection signal="body_entered" from="Kembali" to="." method="_on_kembali_body_entered"]
 [connection signal="body_exited" from="Kembali" to="." method="_on_kembali_body_exited"]

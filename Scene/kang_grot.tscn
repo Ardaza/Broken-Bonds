@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://dx08rkrw7gbjf"]
+
+[ext_resource type="Script" path="res://Script/kang_grot.gd" id="1_10fcl"]
+[ext_resource type="Texture2D" uid="uid://dgel7iq7iib27" path="res://sprites/characters/CheerfulBarmaidIdleSide.png" id="1_gfkq8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0h41k"]
+atlas = ExtResource("1_gfkq8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3aup"]
+atlas = ExtResource("1_gfkq8")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vddr"]
+atlas = ExtResource("1_gfkq8")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xri2"]
+atlas = ExtResource("1_gfkq8")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p3qxs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0h41k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m3aup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vddr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2xri2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y64sx"]
+radius = 4.0
+height = 14.0
+
+[node name="kang_grot" type="CharacterBody2D"]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_10fcl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_p3qxs")
+animation = &"idle"
+frame_progress = 0.0183425
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_y64sx")

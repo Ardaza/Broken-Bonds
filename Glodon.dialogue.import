@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bbj15wbnti814"
+path="res://.godot/imported/Glodon.dialogue-d61d390e89cc3e9fed344ed7d63e33ad.tres"
+
+[deps]
+
+source_file="res://Glodon.dialogue"
+dest_files=["res://.godot/imported/Glodon.dialogue-d61d390e89cc3e9fed344ed7d63e33ad.tres"]
+
+[params]
+
+defaults=true

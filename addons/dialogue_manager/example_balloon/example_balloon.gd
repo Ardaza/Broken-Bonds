@@ -65,6 +65,8 @@ var dialogue_line: DialogueLine:
 
 
 func _ready() -> void:
+	scale.x == 0.3
+	scale.x == 0.3
 	balloon.hide()
 	Engine.get_singleton("DialogueManager").mutated.connect(_on_mutated)
 

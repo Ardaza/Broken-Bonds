@@ -174,3 +174,6 @@ position = Vector2(390, 265)
 position = Vector2(4, 919)
 shape = SubResource("RectangleShape2D_cah0v")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[connection signal="body_entered" from="Kembali" to="." method="_on_kembali_body_entered"]
+[connection signal="body_exited" from="Kembali" to="." method="_on_kembali_body_exited"]

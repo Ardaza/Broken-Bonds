@@ -29,7 +29,6 @@ func _physics_process(delta):
 			return 
 	
 	if darah <= 0:
-		self.queue_free()
 		if global.cur_scenes == 'world':
 			get_tree().change_scene_to_file("res://Scene/world.tscn")
 			global.bawah_loading = false

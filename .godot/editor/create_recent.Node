@@ -1,10 +1,10 @@
+TileMap
 Camera2D
 Node2D
 Area2D
 Button
 AudioStreamPlayer2D
 AudioListener2D
-TileMap
 Timer
 Node
 ProgressBar

@@ -1,11 +1,9 @@
-res://Scene/dwarf_king.tscn
+res://Scene/menu.tscn
 res://Scene/cliff_bawah.tres
-res://Script/Player.gd
 res://Scene/world.tscn
 res://Scene/player.tscn
-res://Scene/menu.tscn
 res://Scene/cliff_bawah.tscn
 res://Scene/cliff_side.tscn
+res://Scene/dwarf_king.tscn
 res://addons/dialogue_manager/example_balloon/example_balloon.tscn
 res://addons/dialogue_manager/example_balloon/small_example_balloon.tscn
-res://addons/dialogue_manager/example_balloon/example_balloon.gd

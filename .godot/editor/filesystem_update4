@@ -7,3 +7,4 @@ res://Scene/cliff_side.tscn
 res://Scene/dwarf_king.tscn
 res://addons/dialogue_manager/example_balloon/example_balloon.tscn
 res://addons/dialogue_manager/example_balloon/small_example_balloon.tscn
+res://Script/enemy.gd

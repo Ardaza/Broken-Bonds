@@ -1323,16 +1323,16 @@ shape = SubResource("RectangleShape2D_yuv18")
 [node name="Enemy" type="Node2D" parent="."]
 
 [node name="Vampire_Female" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(160, 180)
+position = Vector2(508, 128)
 
 [node name="Enemy_Slime" parent="Enemy" instance=ExtResource("5_8c2ny")]
 position = Vector2(271, 262)
 
 [node name="Enemy_Slime2" parent="Enemy" instance=ExtResource("5_8c2ny")]
-position = Vector2(242, 113)
+position = Vector2(502, 255)
 
 [node name="Enemy_Slime3" parent="Enemy" instance=ExtResource("5_8c2ny")]
-position = Vector2(130, 52)
+position = Vector2(292, 60)
 
 [node name="Enemy_Slime4" parent="Enemy" instance=ExtResource("5_8c2ny")]
 position = Vector2(616, 122)
@@ -1347,21 +1347,21 @@ position = Vector2(34, 598)
 position = Vector2(483, 482)
 
 [node name="Vampire_Female4" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(719, 398)
+position = Vector2(908, 447)
 
 [node name="Enemy_Slime6" parent="Enemy" instance=ExtResource("5_8c2ny")]
-position = Vector2(628, 340)
+position = Vector2(727, 398)
 
 [node name="Vampire_Female5" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(735, 95)
+position = Vector2(744, 32)
 
 [node name="Vampire_Female6" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(708, 29)
+position = Vector2(969, 110)
 
 [node name="NPC" type="Node2D" parent="."]
 
 [node name="Dwarf_King" parent="NPC" instance=ExtResource("11_vcvh7")]
-position = Vector2(615, 198)
+position = Vector2(106, 115)
 
 [node name="Anak_Kecil" parent="NPC" instance=ExtResource("12_orknk")]
 position = Vector2(161, 257)

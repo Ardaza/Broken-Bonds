@@ -26,7 +26,7 @@ func _physics_process(delta):
 		$AnimatedSprite2D.play("idle")
 
 func _on_detection_area_body_entered(body):
-	$Detection_Area/CollisionShape2D.shape.radius = 100
+	$Detection_Area/CollisionShape2D.shape.radius = 57
 	player = body
 	kejar = true
 

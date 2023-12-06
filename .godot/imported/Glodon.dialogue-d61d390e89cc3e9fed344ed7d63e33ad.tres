@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8fjwu"]
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8kjlu"]
 
 [resource]
-script = ExtResource("1_8fjwu")
+script = ExtResource("1_8kjlu")
 using_states = PackedStringArray()
 titles = {
 "start": "3"
@@ -23,47 +23,43 @@ lines = {
 "id": "3",
 "next_id": "4",
 "tags": PackedStringArray(),
-"text": "Hello there",
+"text": "This game is still in the development stage",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Hello there",
+"translation_key": "This game is still in the development stage",
 "type": "dialogue"
 },
 "4": {
-"character": "",
+"character": "Glodon",
 "character_replacements": Array[Dictionary]([]),
 "id": "4",
 "next_id": "5",
-"next_id_after": "8",
-"responses": PackedStringArray("4", "6"),
 "tags": PackedStringArray(),
-"text": "Hello juga",
+"text": "what you are playing is the demo version",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Hello juga",
-"type": "response"
+"translation_key": "what you are playing is the demo version",
+"type": "dialogue"
 },
 "5": {
 "character": "Glodon",
 "character_replacements": Array[Dictionary]([]),
 "id": "5",
-"next_id": "8",
-"parent_id": "4",
+"next_id": "6",
 "tags": PackedStringArray(),
-"text": "Hello juga cok",
+"text": "If you find a problem, let the developer know",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Hello juga cok",
+"translation_key": "If you find a problem, let the developer know",
 "type": "dialogue"
 },
 "6": {
-"character": "",
+"character": "Glodon",
 "character_replacements": Array[Dictionary]([]),
 "id": "6",
 "next_id": "8",
-"next_id_after": "8",
 "tags": PackedStringArray(),
-"text": "Haiya...",
+"text": "Thank you >///<",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Haiya...",
-"type": "response"
+"translation_key": "Thank you >///<",
+"type": "dialogue"
 },
 "8": {
 "id": "8",

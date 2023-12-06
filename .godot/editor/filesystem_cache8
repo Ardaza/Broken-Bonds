@@ -1,8 +1,8 @@
 3acdcc5cb6df755358dde907981ccea8
-::res://::1701878317
+::res://::1701879592
 BG Menu HD.png::CompressedTexture2D::6649637975679305506::1701878292::1701878292::1::::<><>::
 Button.gd::GDScript::-1::1701736900::0::1::::<>Button<>::
-Glodon.dialogue::Resource::2476822300421658341::1701878292::1701878317::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
+Glodon.dialogue::Resource::2476822300421658341::1701879520::1701879592::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 ::res://addons/::1701863132
 ::res://addons/dialogue_manager/::1701863132
 constants.gd::GDScript::-1::1701863132::0::1::::<>Node<>::
@@ -20,7 +20,7 @@ plugin.gd::GDScript::-1::1701863132::0::1::::<>EditorPlugin<>::
 settings.gd::GDScript::-1::1701863132::0::1::::<>Node<>::
 test_scene.gd::GDScript::-1::1701863132::0::1::::BaseDialogueTestScene<>Node2D<>::
 test_scene.tscn::PackedScene::-1::1701863132::0::1::::<><>::res://addons/dialogue_manager/test_scene.gd
-::res://addons/dialogue_manager/assets/::1701878289
+::res://addons/dialogue_manager/assets/::1701878317
 icon.svg::CompressedTexture2D::9148339284877624195::1701863132::1701878317::1::::<><>::
 responses_menu.svg::CompressedTexture2D::8371359403825774630::1701863132::1701878317::1::::<><>::
 update.svg::CompressedTexture2D::9126631778427806641::1701863132::1701878317::1::::<><>::
@@ -30,11 +30,11 @@ code_edit.tscn::PackedScene::5379618807048408118::1701863132::0::1::::<><>::res:
 code_edit_syntax_highlighter.gd::GDScript::-1::1701863132::0::1::::<>SyntaxHighlighter<>::
 dialogue_cache.gd::GDScript::-1::1701863132::0::1::::<>Node<>::
 download_update_panel.gd::GDScript::-1::1701863132::0::1::::<>Control<>::
-download_update_panel.tscn::PackedScene::1130642722554629364::1701863132::0::1::::<><>::res://addons/dialogue_manager/components/download_update_panel.gd<>uid://d3baj6rygkb3f::::res://addons/dialogue_manager/assets/update.svg
+download_update_panel.tscn::PackedScene::1130642722554629364::1701863132::0::1::::<><>::res://addons/dialogue_manager/components/download_update_panel.gd<>uid://d3baj6rygkb3f
 errors_panel.gd::GDScript::-1::1701863132::0::1::::<>HBoxContainer<>::
 errors_panel.tscn::PackedScene::6105315990352960875::1701863132::0::1::::<><>::res://addons/dialogue_manager/components/errors_panel.gd
 files_list.gd::GDScript::-1::1701863132::0::1::::<>VBoxContainer<>::
-files_list.tscn::PackedScene::8113335055803740416::1701863132::0::1::::<><>::res://addons/dialogue_manager/components/files_list.gd<>uid://d3lr2uas6ax8v::::res://addons/dialogue_manager/assets/icon.svg
+files_list.tscn::PackedScene::8113335055803740416::1701863132::0::1::::<><>::res://addons/dialogue_manager/components/files_list.gd<>uid://d3lr2uas6ax8v
 parser.gd::GDScript::-1::1701863132::0::1::::DialogueManagerParser<>Object<>::
 parse_result.gd::GDScript::-1::1701863132::0::1::::DialogueManagerParseResult<>RefCounted<>::
 resolved_line_data.gd::GDScript::-1::1701863132::0::1::::<>RefCounted<>::
@@ -44,11 +44,11 @@ search_and_replace.tscn::PackedScene::458254375860855630::1701863132::0::1::::<>
 title_list.gd::GDScript::-1::1701863132::0::1::::<>VBoxContainer<>::
 title_list.tscn::PackedScene::6134415340044566558::1701863132::0::1::::<><>::res://addons/dialogue_manager/components/title_list.gd
 update_button.gd::GDScript::-1::1701863132::0::1::::<>Button<>::
-update_button.tscn::PackedScene::5825087957514786930::1701863132::0::1::::<><>::res://addons/dialogue_manager/components/update_button.gd<>uid://qdxrxv3c3hxk::::res://addons/dialogue_manager/components/download_update_panel.tscn
-::res://addons/dialogue_manager/example_balloon/::1701878292
+update_button.tscn::PackedScene::5825087957514786930::1701863132::0::1::::<><>::res://addons/dialogue_manager/components/update_button.gd<>uid://qdxrxv3c3hxk
+::res://addons/dialogue_manager/example_balloon/::1701879520
 example_balloon.gd::GDScript::-1::1701878292::0::1::::<>CanvasLayer<>::
-example_balloon.tscn::PackedScene::2304415056852043862::1701878292::0::1::::<><>::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>res://addons/dialogue_manager/dialogue_reponses_menu.gd
-small_example_balloon.tscn::PackedScene::1883859960814163368::1701863132::0::1::::<><>::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>res://addons/dialogue_manager/dialogue_reponses_menu.gd
+example_balloon.tscn::PackedScene::2304415056852043862::1701879520::0::1::::<><>::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>res://addons/dialogue_manager/dialogue_reponses_menu.gd
+small_example_balloon.tscn::PackedScene::1883859960814163368::1701879425::0::1::::<><>::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>res://addons/dialogue_manager/dialogue_reponses_menu.gd
 ::res://addons/dialogue_manager/l10n/::1701863132
 en.mo::Translation::-1::1701863132::0::1::::<><>::
 en.po::Translation::-1::1701863132::0::1::::<><>::
@@ -56,7 +56,7 @@ zh.po::Translation::-1::1701863132::0::1::::<><>::
 zh_TW.po::Translation::-1::1701863132::0::1::::<><>::
 ::res://addons/dialogue_manager/views/::1701863132
 main_view.gd::GDScript::-1::1701863132::0::1::::<>Control<>::
-main_view.tscn::PackedScene::4884668666408697448::1701863132::0::1::::<><>::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/title_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://cpg4lg1r3ff6m::::res://addons/dialogue_manager/views/settings_view.tscn
+main_view.tscn::PackedScene::4884668666408697448::1701863132::0::1::::<><>::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u
 settings_view.gd::GDScript::-1::1701863132::0::1::::<>TabContainer<>::
 settings_view.tscn::PackedScene::5839841081119266502::1701863132::0::1::::<><>::res://addons/dialogue_manager/views/settings_view.gd
 ::res://Audio/::1701613655
@@ -73,37 +73,37 @@ Valse di Fantastica (1).mp3::AudioStreamMP3::3084369814165344165::1701613655::17
 678593__redswan_studios__player-hurt-2.mp3::AudioStreamMP3::524828430541054207::1701613655::1701613655::1::::<><>::
 punch-2-166695.mp3::AudioStreamMP3::3181581630671425296::1701613655::1701613655::1::::<><>::
 punch-140236.mp3::AudioStreamMP3::3471096831801739845::1701613655::1701613655::1::::<><>::
-::res://Scene/::1701878292
-anak_kecil.tscn::PackedScene::6190357367391659549::1701613655::0::1::::<><>::uid://cayf07i3kgvx7::::res://sprites/characters/PlayfulChildIdleSide.png<>res://Script/anak_kecil.gd
-anak_kecil_cewe.tscn::PackedScene::5553892202397650282::1701613655::0::1::::<><>::res://Script/Anak_Kecil_Cewe.gd<>uid://bm4go54civeyl::::res://sprites/characters/JoyfulKidIdleSide.png
+::res://Scene/::1701879520
+anak_kecil.tscn::PackedScene::6190357367391659549::1701613655::0::1::::<><>::uid://cayf07i3kgvx7
+anak_kecil_cewe.tscn::PackedScene::5553892202397650282::1701613655::0::1::::<><>::res://Script/Anak_Kecil_Cewe.gd<>uid://bm4go54civeyl
 Area2D.gd::GDScript::-1::1701613655::0::1::::<>Area2D<>::
-cliff_bawah.tres::TileSet::1289249052421019071::1701866129::0::1::::<><>::uid://bxckkvqeotl2n::::res://sprites/objects/chest_01.png<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://bsehs8bbmh30e::::res://sprites/tilesets/floors/flooring.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://bngu2u105lst8::::res://sprites/tilesets/walls/wooden_door.png<>uid://qy3cbepj8ohf::::res://sprites/tilesets/walls/walls.png<>uid://bpnlke0ti2fe5::::res://sprites/tilesets/floors/wooden.png
-cliff_bawah.tscn::PackedScene::5312256315803712076::1701878289::0::1::::<><>::uid://bxckkvqeotl2n::::res://sprites/objects/chest_01.png<>res://Script/cliff_bawah.gd<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://bsehs8bbmh30e::::res://sprites/tilesets/floors/flooring.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://bngu2u105lst8::::res://sprites/tilesets/walls/wooden_door.png<>uid://qy3cbepj8ohf::::res://sprites/tilesets/walls/walls.png<>uid://bpnlke0ti2fe5::::res://sprites/tilesets/floors/wooden.png<>uid://b02w6uu671yge::::res://Scene/oranf_mabok.tscn<>uid://q3ek7jkup53i::::res://Scene/orang_tuas.tscn<>uid://clel174td2qac::::res://Scene/anak_kecil_cewe.tscn<>uid://cugwjtk4s2ewj::::res://Scene/anak_kecil.tscn
+cliff_bawah.tres::TileSet::1289249052421019071::1701878321::0::1::::<><>::uid://bxckkvqeotl2n::::res://sprites/objects/chest_01.png<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://bsehs8bbmh30e::::res://sprites/tilesets/floors/flooring.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://bngu2u105lst8::::res://sprites/tilesets/walls/wooden_door.png<>uid://qy3cbepj8ohf::::res://sprites/tilesets/walls/walls.png<>uid://bpnlke0ti2fe5::::res://sprites/tilesets/floors/wooden.png
+cliff_bawah.tscn::PackedScene::5312256315803712076::1701879425::0::1::::<><>::uid://bxckkvqeotl2n::::res://sprites/objects/chest_01.png<>res://Script/cliff_bawah.gd<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://bsehs8bbmh30e::::res://sprites/tilesets/floors/flooring.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://bngu2u105lst8::::res://sprites/tilesets/walls/wooden_door.png<>uid://qy3cbepj8ohf::::res://sprites/tilesets/walls/walls.png<>uid://bpnlke0ti2fe5::::res://sprites/tilesets/floors/wooden.png<>uid://b02w6uu671yge::::res://Scene/oranf_mabok.tscn<>uid://q3ek7jkup53i::::res://Scene/orang_tuas.tscn<>uid://clel174td2qac::::res://Scene/anak_kecil_cewe.tscn<>uid://cugwjtk4s2ewj::::res://Scene/anak_kecil.tscn
 cliff_kanan.gd::GDScript::-1::1701799587::0::1::::<>Node2D<>::
-cliff_side.tscn::PackedScene::7184461525177853194::1701866129::0::1::::<><>::res://Script/cliff_side.gd<>uid://dab3d7vt3300f::::res://Scene/vampire_female.tscn<>uid://smr0jr1homuh::::res://Scene/cliff_bawah.tres<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://cywg5fdsddyli::::res://Scene/enemy.tscn<>uid://cugwjtk4s2ewj::::res://Scene/anak_kecil.tscn<>uid://q3ek7jkup53i::::res://Scene/orang_tuas.tscn<>uid://clel174td2qac::::res://Scene/anak_kecil_cewe.tscn<>uid://s1s4unbyysgs::::res://Scene/dwarf_king.tscn
-dwarf_king.tscn::PackedScene::1318218771611107526::1701613655::0::1::::<><>::res://Script/dwarf_king.gd<>uid://b5fuvl6vk38du::::res://sprites/characters/DwarfKingIdleSide.png
-enemy.tscn::PackedScene::6503208069135196710::1701709277::0::1::::<><>::uid://qvnmidifjru1::::res://sprites/characters/slime.png<>res://Script/enemy.gd
-global_audio.tscn::PackedScene::7298347263826739515::1701709276::0::1::::<><>::uid://dsifs1bprixwh::::res://Audio/Music/mix_19m51s (audio-joiner.com).mp3
-menu.tscn::PackedScene::6623120394094481636::1701878292::0::1::::<><>::res://Button.gd<>uid://c10etihrsp1fy::::res://BG Menu HD.png
-oranf_mabok.tscn::PackedScene::4198272190270840544::1701613655::0::1::::<><>::res://Script/Oranf_Mabok.gd<>uid://b48e31gjjivb1::::res://sprites/characters/VillageDrunkardIdleSide.png
-orang_tuas.tscn::PackedScene::1181086496364457200::1701613655::0::1::::<><>::res://Script/orang_tuas.gd<>uid://csj4odk0r4wcr::::res://sprites/characters/OverworkedVillagerIdleSide.png
-player.tscn::PackedScene::34738401063412573::1701878289::0::1::::<><>::res://Script/Player.gd<>uid://cvmn4qmbx2stg::::res://sprites/characters/player.png<>uid://bt2ov615rhop2::::res://Audio/518883__beezlefm__simple-slash-attack-sound.wav<>uid://hqh32182i51d::::res://Audio/SFX/678593__redswan_studios__player-hurt-2.mp3<>uid://d2gvnpni1mo5b::::res://Audio/SFX/414073__inspectorj__dialogue-pained-yelp-loud-a.mp3
-vampire_female.tscn::PackedScene::7163033576102456699::1701709276::0::1::::<><>::res://Script/Vampire_Female.gd<>uid://ck8de0f7j4aoa::::res://sprites/characters/vampire .png
-world.tscn::PackedScene::8443488009865344551::1701878289::0::1::::<><>::uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>res://Script/world.gd<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://cywg5fdsddyli::::res://Scene/enemy.tscn<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dab3d7vt3300f::::res://Scene/vampire_female.tscn<>uid://s1s4unbyysgs::::res://Scene/dwarf_king.tscn<>uid://cugwjtk4s2ewj::::res://Scene/anak_kecil.tscn<>uid://clel174td2qac::::res://Scene/anak_kecil_cewe.tscn<>uid://b02w6uu671yge::::res://Scene/oranf_mabok.tscn<>uid://q3ek7jkup53i::::res://Scene/orang_tuas.tscn
-::res://Script/::1701878292
+cliff_side.tscn::PackedScene::7184461525177853194::1701879481::0::1::::<><>::res://Script/cliff_side.gd<>uid://dab3d7vt3300f::::res://Scene/vampire_female.tscn<>uid://smr0jr1homuh::::res://Scene/cliff_bawah.tres<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://cywg5fdsddyli::::res://Scene/enemy.tscn<>uid://cugwjtk4s2ewj::::res://Scene/anak_kecil.tscn<>uid://q3ek7jkup53i::::res://Scene/orang_tuas.tscn<>uid://clel174td2qac::::res://Scene/anak_kecil_cewe.tscn<>uid://s1s4unbyysgs::::res://Scene/dwarf_king.tscn
+dwarf_king.tscn::PackedScene::1318218771611107526::1701879425::0::1::::<><>::res://Script/dwarf_king.gd<>uid://b5fuvl6vk38du::::res://sprites/characters/DwarfKingIdleSide.png
+enemy.tscn::PackedScene::6503208069135196710::1701709277::0::1::::<><>::uid://qvnmidifjru1
+global_audio.tscn::PackedScene::7298347263826739515::1701709276::0::1::::<><>::uid://dsifs1bprixwh
+menu.tscn::PackedScene::6623120394094481636::1701879424::0::1::::<><>::res://Button.gd<>uid://c10etihrsp1fy::::res://BG Menu HD.png
+oranf_mabok.tscn::PackedScene::4198272190270840544::1701613655::0::1::::<><>::res://Script/Oranf_Mabok.gd<>uid://b48e31gjjivb1
+orang_tuas.tscn::PackedScene::1181086496364457200::1701613655::0::1::::<><>::res://Script/orang_tuas.gd<>uid://csj4odk0r4wcr
+player.tscn::PackedScene::34738401063412573::1701879424::0::1::::<><>::res://Script/Player.gd<>uid://cvmn4qmbx2stg::::res://sprites/characters/player.png<>uid://bt2ov615rhop2::::res://Audio/518883__beezlefm__simple-slash-attack-sound.wav<>uid://hqh32182i51d::::res://Audio/SFX/678593__redswan_studios__player-hurt-2.mp3<>uid://d2gvnpni1mo5b::::res://Audio/SFX/414073__inspectorj__dialogue-pained-yelp-loud-a.mp3
+vampire_female.tscn::PackedScene::7163033576102456699::1701709276::0::1::::<><>::res://Script/Vampire_Female.gd<>uid://ck8de0f7j4aoa
+world.tscn::PackedScene::8443488009865344551::1701879520::0::1::::<><>::uid://shba0fgkfvti::::res://sprites/tilesets/plains.png<>res://Script/world.gd<>uid://dtrx52ohtir3b::::res://sprites/tilesets/grass.png<>uid://qkq7xlhr4g5v::::res://sprites/objects/objects.png<>uid://q3evwxdhw66::::res://Scene/player.tscn<>uid://cywg5fdsddyli::::res://Scene/enemy.tscn<>uid://dnyhgm0y4kqp2::::res://sprites/tilesets/fences.png<>uid://5y2dn1ubjaqe::::res://sprites/tilesets/survivalgame-terrian-water.png<>uid://bw4aoaba1mdbp::::res://sprites/tilesets/decor_16x16.png<>uid://dab3d7vt3300f::::res://Scene/vampire_female.tscn<>uid://s1s4unbyysgs::::res://Scene/dwarf_king.tscn<>uid://cugwjtk4s2ewj::::res://Scene/anak_kecil.tscn<>uid://clel174td2qac::::res://Scene/anak_kecil_cewe.tscn<>uid://b02w6uu671yge::::res://Scene/oranf_mabok.tscn<>uid://q3ek7jkup53i::::res://Scene/orang_tuas.tscn
+::res://Script/::1701879520
 anak_kecil.gd::GDScript::-1::1701613655::0::1::::<>CharacterBody2D<>::
 Anak_Kecil_Cewe.gd::GDScript::-1::1701613655::0::1::::<>CharacterBody2D<>::
 cliff_bawah.gd::GDScript::-1::1701613655::0::1::::<>Node2D<>::
-cliff_side.gd::GDScript::-1::1701709164::0::1::::<>Node2D<>::
+cliff_side.gd::GDScript::-1::1701879343::0::1::::<>Node2D<>::
 dwarf_king.gd::GDScript::-1::1701863132::0::1::::<>CharacterBody2D<>::
-enemy.gd::GDScript::-1::1701613655::0::1::::<>CharacterBody2D<>::
+enemy.gd::GDScript::-1::1701879520::0::1::::<>CharacterBody2D<>::
 global.gd::GDScript::-1::1701878292::0::1::::<>Node<>::
 Oranf_Mabok.gd::GDScript::-1::1701613655::0::1::::<>CharacterBody2D<>::
 orang_tuas.gd::GDScript::-1::1701613655::0::1::::<>CharacterBody2D<>::
 Player.gd::GDScript::-1::1701878292::0::1::::<>CharacterBody2D<>::
 Vampire_Female.gd::GDScript::-1::1701613655::0::1::::<>CharacterBody2D<>::
 world.gd::GDScript::-1::1701866094::0::1::::<>Node2D<>::
-::res://sprites/::1701866123
+::res://sprites/::1701878317
 icon.svg::CompressedTexture2D::4118066081892649745::1701613655::1701878317::1::::<><>::
 ::res://sprites/characters/::1701613655
 DwarfKingIdleSide.png::CompressedTexture2D::4503660349746138078::1701613655::1701613655::1::::<><>::

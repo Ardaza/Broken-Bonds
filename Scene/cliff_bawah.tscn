@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://chxkc5yg7606s"]
+[gd_scene load_steps=36 format=3 uid="uid://chxkc5yg7606s"]
 
 [ext_resource type="Texture2D" uid="uid://bxckkvqeotl2n" path="res://sprites/objects/chest_01.png" id="1_bge01"]
 [ext_resource type="Script" path="res://Script/cliff_bawah.gd" id="1_mxliw"]
@@ -19,6 +19,9 @@
 [ext_resource type="PackedScene" uid="uid://cugwjtk4s2ewj" path="res://Scene/anak_kecil.tscn" id="17_ye1k3"]
 [ext_resource type="PackedScene" uid="uid://vr4i11ewf5u4" path="res://Scene/elf_shooter.tscn" id="18_d8r61"]
 [ext_resource type="PackedScene" uid="uid://s1s4unbyysgs" path="res://Scene/dwarf_king.tscn" id="19_gd1sa"]
+[ext_resource type="PackedScene" uid="uid://dab3d7vt3300f" path="res://Scene/vampire_female.tscn" id="20_ljqe7"]
+[ext_resource type="PackedScene" uid="uid://cywg5fdsddyli" path="res://Scene/enemy.tscn" id="21_tu57f"]
+[ext_resource type="PackedScene" uid="uid://dus2335us737r" path="res://Scene/elf_lord.tscn" id="22_jtc57"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lm5wh"]
 texture = ExtResource("1_bge01")
@@ -1371,7 +1374,6 @@ layer_4/tile_data = PackedInt32Array(262147, 3, 0, 262148, 3, 0, 327684, 3, 0, 3
 position = Vector2(162, 25)
 
 [node name="Collison" type="StaticBody2D" parent="."]
-visible = false
 
 [node name="1" type="CollisionPolygon2D" parent="Collison"]
 position = Vector2(0, 177)
@@ -1426,6 +1428,10 @@ polygon = PackedVector2Array(0, 0, 2096, 0, 2096, 1504, 0, 1504, 0, 1, -114, 366
 [node name="14" type="CollisionPolygon2D" parent="Collison"]
 position = Vector2(992, 1408)
 polygon = PackedVector2Array(0, 0, 16, 0, 16, -32, 33, -33, 32, -48, 16, -48, 16, -112, 32, -112, 32, -129, 48, -128, 48, -144, 64, -144, 64, -160, 96, -160, 96, -208, 112, -208, 112, -256, 128, -256, 128, -288, 112, -288, 112, -336, 128, -336, 128, -352, 144, -353, 144, -368, 160, -368, 160, -384, 176, -384, 176, -400, 192, -400, 192, -415, 192, -416, 256, -416, 256, -400, 352, -400, 352, -416, 400, -416, 400, -432, 448, -432, 449, -416, 464, -416, 464, -401, 499, -400, 499, -449, 512, -449, 512, -400, 528, -400, 528, -416, 656, -417, 656, -448, 704, -448, 704, -465, 736, -464, 736, -480, 800, -480, 800, -496, 832, -496, 832, -512, 881, -512, 881, -528, 928, -528, 928, -544, 992, -544, 992, -528, 1008, -529, 1008, -512, 1024, -512, 1024, -496, 1040, -496, 1040, -480, 1056, -480, 1056, -464, 1088, -464, 1088, -480, 1104, -480, 1106, 97, -1, 95)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collison"]
+position = Vector2(885, 17)
+polygon = PackedVector2Array(0, 0, 87, 0, 89, 2, 89, 10, 9, 10, 9, 74, -1, 74, -2, 74, -2, 2)
 
 [node name="karakter" type="Node2D" parent="."]
 
@@ -1527,6 +1533,81 @@ position = Vector2(184, 1110)
 
 [node name="Dwarf_King" parent="." instance=ExtResource("19_gd1sa")]
 position = Vector2(1185, 550)
+
+[node name="Vampire_Female" parent="." instance=ExtResource("20_ljqe7")]
+position = Vector2(1348, 383)
+
+[node name="Enemy_Slime" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(1431, 605)
+
+[node name="Enemy_Slime2" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(1283, 660)
+
+[node name="Enemy_Slime3" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(1551, 326)
+
+[node name="Enemy_Slime4" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(1287, 251)
+
+[node name="Vampire_Female2" parent="." instance=ExtResource("20_ljqe7")]
+position = Vector2(1227, 470)
+
+[node name="Vampire_Female3" parent="." instance=ExtResource("20_ljqe7")]
+position = Vector2(1435, 444)
+
+[node name="Enemy_Slime5" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(1343, 549)
+
+[node name="Enemy_Slime6" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(1450, 267)
+
+[node name="elf_lord" parent="." instance=ExtResource("22_jtc57")]
+position = Vector2(587, 275)
+
+[node name="Vampire_Female4" parent="." instance=ExtResource("20_ljqe7")]
+position = Vector2(122, 413)
+
+[node name="Vampire_Female5" parent="." instance=ExtResource("20_ljqe7")]
+position = Vector2(117, 285)
+
+[node name="Vampire_Female6" parent="." instance=ExtResource("20_ljqe7")]
+position = Vector2(14, 492)
+
+[node name="Vampire_Female7" parent="." instance=ExtResource("20_ljqe7")]
+position = Vector2(301, 296)
+
+[node name="Enemy_Slime7" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(222, 477)
+
+[node name="Enemy_Slime8" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(511, 440)
+
+[node name="Enemy_Slime9" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(149, 508)
+
+[node name="Enemy_Slime10" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(60, 204)
+
+[node name="Enemy_Slime11" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(269, 391)
+
+[node name="Enemy_Slime12" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(922, 1174)
+
+[node name="Enemy_Slime13" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(836, 1102)
+
+[node name="Enemy_Slime14" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(958, 1067)
+
+[node name="Vampire_Female8" parent="." instance=ExtResource("20_ljqe7")]
+position = Vector2(800, 1021)
+
+[node name="Vampire_Female9" parent="." instance=ExtResource("20_ljqe7")]
+position = Vector2(883, 1001)
+
+[node name="Enemy_Slime15" parent="." instance=ExtResource("21_tu57f")]
+position = Vector2(953, 1024)
 
 [connection signal="body_entered" from="Kembali" to="." method="_on_kembali_body_entered"]
 [connection signal="body_exited" from="Kembali" to="." method="_on_kembali_body_exited"]

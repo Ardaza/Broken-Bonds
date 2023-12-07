@@ -1350,7 +1350,7 @@ position = Vector2(616, 122)
 position = Vector2(220, 554)
 
 [node name="Vampire_Female2" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(34, 598)
+position = Vector2(144, 631)
 
 [node name="Vampire_Female3" parent="Enemy" instance=ExtResource("9_1njd1")]
 position = Vector2(483, 482)

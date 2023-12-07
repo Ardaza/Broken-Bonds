@@ -9,6 +9,7 @@ var attack_ip = false
 
 var dwarf_king = false
 var kang_grot = false
+var elf_lord = false
 
 @onready var pukul = $Pukul
 @onready var kena = $kena
@@ -33,6 +34,11 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("ui_accept"):
 			DialogueManager.show_example_dialogue_balloon(load("res://Lomort.dialogue"), "start")
 			return 
+			
+	if elf_lord == true:
+		if Input.is_action_just_pressed("ui_accept"):
+			DialogueManager.show_example_dialogue_balloon(load("res://Talon.dialogue"), "start")
+			return
 	
 	if darah <= 0:
 		if global.cur_scenes == 'world':
@@ -128,6 +134,9 @@ func _on_player_hitbox_body_entered(body):
 		
 	if body.has_method("kang_grot"):
 		kang_grot = true
+		
+	if body.has_method("elf_lord"):
+		elf_lord = true
 
 func _on_player_hitbox_body_exited(body):
 	if body.has_method("enemy"):
@@ -138,6 +147,9 @@ func _on_player_hitbox_body_exited(body):
 		
 	if body.has_method("kang_grot"):
 		kang_grot = false
+		
+	if body.has_method("elf_lord"):
+		elf_lord = false
 		
 func enemy_att():
 	if range and att_cd == true:

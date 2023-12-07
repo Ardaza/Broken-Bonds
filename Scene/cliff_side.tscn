@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://damhbcuiahnmg"]
+[gd_scene load_steps=12 format=3 uid="uid://damhbcuiahnmg"]
 
 [ext_resource type="Script" path="res://Script/cliff_side.gd" id="1_4xpcp"]
 [ext_resource type="PackedScene" uid="uid://dab3d7vt3300f" path="res://Scene/vampire_female.tscn" id="1_qmj3i"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://q3ek7jkup53i" path="res://Scene/orang_tuas.tscn" id="7_cs0af"]
 [ext_resource type="PackedScene" uid="uid://clel174td2qac" path="res://Scene/anak_kecil_cewe.tscn" id="8_mvn5w"]
 [ext_resource type="PackedScene" uid="uid://s1s4unbyysgs" path="res://Scene/dwarf_king.tscn" id="9_m6mbj"]
+[ext_resource type="PackedScene" uid="uid://dx08rkrw7gbjf" path="res://Scene/kang_grot.tscn" id="10_2sgsw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cah0v"]
 size = Vector2(37, 43.5)
@@ -204,6 +205,9 @@ polygon = PackedVector2Array(0, 0, 0, 109, 63, 110, 63, 147, 22, 148, 16, 156, 1
 [node name="7" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(494, 976)
 polygon = PackedVector2Array(0, 0, 0, 48, 735, 47, 736, -64, 720, -64, 720, -113, 672, -112, 673, -128, 656, -128, 656, -145, 640, -145, 640, -160, 624, -160, 624, -176, 592, -176, 592, -208, 561, -208, 560, -208, 560, -240, 528, -240, 528, -272, 480, -272, 480, -336, 416, -336, 416, -352, 352, -352, 352, -368, 320, -368, 320, -384, 288, -384, 288, -368, 256, -368, 256, -352, -48, -352, -48, -336, -80, -336, -80, -304, -95, -304, -96, -304, -96, -160, -80, -160, -80, -128, -64, -128, -64, -112, 32, -112, 32, -96, 112, -96, 112, -32, 80, -32, 80, -16, 64, -16, 64, 0)
+
+[node name="kang_grot" parent="." instance=ExtResource("10_2sgsw")]
+position = Vector2(673, 587)
 
 [connection signal="body_entered" from="Kembali" to="." method="_on_kembali_body_entered"]
 [connection signal="body_exited" from="Kembali" to="." method="_on_kembali_body_exited"]

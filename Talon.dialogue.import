@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://bfmlu83e65n0r"
+path="res://.godot/imported/Talon.dialogue-805f52a8802f6bdff3ff4915db2e1e92.tres"
+
+[deps]
+
+source_file="res://Talon.dialogue"
+dest_files=["res://.godot/imported/Talon.dialogue-805f52a8802f6bdff3ff4915db2e1e92.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,63 @@
+~ start
+
+Talon: What
+- Where are you from?
+	Talon: Im from place called Antacean
+	Talon: Wanna hear about Antacean lore?
+	- Yes
+		Talon: Kerajaan Rumburg, umumnya dikenal sebagai Rumburg
+		Talon: adalah sebuah monarki konstitusional yang terletak di utara Merkopa
+		Talon: Ibu kota negara ini adalah Thornbourgh
+		Talon: Pemimpinnya adalah Ratu Beatrice Livingston
+		Talon: Ini adalah negara terbesar di benua Merkopan
+		Talon: berdasarkan ukurannya, membentang di seluruh utara dari barat ke timur
+		Talon: Ini adalah anggota pendiri The Guild of Royal Allies for Commercial Exchange 
+		Talon: atau singkatannya GRACE
+		
+		Talon: Rumburg awalnya muncul sebagai barisan Rum sekitar abad ke-7
+		Talon: kemudian Migrasi dan berkembang menjadi jantung Kerajaan Rum
+		Talon: Pada tahun 1599, Rumburg memisahkan diri dari Kekaisaran Markian
+		Talon: dan mendirikan kerajaannya sendiri
+		Talon: Pada awal abad ke-19, Rumburg berubah menjadi monarki konstitusional
+		Talon: ketika Raja Uthred mengalihkan sebagian kekuasaannya
+		Talon: ke Dewan Negara dan kemudian ke Parlemen Rumburg
+		
+		Talon: Pada abad ke-19, Rumburg menjadi terkenal sebagai kekuatan besar di Merkopa
+		Talon: ketika ia menjajah dan dengan cepat melakukan industrialisasi
+		Talon: di wilayah stepa, tundra, dan es yang luas di ujung utara
+		Talon: Setelah terlibat dan kalah dalam beberapa perang pada abad sebelumnya
+		Talon: Rumburg mengalami masa industrialisasi yang pesat melalui kolektivisasi
+		Talon: kerja paksa, khususnya investasi dalam teknologi militer
+		Talon: Selama periode ini, industri militer Rumburg bangkit menyaingi Arcasia
+		Talon: dan perkembangan ekonomi yang menghasilkan peningkatan standar hidup
+		Talon: Setelah menderita banyak selama Perang 15 Hari melawan Sordland
+		Talon: negara ini juga mengembangkan senapan otomatis pertama di dunia
+		Talon: KA-74, yang menjadi senjata paling populer di benua ini pada abad ke-20
+		
+		Talon: tahun 1921, Beatrice Livingston naik takhta setelah Raja Alfred II
+		Talon: Pemerintahan Ratu dimulai dengan Aneksasi Kubah yang kontroversial
+		Talon: dan memperluas perbatasan Rumburg lebih jauh ke selatan
+		Talon: memulai apa yang disebut Ratu Livingston sebagai “Great Unification”
+		Talon: berupaya merebut kembali wilayah lama yang hilang dan menyatukan etnis Rum
+		Talon: Setelah revolusi sosialis di Valgsland 
+		Talon: Ratu membatalkan rencana ayahnya
+		Talon: untuk membentuk Pakta Merkopan Timur dengan Valgsland
+		Talon: an sebaliknya, mulai melakukan pemanasan terhadap Arcasia
+		Talon: dengan membuat kesepakatan perdagangan penting
+		Talon: Terlepas dari klaim pemerintah Rumburgian, negara tersebut
+		Talon: diyakini telah banyak terlibat dalam Perang Saudara Wehlen 
+		Talon: dan Perang Saudara Sordish
+		
+		Talon: Negara ini mempunyai perekonomian yang kuat
+		Talon: dan catatan hak-hak sipil di bawah rata-rata
+		Talon: serta kebebasan politik yang sangat sedikit
+		Talon: Berkat gencarnya kemajuan ilmu pengetahuan dan teknologi militer
+		Talon: mereka mengalami perkembangan teknologi yang sangat pesat
+		Talon: dan diyakini memiliki senjata eksperimental yang signifikan
+		Talon: Meskipun merupakan wilayah yang kaya sumber daya di utara
+		Talon: Rumburg mengimpor bahan mentah dalam jumlah besar
+		Talon: untuk menggerakkan industri militer besar-besaran mereka
+		
+	- No
+	=> END
+=> END

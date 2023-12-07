@@ -7,6 +7,9 @@ var alive = true
 
 var attack_ip = false
 
+var slime = 0
+var vampire_female = 0
+
 var dwarf_king = false
 var kang_grot = false
 var elf_lord = false
@@ -15,7 +18,7 @@ var elf_lord = false
 @onready var kena = $kena
 @onready var mati = $mati
 
-const speed = 70
+const speed = 200
 var directions = "none"
 
 func _physics_process(delta):
@@ -45,11 +48,20 @@ func _physics_process(delta):
 			get_tree().change_scene_to_file("res://Scene/world.tscn")
 			global.bawah_loading = false
 			global.side_loading = false
+			global.kiri_loading = false
 			global.finish_changescenes()
 			
 		if global.cur_scenes == 'cliff_side':
 			get_tree().change_scene_to_file("res://Scene/cliff_side.tscn")
 			global.bawah_loading = false
+			global.first_loading = false
+			global.kiri_loading = false
+			global.finish_changescenes()
+		
+		if global.cur_scenes == 'cliff_kiri':
+			get_tree().change_scene_to_file("res://Scene/cliff_kiri.tscn")
+			global.bawah_loading = false
+			global.first_loading = false
 			global.first_loading = false
 			global.finish_changescenes()
 			
@@ -57,6 +69,7 @@ func _physics_process(delta):
 			get_tree().change_scene_to_file("res://Scene/cliff_bawah.tscn")
 			global.side_loading = false
 			global.first_loading = false
+			global.kiri_loading = false
 			global.finish_changescenes()
 	
 func playerMovement(delta):
@@ -127,7 +140,10 @@ func player():
 
 func _on_player_hitbox_body_entered(body):
 	if body.has_method("enemy"):
-		range = true
+		slime += 1
+		
+	if body.has_method("Vampire_Female"):
+		vampire_female += 1
 	
 	if body.has_method("dwarf_king"):
 		dwarf_king = true
@@ -140,7 +156,10 @@ func _on_player_hitbox_body_entered(body):
 
 func _on_player_hitbox_body_exited(body):
 	if body.has_method("enemy"):
-		range = false
+		slime -= 1
+		
+	if body.has_method("Vampire_Female"):
+		vampire_female -= 1
 		
 	if body.has_method("dwarf_king"):
 		dwarf_king = false
@@ -152,19 +171,26 @@ func _on_player_hitbox_body_exited(body):
 		elf_lord = false
 		
 func enemy_att():
-	if range and att_cd == true:
-		kena.play()
-		darah = darah - 10
+	if att_cd == true :
+		if slime != 0 :
+			kena.play()
+			darah -= 10 * slime
+			print(darah)
+			
+		elif vampire_female != 0 :
+			kena.play()
+			darah -= 50 * vampire_female
+			print(darah)
+		
 		att_cd = false
 		$Att_cd.start()
-		print(darah)
 
 func _on_att_cd_timeout():
 	att_cd = true
 
 func attack():
 	var dir = directions
-	if Input.is_action_just_pressed("attack"):
+	if  global.cur_att == false and Input.is_action_just_pressed("attack"):
 		pukul.play()
 		global.cur_att = true
 		attack_ip = true
@@ -226,7 +252,7 @@ func update_health():
 
 func _on_regen_timeout():
 	if darah < 150:
-		darah += 10
+		darah += 30
 		if darah > 150:
 			darah = 150
 	if darah <= 0:

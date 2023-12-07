@@ -8,10 +8,10 @@ var transition_scene2 = false
 var transition_scene3 = false
 
 var player_exit_cliffbawah_posx = 873
-var player_exit_cliffbawah_posy = 649
-var player_exit_cliffside_posx = 1144
+var player_exit_cliffbawah_posy = 620
+var player_exit_cliffside_posx = 1134
 var player_exit_cliffside_posy = 99
-var player_exit_cliffkiri_posx = 15
+var player_exit_cliffkiri_posx = 20
 var player_exit_cliffkiri_posy = 594
 var player_start_posx = 10
 var player_start_posy = 140
@@ -20,6 +20,8 @@ var first_loading = true
 var bawah_loading = true
 var side_loading = true
 var kiri_loading = true
+
+var progress_point = 0
 
 func finish_changescenes():
 	if transition_scene1 == true:

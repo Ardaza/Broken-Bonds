@@ -1,10 +1,10 @@
 extends CharacterBody2D
 
-var kecepatan = 70
+var kecepatan = 40
 var kejar = false
 var player = null
 
-var darah = 40
+var darah = 80
 var att_zone = false
 var can_take_damage = true
 
@@ -13,7 +13,8 @@ func _physics_process(delta):
 	update_health()
 	
 	if kejar:
-		position += (player.position - position)/kecepatan
+		velocity = position.direction_to(player.position) * kecepatan
+		move_and_slide()
 		
 		
 		$AnimatedSprite2D.play("walk")
@@ -48,13 +49,14 @@ func _on_enemy_hit_box_body_exited(body):
 func deal_with_damage():
 	if att_zone and global.cur_att == true:
 		if can_take_damage == true:
-			darah = darah - 10
+			darah = darah - 20
 			$take_damage_cd.start()
 			can_take_damage = false
 			print("Darah Vampire: ", darah)
 			if darah <= 0:
-				
 				self.queue_free()
+				global.progress_point += 20
+				print("Skor ", global.progress_point)
 				
 func _on_take_damage_cd_timeout():
 	can_take_damage = true

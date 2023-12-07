@@ -108,15 +108,14 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_phsyi"]
-radius = 9.99998
-height = 48.0
+height = 32.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gj5am"]
 radius = 89.6939
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_elfsj"]
-radius = 18.0
-height = 56.0
+radius = 22.0
+height = 60.0
 
 [node name="Vampire_Female" type="CharacterBody2D"]
 y_sort_enabled = true
@@ -130,7 +129,8 @@ sprite_frames = SubResource("SpriteFrames_6swyo")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -18)
+position = Vector2(-2, 0)
+rotation = 1.5708
 shape = SubResource("CapsuleShape2D_phsyi")
 
 [node name="Detection_Area" type="Area2D" parent="."]
@@ -144,7 +144,7 @@ shape = SubResource("CircleShape2D_gj5am")
 [node name="Enemy_HitBox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy_HitBox"]
-position = Vector2(0, -20)
+position = Vector2(-2, -18)
 shape = SubResource("CapsuleShape2D_elfsj")
 
 [node name="take_damage_cd" type="Timer" parent="."]

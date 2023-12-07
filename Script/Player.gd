@@ -71,6 +71,10 @@ func _physics_process(delta):
 			global.first_loading = false
 			global.kiri_loading = false
 			global.finish_changescenes()
+			
+		if global.cur_scenes == 'cliff_bawah':
+			get_tree().change_scene_to_file("res://Scene/boss_fight.tscn")
+			global.finish_changescenes()
 	
 func playerMovement(delta):
 	

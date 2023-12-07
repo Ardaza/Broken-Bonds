@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://b2ft4apmsuwqr"]
+[gd_scene load_steps=29 format=3 uid="uid://b2ft4apmsuwqr"]
 
 [ext_resource type="Script" path="res://Script/cliff_kiri.gd" id="1_gotof"]
 [ext_resource type="Texture2D" uid="uid://bxckkvqeotl2n" path="res://sprites/objects/chest_01.png" id="1_nwqtt"]
@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://dnyhgm0y4kqp2" path="res://sprites/tilesets/fences.png" id="7_et6ex"]
 [ext_resource type="Texture2D" uid="uid://shba0fgkfvti" path="res://sprites/tilesets/plains.png" id="8_siox2"]
 [ext_resource type="Texture2D" uid="uid://dtrx52ohtir3b" path="res://sprites/tilesets/grass.png" id="9_g72wi"]
-[ext_resource type="Script" path="res://Script/kembali.gd" id="10_173h8"]
 [ext_resource type="Texture2D" uid="uid://5y2dn1ubjaqe" path="res://sprites/tilesets/survivalgame-terrian-water.png" id="11_5fe0d"]
 [ext_resource type="PackedScene" uid="uid://q3evwxdhw66" path="res://Scene/player.tscn" id="11_eesyg"]
 [ext_resource type="PackedScene" uid="uid://dab3d7vt3300f" path="res://Scene/vampire_female.tscn" id="15_b13u5"]
@@ -1370,96 +1369,96 @@ layer_5/y_sort_origin = 0
 layer_5/z_index = 0
 layer_5/tile_data = PackedInt32Array(589892, 1, 5, 1048633, 1, 5, 1310769, 1, 5, 1507371, 1, 5, 1572931, 1, 5, 589886, 1, 5, 2162757, 1, 5, 2424895, 1, 5, 1114181, 1, 5, 1376317, 1, 5, 720955, 1, 5, 917568, 1, 5, 1048628, 1, 5, 1310775, 1, 5, 1835072, 1, 5, 524340, 1, 5, 1048616, 1, 5, 327730, 524289, 6, 786478, 524289, 6, 1572913, 524289, 6, 1310766, 524289, 6, 1179708, 524289, 6, 1572924, 524289, 6, 2031680, 524289, 6, 2228285, 524289, 6, 524353, 524289, 6, 458822, 524289, 6, 852022, 524289, 6, 1179712, 524289, 6, 917570, 524289, 6, 786451, 524289, 6, 65545, 524289, 6, 458753, 524289, 6, 1048577, 524289, 6, 196633, 524289, 6, 720921, 393217, 7, 851980, 393217, 7, 655366, 393217, 7, 65540, 393217, 7, 327689, 393217, 7, 983045, 655361, 7, 655361, 655361, 7, 327699, 655361, 7, 720912, 655361, 7, 393228, 655361, 7)
 
+[node name="Enemy" type="Node2D" parent="."]
+
+[node name="Vampire_Female" parent="Enemy" instance=ExtResource("15_b13u5")]
+position = Vector2(221, 166)
+collision_priority = 1.02
+
+[node name="Vampire_Female2" parent="Enemy" instance=ExtResource("15_b13u5")]
+position = Vector2(61, 267)
+
+[node name="Vampire_Female3" parent="Enemy" instance=ExtResource("15_b13u5")]
+position = Vector2(121, 38)
+
+[node name="Vampire_Female4" parent="Enemy" instance=ExtResource("15_b13u5")]
+position = Vector2(935, 482)
+
+[node name="Vampire_Female5" parent="Enemy" instance=ExtResource("15_b13u5")]
+position = Vector2(373, 225)
+
+[node name="Enemy_Slime" parent="Enemy" instance=ExtResource("16_ihc4u")]
+position = Vector2(341, 104)
+
+[node name="Enemy_Slime2" parent="Enemy" instance=ExtResource("16_ihc4u")]
+position = Vector2(285, 32)
+
+[node name="Enemy_Slime3" parent="Enemy" instance=ExtResource("16_ihc4u")]
+position = Vector2(958, 531)
+
+[node name="Enemy_Slime4" parent="Enemy" instance=ExtResource("16_ihc4u")]
+position = Vector2(829, 440)
+
+[node name="Enemy_Slime5" parent="Enemy" instance=ExtResource("16_ihc4u")]
+position = Vector2(535, 585)
+
+[node name="Enemy_Slime6" parent="Enemy" instance=ExtResource("16_ihc4u")]
+position = Vector2(889, 613)
+
+[node name="Enemy_Slime7" parent="Enemy" instance=ExtResource("16_ihc4u")]
+position = Vector2(427, 515)
+
+[node name="Enemy_Slime8" parent="Enemy" instance=ExtResource("16_ihc4u")]
+position = Vector2(642, 433)
+
+[node name="Enemy_Slime9" parent="Enemy" instance=ExtResource("16_ihc4u")]
+position = Vector2(875, 129)
+
 [node name="Player" parent="." instance=ExtResource("11_eesyg")]
-position = Vector2(1131, 55)
+position = Vector2(1088, 49)
 
-[node name="kembali" type="Area2D" parent="."]
-script = ExtResource("10_173h8")
+[node name="Kembali" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="kembali"]
-position = Vector2(1171, 48)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Kembali"]
+position = Vector2(1133, 49)
 shape = SubResource("RectangleShape2D_m8qqd")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="Collision" type="StaticBody2D" parent="."]
 
-[node name="1" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="1" type="CollisionPolygon2D" parent="Collision"]
 polygon = PackedVector2Array(0, 0, 1152, 0, 1152, 656, 0, 656, 0, 2, -13, 16, -139, 837, 1239, 760, 1288, 286, 1296, -83, 528, -258, -10, -204, -197, -131, 1, -3, 3, -1, -2, -1, -2, 1, -1, 1, 0, 1)
 
-[node name="2" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="2" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(441, 90)
 polygon = PackedVector2Array(-1, 0, 5, 0, 5, -90, -6, -90, -6, 0)
 
-[node name="3" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="3" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(440, 161)
 polygon = PackedVector2Array(0, 0, 4, 0, 6, 2, 6, 90, -298, 90, -298, 106, -346, 106, -346, 122, -394, 122, -394, 138, -437, 137, -437, 128, -405, 128, -405, 112, -357, 112, -357, 96, -309, 96, -309, 80, -5, 80, -5, 2, -3, 0)
 
-[node name="4" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="4" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(505, 321)
 polygon = PackedVector2Array(-1, 0, 3, 0, 5, 2, 5, 6, 5, 10, -331, 10, -331, 26, -374, 26, -374, 18, -372, 16, -342, 16, -342, 2, -340, 0)
 
-[node name="5" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="5" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(1152, 116)
 polygon = PackedVector2Array(0, 0, -151, 0, -153, 2, -153, 15, -193, 15, -199, 16, -205, 25, -208, 31, -215, 32, -221, 41, -225, 47, -231, 48, -237, 57, -238, 62, -247, 64, -253, 73, -257, 79, -263, 80, -269, 89, -270, 96, -311, 96, -316, 103, -317, 112, -343, 112, -349, 121, -352, 127, -376, 128, -381, 137, -382, 143, -391, 144, -397, 153, -398, 159, -423, 160, -428, 166, -429, 174, -432, 175, -455, 176, -461, 185, -462, 191, -471, 192, -477, 201, -477, 206, -487, 208, -493, 218, -493, 239, -503, 240, -509, 249, -509, 278, -506, 282, -493, 283, -493, 294, -490, 298, -477, 299, -477, 310, -475, 313, -472, 315, -462, 315, -461, 326, -458, 330, -455, 331, -420, 331, -417, 327, -417, 315, -327, 315, -321, 311, -321, 298, -308, 298, -305, 295, -305, 283, -238, 283, -237, 285, -237, 294, -232, 299, -222, 299, -221, 310, -215.955, 315.274, -206, 315, -205, 316, -205, 326, -200, 331, -189, 331, -189, 342, -184.157, 347.1, -174, 347, -173, 349, -173, 356, -174, 356, -174, 362, -173, 362, -173, 374, -167.884, 378.939, -157, 379, -157, 415, -167, 416, -171, 423, -173, 430, -184, 433, -189, 441, -190, 463, -199, 464, -205, 473, -205, 486, -200.243, 491.814, -190, 491, -189, 519, -183.882, 522.883, -173, 523, -173, 540, -160, 541, 0, 541)
 
-[node name="6" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="6" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(0, 400)
 polygon = PackedVector2Array(0, 0, 32, 0, 32, -16, 48, -16, 48, -32, 96, -32, 96, -48, 208, -48, 208, -32, 240, -32, 240, -16, 256, -16, 256, 0, 272, 0, 272, 16, 288, 16, 288, 32, 320, 32, 320, 48, 352, 48, 352, 64, 368, 64, 368, 80, 384, 80, 384, 96, 400, 96, 400, 112, 416, 112, 416, 144, 432, 144, 432, 256, 0, 256)
 
-[node name="7" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="7" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(578, 73)
 polygon = PackedVector2Array(0, 0, 124, 0, 126, 2, 126, 104, 126, 103, -2, 102, -2, 2)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(386, 377)
 polygon = PackedVector2Array(0, 0, 62, 0, 62, -30, 64, -32, 124, -32, 126, -30, 126, 87, -2, 87, -2, 2)
 
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(883, 91)
 polygon = PackedVector2Array(0, 0, 267, 0, 267, -10, 2, -10, 0, -8)
 
-[node name="Enemy" type="Node2D" parent="."]
-
-[node name="Vampire_Female" parent="." instance=ExtResource("15_b13u5")]
-position = Vector2(221, 166)
-
-[node name="Vampire_Female2" parent="." instance=ExtResource("15_b13u5")]
-position = Vector2(61, 267)
-
-[node name="Vampire_Female3" parent="." instance=ExtResource("15_b13u5")]
-position = Vector2(124, 20)
-
-[node name="Vampire_Female4" parent="." instance=ExtResource("15_b13u5")]
-position = Vector2(935, 482)
-
-[node name="Vampire_Female5" parent="." instance=ExtResource("15_b13u5")]
-position = Vector2(373, 225)
-
-[node name="Enemy_Slime" parent="." instance=ExtResource("16_ihc4u")]
-position = Vector2(341, 104)
-
-[node name="Enemy_Slime2" parent="." instance=ExtResource("16_ihc4u")]
-position = Vector2(283, 8)
-
-[node name="Enemy_Slime3" parent="." instance=ExtResource("16_ihc4u")]
-position = Vector2(958, 531)
-
-[node name="Enemy_Slime4" parent="." instance=ExtResource("16_ihc4u")]
-position = Vector2(829, 440)
-
-[node name="Enemy_Slime5" parent="." instance=ExtResource("16_ihc4u")]
-position = Vector2(535, 585)
-
-[node name="Enemy_Slime6" parent="." instance=ExtResource("16_ihc4u")]
-position = Vector2(889, 613)
-
-[node name="Enemy_Slime7" parent="." instance=ExtResource("16_ihc4u")]
-position = Vector2(427, 515)
-
-[node name="Enemy_Slime8" parent="." instance=ExtResource("16_ihc4u")]
-position = Vector2(642, 433)
-
-[node name="Enemy_Slime9" parent="." instance=ExtResource("16_ihc4u")]
-position = Vector2(875, 129)
-
-[connection signal="body_entered" from="kembali" to="." method="_on_kembali_body_entered"]
-[connection signal="body_exited" from="kembali" to="." method="_on_kembali_body_exited"]
+[connection signal="body_entered" from="Kembali" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Kembali" to="." method="_on_area_2d_body_exited"]

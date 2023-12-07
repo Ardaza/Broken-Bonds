@@ -475,6 +475,12 @@ limit_bottom = 1007
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 
+[node name="Cliff_kiri_camera" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 656
+
 [node name="Health_Bar" type="ProgressBar" parent="."]
 modulate = Color(0.160784, 1, 0.321569, 1)
 y_sort_enabled = true

@@ -11,10 +11,14 @@ func _ready():
 	elif global.side_loading == true:
 		$Player.position.x = global.player_exit_cliffside_posx
 		$Player.position.y = global.player_exit_cliffside_posy
+	elif global.kiri_loading == true:
+		$Player.position.x = global.player_exit_cliffkiri_posx
+		$Player.position.y = global.player_exit_cliffkiri_posy
 
 func _process(delta):
 	change_scene1()
 	change_scene2()
+	change_scene3()
 
 func _on_cliff_side_body_entered(body):
 	if body.has_method("player"):
@@ -30,6 +34,7 @@ func change_scene1():
 			get_tree().change_scene_to_file("res://Scene/cliff_side.tscn")
 			global.first_loading = false
 			global.bawah_loading = false
+			global.kiri_loading = false
 			global.finish_changescenes()
 
 func _on_cliff_bawah_body_entered(body):
@@ -46,4 +51,24 @@ func change_scene2():
 			get_tree().change_scene_to_file("res://Scene/cliff_bawah.tscn")
 			global.first_loading = false
 			global.side_loading = false
+			global.kiri_loading = false
+			global.finish_changescenes()
+
+
+func _on_cliff_kiri_body_entered(body):
+	if body.has_method("player"):
+		global.transition_scene3 = true
+
+
+func _on_cliff_kiri_body_exited(body):
+	if body.has_method("player"):
+		global.transition_scene3 = false
+	
+func change_scene3():
+	if global.transition_scene3 == true:
+		if global.cur_scenes == 'world':
+			get_tree().change_scene_to_file("res://Scene/cliff_kiri.tscn")
+			global.first_loading = false
+			global.side_loading = false
+			global.bawah_loading = false
 			global.finish_changescenes()

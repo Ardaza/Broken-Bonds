@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dskdaqc4bj3nf"]
+[gd_scene load_steps=26 format=3 uid="uid://dskdaqc4bj3nf"]
 
 [ext_resource type="Texture2D" uid="uid://shba0fgkfvti" path="res://sprites/tilesets/plains.png" id="1_i6ro1"]
 [ext_resource type="Script" path="res://Script/world.gd" id="1_rk3tc"]
@@ -1218,6 +1218,9 @@ size = Vector2(46, 63)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yuv18"]
 size = Vector2(72, 39)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb4s1"]
+size = Vector2(27, 59)
+
 [node name="World" type="Node2D"]
 y_sort_enabled = true
 position = Vector2(-1, -17)
@@ -1320,6 +1323,12 @@ shape = SubResource("RectangleShape2D_tifnc")
 position = Vector2(872, 674.5)
 shape = SubResource("RectangleShape2D_yuv18")
 
+[node name="Cliff_kiri" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cliff_kiri"]
+position = Vector2(-3, 594)
+shape = SubResource("RectangleShape2D_pb4s1")
+
 [node name="Enemy" type="Node2D" parent="."]
 
 [node name="Vampire_Female" parent="Enemy" instance=ExtResource("9_1njd1")]
@@ -1375,7 +1384,12 @@ position = Vector2(232, 443)
 [node name="Orang_Tua" parent="NPC" instance=ExtResource("15_5l8vb")]
 position = Vector2(308, 358)
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(15, 594)
+
 [connection signal="body_entered" from="Cliff_side" to="." method="_on_cliff_side_body_entered"]
 [connection signal="body_exited" from="Cliff_side" to="." method="_on_cliff_side_body_exited"]
 [connection signal="body_entered" from="Cliff_bawah" to="." method="_on_cliff_bawah_body_entered"]
 [connection signal="body_exited" from="Cliff_bawah" to="." method="_on_cliff_bawah_body_exited"]
+[connection signal="body_entered" from="Cliff_kiri" to="." method="_on_cliff_kiri_body_entered"]
+[connection signal="body_exited" from="Cliff_kiri" to="." method="_on_cliff_kiri_body_exited"]

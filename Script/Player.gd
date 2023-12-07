@@ -185,14 +185,22 @@ func curent_camera():
 		$World.enabled = true
 		$Cliff_bawah_camera.enabled = false
 		$Cliff_side_camera.enabled = false
+		$Cliff_kiri_camera.enabled = false
 	elif global.cur_scenes == "cliff_bawah":
 		$World.enabled = false
 		$Cliff_bawah_camera.enabled = true
 		$Cliff_side_camera.enabled = false
+		$Cliff_kiri_camera.enabled = false
 	elif global.cur_scenes == "cliff_side":
 		$World.enabled = false
 		$Cliff_bawah_camera.enabled = false
 		$Cliff_side_camera.enabled = true
+		$Cliff_kiri_camera.enabled = false
+	elif global.cur_scenes == "cliff_kiri":
+		$World.enabled = false
+		$Cliff_bawah_camera.enabled = false
+		$Cliff_side_camera.enabled = false
+		$Cliff_kiri_camera.enabled = true
 		
 
 func update_health():

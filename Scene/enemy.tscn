@@ -152,16 +152,15 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_1v3pu"]
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_qw55f"]
 radius = 57.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kd38r"]
+radius = 8.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r661n"]
 
 [node name="Enemy_Slime" type="CharacterBody2D"]
-y_sort_enabled = true
-motion_mode = 1
 slide_on_ceiling = false
 script = ExtResource("1_21o00")
 
@@ -171,10 +170,6 @@ animation = &"walk"
 frame_progress = 0.479066
 offset = Vector2(0, -6)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -4)
-shape = SubResource("CircleShape2D_1v3pu")
-
 [node name="Detection_Area" type="Area2D" parent="."]
 visible = false
 collision_layer = 2
@@ -183,7 +178,13 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection_Area"]
 shape = SubResource("CircleShape2D_qw55f")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_kd38r")
+
 [node name="Enemy_HitBox" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy_HitBox"]
 position = Vector2(0, -4)

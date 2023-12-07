@@ -107,44 +107,45 @@ animations = [{
 "speed": 4.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_phsyi"]
-radius = 9.99998
-height = 48.0
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_gj5am"]
 radius = 89.6939
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_phsyi"]
+radius = 15.0
+height = 54.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_elfsj"]
 radius = 18.0
 height = 56.0
 
 [node name="Vampire_Female" type="CharacterBody2D"]
-y_sort_enabled = true
 scale = Vector2(0.5, 0.5)
-motion_mode = 1
 script = ExtResource("1_jb3g3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -27)
+position = Vector2(0, -35)
 sprite_frames = SubResource("SpriteFrames_6swyo")
-animation = &"idle"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -18)
-shape = SubResource("CapsuleShape2D_phsyi")
+animation = &"walk"
+frame_progress = 0.455868
 
 [node name="Detection_Area" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection_Area"]
-position = Vector2(0, -21)
+visible = false
+position = Vector2(0, -29)
 shape = SubResource("CircleShape2D_gj5am")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -28)
+shape = SubResource("CapsuleShape2D_phsyi")
 
 [node name="Enemy_HitBox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy_HitBox"]
-position = Vector2(0, -20)
+position = Vector2(0, -28)
 shape = SubResource("CapsuleShape2D_elfsj")
 
 [node name="take_damage_cd" type="Timer" parent="."]

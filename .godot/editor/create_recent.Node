@@ -1,3 +1,8 @@
+Control
+CanvasLayer
+Label
+ProgressBar
+TextureProgressBar
 CharacterBody2D
 CollisionShape2D
 RigidBody2D
@@ -13,6 +18,5 @@ AudioStreamPlayer2D
 AudioListener2D
 Timer
 Node
-ProgressBar
 Polygon2D
 ColorRect

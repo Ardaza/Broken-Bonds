@@ -179,7 +179,7 @@ func enemy_att():
 			
 		elif vampire_female != 0 :
 			kena.play()
-			darah -= 50 * vampire_female
+			darah -= 15 * vampire_female
 			print(darah)
 		
 		att_cd = false

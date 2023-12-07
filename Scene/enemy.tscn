@@ -158,6 +158,7 @@ animations = [{
 radius = 57.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r661n"]
+radius = 12.0
 
 [node name="Enemy_Slime" type="CharacterBody2D"]
 y_sort_enabled = true
@@ -199,7 +200,7 @@ offset_top = -15.0
 offset_right = 90.0
 offset_bottom = 12.0
 scale = Vector2(0.2, 0.2)
-max_value = 50.0
+max_value = 60.0
 show_percentage = false
 
 [connection signal="body_entered" from="Detection_Area" to="." method="_on_detection_area_body_entered"]

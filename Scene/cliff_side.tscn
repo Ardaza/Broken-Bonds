@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://damhbcuiahnmg"]
+[gd_scene load_steps=13 format=3 uid="uid://damhbcuiahnmg"]
 
 [ext_resource type="Script" path="res://Script/cliff_side.gd" id="1_4xpcp"]
 [ext_resource type="PackedScene" uid="uid://dab3d7vt3300f" path="res://Scene/vampire_female.tscn" id="1_qmj3i"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://clel174td2qac" path="res://Scene/anak_kecil_cewe.tscn" id="8_mvn5w"]
 [ext_resource type="PackedScene" uid="uid://s1s4unbyysgs" path="res://Scene/dwarf_king.tscn" id="9_m6mbj"]
 [ext_resource type="PackedScene" uid="uid://dx08rkrw7gbjf" path="res://Scene/kang_grot.tscn" id="10_2sgsw"]
+[ext_resource type="Script" path="res://Scene/ProgressBar.gd" id="11_wh3s2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cah0v"]
 size = Vector2(37, 43.5)
@@ -208,6 +209,49 @@ polygon = PackedVector2Array(0, 0, 0, 109, 63, 110, 63, 147, 22, 148, 16, 156, 1
 [node name="7" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(494, 976)
 polygon = PackedVector2Array(0, 0, 0, 48, 735, 47, 736, -64, 720, -64, 720, -113, 672, -112, 673, -128, 656, -128, 656, -145, 640, -145, 640, -160, 624, -160, 624, -176, 592, -176, 592, -208, 561, -208, 560, -208, 560, -240, 528, -240, 528, -272, 480, -272, 480, -336, 416, -336, 416, -352, 352, -352, 352, -368, 320, -368, 320, -384, 288, -384, 288, -368, 256, -368, 256, -352, -48, -352, -48, -336, -80, -336, -80, -304, -95, -304, -96, -304, -96, -160, -80, -160, -80, -128, -64, -128, -64, -112, 32, -112, 32, -96, 112, -96, 112, -32, 80, -32, 80, -16, 64, -16, 64, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label Progress Evakuasi" type="Label" parent="CanvasLayer/Control"]
+top_level = true
+clip_contents = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -133.0
+offset_top = 19.0
+offset_right = -72.0
+offset_bottom = 33.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 7
+text = "Progress Evakuasi"
+metadata/_edit_use_anchors_ = true
+
+[node name="Progress Bar" type="ProgressBar" parent="CanvasLayer/Control"]
+modulate = Color(0, 0.219608, 0.87451, 1)
+top_level = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -135.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = 20.0
+grow_horizontal = 0
+max_value = 1200.0
+step = 1.0
+show_percentage = false
+script = ExtResource("11_wh3s2")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="body_entered" from="Kembali" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Kembali" to="." method="_on_area_2d_body_exited"]

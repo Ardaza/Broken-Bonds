@@ -65,7 +65,7 @@ func update_health():
 	var bardarah = $Health_Bar
 	bardarah.value = darah
 	
-	if darah >= 40:
+	if darah >= 80:
 		bardarah.visible = false
 	else:
 		bardarah.visible = true

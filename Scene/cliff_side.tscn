@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://damhbcuiahnmg"]
+[gd_scene load_steps=14 format=3 uid="uid://damhbcuiahnmg"]
 
 [ext_resource type="Script" path="res://Script/cliff_side.gd" id="1_4xpcp"]
 [ext_resource type="PackedScene" uid="uid://dab3d7vt3300f" path="res://Scene/vampire_female.tscn" id="1_qmj3i"]
@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://clel174td2qac" path="res://Scene/anak_kecil_cewe.tscn" id="8_mvn5w"]
 [ext_resource type="PackedScene" uid="uid://s1s4unbyysgs" path="res://Scene/dwarf_king.tscn" id="9_m6mbj"]
 [ext_resource type="PackedScene" uid="uid://dx08rkrw7gbjf" path="res://Scene/kang_grot.tscn" id="10_2sgsw"]
+[ext_resource type="Script" path="res://Scene/Score.gd" id="11_nhq34"]
+[ext_resource type="Script" path="res://Scene/Highscore.gd" id="12_8u70m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cah0v"]
 size = Vector2(37, 43.5)
@@ -55,7 +57,7 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array(2752537, 1245190, 2, 2818073, 1245190, 2, 2883609, 1245190, 2, 2949145, 1245190, 2, 3014681, 1245190, 2, 3080217, 1245190, 2, 3538982, 1245190, 2, 3604518, 1245190, 2, 3670054, 1245190, 2, 2621500, 1245190, 2, 2687036, 1245190, 2, 3539019, 1245190, 2, 3145753, 1245190, 2, 3211289, 1245190, 2, 3276825, 1245190, 2, 2621466, 1245190, 2, 2687002, 1245190, 2, 2752538, 1245190, 2, 3276826, 1245190, 2, 3342362, 1245190, 2, 3407898, 1245190, 2, 2621467, 1245190, 2, 3407899, 1245190, 2, 3473435, 1245190, 2, 2555932, 1245190, 2, 2621468, 1245190, 2, 3473436, 1245190, 2, 2555933, 1245190, 2, 3473437, 1245190, 2, 2555934, 1245190, 2, 3473438, 1245190, 2, 2555935, 1245190, 2, 3473439, 1245190, 2, 3997727, 1245190, 2, 4063263, 1245190, 2, 4128799, 1245190, 2, 2555936, 1245190, 2, 3473440, 1245190, 2, 3997728, 1245190, 2, 4063264, 1245190, 2, 4128800, 1245190, 2, 2555937, 1245190, 2, 3473441, 1245190, 2, 3538977, 1245190, 2, 3997729, 1245190, 2, 2555938, 1245190, 2, 3538978, 1245190, 2, 3997730, 1245190, 2, 2555939, 1245190, 2, 3538979, 1245190, 2, 3932195, 1245190, 2, 3997731, 1245190, 2, 2555940, 1245190, 2, 3538980, 1245190, 2, 3866660, 1245190, 2, 3932196, 1245190, 2, 2555941, 1245190, 2, 3538981, 1245190, 2, 3866661, 1245190, 2, 2555942, 1245190, 2, 3735590, 1245190, 2, 3801126, 1245190, 2, 3866662, 1245190, 2, 2555943, 1245190, 2, 2555944, 1245190, 2, 2555945, 1245190, 2, 2555946, 1245190, 2, 2555947, 1245190, 2, 2555948, 1245190, 2, 2555949, 1245190, 2, 2555950, 1245190, 2, 2490415, 1245190, 2, 2555951, 1245190, 2, 2490416, 1245190, 2, 2424881, 1245190, 2, 2490417, 1245190, 2, 2424882, 1245190, 2, 2490418, 1245190, 2, 2490419, 1245190, 2, 2490420, 1245190, 2, 2555956, 1245190, 2, 2555957, 1245190, 2, 2555958, 1245190, 2, 2555959, 1245190, 2, 2555960, 1245190, 2, 2621496, 1245190, 2, 2621497, 1245190, 2, 2621498, 1245190, 2, 2687034, 1245190, 2, 2621499, 1245190, 2, 2687035, 1245190, 2, 2752572, 1245190, 2, 2818108, 1245190, 2, 2883644, 1245190, 2, 2883645, 1245190, 2, 2883646, 1245190, 2, 2949182, 1245190, 2, 2883647, 1245190, 2, 2949183, 1245190, 2, 3014719, 1245190, 2, 3014720, 1245190, 2, 3014721, 1245190, 2, 3080257, 1245190, 2, 3145793, 1245190, 2, 3145794, 1245190, 2, 3145795, 1245190, 2, 3211331, 1245190, 2, 3276867, 1245190, 2, 3276868, 1245190, 2, 3276869, 1245190, 2, 3342405, 1245190, 2, 3342406, 1245190, 2, 3407942, 1245190, 2, 3407943, 1245190, 2, 3473479, 1245190, 2, 3473480, 1245190, 2, 3539016, 1245190, 2, 3539017, 1245190, 2, 3539018, 1245190, 2, 3604555, 1245190, 2, 3670091, 1245190, 2, 3735627, 1245190, 2, 3735628, 1245190, 2)
 
 [node name="Player" parent="." instance=ExtResource("4_ttdqs")]
-position = Vector2(28, 922)
+position = Vector2(36, 925)
 
 [node name="Karakter Enemies" type="Node2D" parent="."]
 
@@ -64,6 +66,18 @@ position = Vector2(139, 927)
 
 [node name="Vampire_Female2" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(355, 745)
+
+[node name="Vampire_Female13" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(350, 895)
+
+[node name="Vampire_Female14" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(146, 731)
+
+[node name="Vampire_Female15" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(426, 591)
+
+[node name="Vampire_Female16" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(198, 525)
 
 [node name="Vampire_Female3" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(214, 600)
@@ -76,6 +90,9 @@ position = Vector2(549, 481)
 
 [node name="Vampire_Female6" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(745, 275)
+
+[node name="Vampire_Female18" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(790, 398)
 
 [node name="Vampire_Female7" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(894, 495)
@@ -91,6 +108,9 @@ position = Vector2(306, 109)
 
 [node name="Vampire_Female11" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(390, 129)
+
+[node name="Vampire_Female17" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(282, 203)
 
 [node name="Vampire_Female12" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(45, 437)
@@ -121,6 +141,12 @@ position = Vector2(125, 430)
 
 [node name="Enemy_Slime9" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
 position = Vector2(58, 215)
+
+[node name="Enemy_Slime21" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(185, 294)
+
+[node name="Enemy_Slime22" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(449, 274)
 
 [node name="Enemy_Slime10" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
 position = Vector2(47, 119)
@@ -169,6 +195,9 @@ position = Vector2(246, 827)
 [node name="Dwarf_King" parent="Karakter NPC" instance=ExtResource("9_m6mbj")]
 position = Vector2(390, 265)
 
+[node name="kang_grot" parent="Karakter NPC" instance=ExtResource("10_2sgsw")]
+position = Vector2(673, 587)
+
 [node name="Kembali" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kembali"]
@@ -176,38 +205,76 @@ position = Vector2(-10, 921)
 shape = SubResource("RectangleShape2D_cah0v")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="Collision" type="StaticBody2D" parent="."]
 
-[node name="1" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="1" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(-50, -32)
 polygon = PackedVector2Array(0, -1, 1264, 0, 1280, 1056, 0, 1057, 0, 2, -150, 576, -149, 1149, -98, 1300, 804, 1191, 1360, 1168, 1532, 1120, 1422, 231, 1360, -38, 1189, -102, 497, -118, 153, -78, -78, -76, -6, -1, 1, 1, 1, 0)
 
-[node name="2" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="2" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(206, 361)
 polygon = PackedVector2Array(1, 0, 94, 0, 96, 2, 97, 71, 56, 71, 55, 49, 55, 48, 86, 48, 87, 48, 87, 7, 9, 7, 9, 45, 12, 48, 25, 48, 25, 71, 0, 71, 0, 0)
 
-[node name="3" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="3" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(158, 537)
 polygon = PackedVector2Array(2, 0, 142, 0, 144, 2, 144, 119, 78, 119, 78, 96, 135, 96, 135, 7, 9, 7, 9, 96, 66, 96, 66, 119, 1, 119, 0, 119, 0, 2)
 
-[node name="4" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="4" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(190, 777)
 polygon = PackedVector2Array(1, 0, 87, 0, 89, 2, 89, 29, 90, 29, 90, 31, 91, 31, 91, 32, 110, 32, 112, 34, 112, 87, 0, 87, 0, 0)
 
-[node name="5" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="5" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(414, 425)
 polygon = PackedVector2Array(2, 0, 206, 0, 208, 2, 208, 103, 63, 103, 63, 80, 103, 80, 103, 67, 103, 66, 105, 64, 119, 64, 121, 67, 121, 77, 122, 77, 123, 79, 124, 80, 128, 80, 199, 80, 199, 7, 9, 7, 9, 77, 12, 80, 51, 80, 51, 103, 0, 103, 0, 2)
 
-[node name="6" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="6" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(529, -32)
 polygon = PackedVector2Array(0, 0, 0, 109, 63, 110, 63, 147, 22, 148, 16, 156, 15, 227, -36, 227, -42, 228, -48, 237, -48, 345, -45, 350, -1, 350, -1, 393, 5, 399, 89, 399, 91, 399, 91, 335, 120, 335, 124, 331, 124, 304, 138, 303, 140, 299, 139, 222, 234, 223, 236, 219, 236, 207, 271, 207, 272, 226, 262, 228, 256, 237, 256, 298, 259, 302, 261, 303, 287, 303, 288, 362, 293, 367, 350, 366, 352, 370, 353, 397, 415, 398, 415, 414, 415, 618, 420, 624, 463, 623, 464, 634, 468, 639, 495, 638, 495, 648, 495, 680, 496, 698, 501, 703, 608, 703, 607, 794, 612, 799, 701, 798, 686, 31)
 
-[node name="7" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="7" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(494, 976)
 polygon = PackedVector2Array(0, 0, 0, 48, 735, 47, 736, -64, 720, -64, 720, -113, 672, -112, 673, -128, 656, -128, 656, -145, 640, -145, 640, -160, 624, -160, 624, -176, 592, -176, 592, -208, 561, -208, 560, -208, 560, -240, 528, -240, 528, -272, 480, -272, 480, -336, 416, -336, 416, -352, 352, -352, 352, -368, 320, -368, 320, -384, 288, -384, 288, -368, 256, -368, 256, -352, -48, -352, -48, -336, -80, -336, -80, -304, -95, -304, -96, -304, -96, -160, -80, -160, -80, -128, -64, -128, -64, -112, 32, -112, 32, -96, 112, -96, 112, -32, 80, -32, 80, -16, 64, -16, 64, 0)
 
-[node name="kang_grot" parent="." instance=ExtResource("10_2sgsw")]
-position = Vector2(673, 587)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[connection signal="body_entered" from="Kembali" to="." method="_on_kembali_body_entered"]
-[connection signal="body_exited" from="Kembali" to="." method="_on_kembali_body_exited"]
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Score" type="Label" parent="CanvasLayer/Control"]
+top_level = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.939236
+anchor_top = 0.0617284
+anchor_right = 0.939236
+anchor_bottom = 0.0617284
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 2
+script = ExtResource("11_nhq34")
+metadata/_edit_use_anchors_ = true
+
+[node name="Highscore" type="Label" parent="CanvasLayer/Control"]
+top_level = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.939236
+anchor_top = 0.0941358
+anchor_right = 0.939236
+anchor_bottom = 0.0941358
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 2
+script = ExtResource("12_8u70m")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="Kembali" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Kembali" to="." method="_on_area_2d_body_exited"]

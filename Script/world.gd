@@ -54,11 +54,9 @@ func change_scene2():
 			global.kiri_loading = false
 			global.finish_changescenes()
 
-
 func _on_cliff_kiri_body_entered(body):
 	if body.has_method("player"):
 		global.transition_scene3 = true
-
 
 func _on_cliff_kiri_body_exited(body):
 	if body.has_method("player"):
@@ -72,3 +70,4 @@ func change_scene3():
 			global.side_loading = false
 			global.bawah_loading = false
 			global.finish_changescenes()
+

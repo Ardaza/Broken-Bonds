@@ -421,11 +421,12 @@ radius = 2.0
 height = 10.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2pxpd"]
-radius = 12.0
+radius = 13.0
 
 [node name="Player" type="CharacterBody2D"]
 y_sort_enabled = true
 collision_layer = 3
+motion_mode = 1
 script = ExtResource("1_j6fba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -442,7 +443,7 @@ shape = SubResource("CapsuleShape2D_g8obm")
 [node name="Player_Hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player_Hitbox"]
-position = Vector2(-1, -6)
+position = Vector2(0, -7)
 shape = SubResource("CircleShape2D_2pxpd")
 
 [node name="Att_cd" type="Timer" parent="."]
@@ -489,7 +490,6 @@ offset_top = -25.0
 offset_right = 81.0
 offset_bottom = 2.0
 scale = Vector2(0.2, 0.2)
-max_value = 150.0
 rounded = true
 show_percentage = false
 

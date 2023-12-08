@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://dskdaqc4bj3nf"]
+[gd_scene load_steps=28 format=3 uid="uid://dskdaqc4bj3nf"]
 
 [ext_resource type="Texture2D" uid="uid://shba0fgkfvti" path="res://sprites/tilesets/plains.png" id="1_i6ro1"]
 [ext_resource type="Script" path="res://Script/world.gd" id="1_rk3tc"]
@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://clel174td2qac" path="res://Scene/anak_kecil_cewe.tscn" id="13_s70an"]
 [ext_resource type="PackedScene" uid="uid://b02w6uu671yge" path="res://Scene/oranf_mabok.tscn" id="14_vg0ue"]
 [ext_resource type="PackedScene" uid="uid://q3ek7jkup53i" path="res://Scene/orang_tuas.tscn" id="15_5l8vb"]
+[ext_resource type="Script" path="res://Scene/Score.gd" id="16_rqoq8"]
+[ext_resource type="Script" path="res://Scene/Highscore.gd" id="17_swat5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l2oj5"]
 texture = ExtResource("1_i6ro1")
@@ -185,12 +187,16 @@ texture = ExtResource("3_vwxoh")
 10:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.6351, 5.34539, -11.4146, -1.44771, 11.7487, 1.7818, 10.7465, 5.45675, 9.63284, 9.02035, -5.40107, 9.24307)
 11:2/size_in_atlas = Vector2i(1, 2)
 11:2/0 = 0
+11:2/0/y_sort_origin = 9
 11:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:2/0/physics_layer_0/angular_velocity = 0.0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(6.875, 13.375, -6.625, 14.125, -8, 8, 8, 8)
+11:2/0/physics_layer_0/polygon_1/points = PackedVector2Array(-8, -8, 8, -8, 6.54074, -13.6118, -7.42462, -13.9654)
 10:0/size_in_atlas = Vector2i(2, 1)
 10:0/0 = 0
 10:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:0/0/physics_layer_0/angular_velocity = 0.0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.125, -8.125, 14.375, -7.875, 15.125, 3.375, 14.125, 7.375, 10.125, 7.375, 8, 4.375, -10.375, 4.125, -10.375, 7.875, -15.125, 7.875)
 5:0/0 = 0
 5:0/0/y_sort_origin = 5
 5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -1263,51 +1269,129 @@ layer_4/z_index = 0
 layer_4/tile_data = PackedInt32Array(2031616, 2162692, 3, 2097152, 2162692, 3, 2162688, 2162692, 3, 2228224, 2228228, 6, 2228225, 2162692, 6, 2228226, 2228228, 6, 2228227, 2162692, 6, 2228228, 2228228, 6, 2228229, 2162692, 6, 2228230, 2228228, 6, 2228231, 2162692, 6, 2228232, 2228228, 6, 2228233, 2162692, 6, 2228234, 2228228, 6, 2228235, 2162692, 6, 2228236, 2228228, 6, 2162689, 2162692, 3, 2162690, 2162692, 3, 2162691, 2162692, 3, 2162692, 2162692, 3, 2162693, 2162692, 3, 2162694, 2162692, 3, 2162695, 2162692, 3, 2162696, 2162692, 3, 2162697, 2162692, 3, 2162698, 2162692, 3, 2162699, 2162692, 5, 2162700, 2162692, 5, 2162701, 2228228, 6, 2162702, 2162692, 6, 2162703, 2228228, 6, 2162704, 2162692, 6, 2162705, 2228228, 6, 2162706, 2162692, 6, 2162707, 2228228, 6, 2162708, 2162692, 6, 2162709, 2228228, 6, 2097153, 2162692, 3, 2097154, 2162692, 3, 2097155, 2162692, 3, 2097156, 2162692, 3, 2097157, 2162692, 3, 2097158, 2162692, 3, 2097159, 2162692, 3, 2097160, 2162692, 3, 2097161, 2162692, 3, 2097162, 2162692, 3, 2097163, 2162692, 3, 2097164, 2162692, 3, 2097165, 2162692, 3, 2097166, 2162692, 3, 2097167, 2162692, 3, 2097168, 2162692, 3, 2097169, 2162692, 3, 2097170, 2162692, 3, 2097171, 2162692, 3, 2097172, 2162692, 3, 2097173, 2162692, 3, 2097174, 2228228, 6, 2097175, 2162692, 6, 2097176, 2228228, 6, 2031617, 2162692, 3, 2031618, 2162692, 3, 2031619, 2162692, 3, 2031620, 2162692, 3, 2031621, 2162692, 3, 2031622, 2162692, 3, 2031623, 2162692, 3, 2031624, 2162692, 3, 2031625, 2162692, 3, 2031626, 2162692, 3, 2031627, 2162692, 3, 2031628, 2162692, 3, 2031629, 2162692, 3, 2031630, 2162692, 3, 2031631, 2162692, 3, 2031632, 2162692, 3, 2031633, 2162692, 3, 2031634, 2162692, 3, 2031635, 2162692, 3, 2031636, 2162692, 3, 2031637, 2162692, 3, 2031638, 2162692, 3, 2031639, 2162692, 3, 2031640, 2162692, 3, 2293759, 2162692, 6, 983079, 2097156, 3, 1048615, 2097156, 4, 1114151, 2031620, 5, 983080, 2162692, 3, 1048616, 2162692, 4, 1114152, 2162692, 4, 983081, 2228228, 3, 1048617, 2228228, 4, 1114153, 2097156, 4, 1179688, 2031620, 3, 1245224, 2031620, 4, 1310760, 2031620, 5, 1179689, 2162692, 2, 1245225, 2097156, 2, 1310761, 2097156, 3, 1179690, 2097156, 3, 1245226, 2097156, 4, 1310762, 2162692, 3, 1376298, 2162692, 4, 1441834, 2031620, 5, 1310763, 2228228, 3, 1376299, 2097156, 2, 1441835, 2097156, 3, 1310764, 2097156, 4, 1376300, 2162692, 2, 1441836, 2162692, 3, 1376297, 2031620, 5, 1245227, 2162692, 4, 1507371, 2031620, 5, 1507372, 2162692, 4, 1376301, 2097156, 4, 1441837, 2228228, 3, 1507373, 2162692, 5, 1376302, 2162692, 4, 1441838, 2097156, 3, 1507374, 2097156, 4, 1376303, 2228228, 4, 1441839, 2162692, 3, 1507375, 2162692, 5, 1376304, 2097156, 4, 1441840, 2228228, 3, 1507376, 2228228, 4, 1441841, 2097156, 3, 1507377, 2097156, 4, 1572913, 2031620, 5, 1441842, 2097156, 4, 1507378, 2162692, 4, 1572914, 2162692, 5, 1441843, 2162692, 4, 1507379, 2097156, 3, 1572915, 2162692, 5, 1376305, 2162692, 4, 1376306, 2228228, 4, 1376307, 2162692, 3, 1441844, 2228228, 4, 1507380, 2097156, 4, 1572916, 2162692, 5, 1441845, 2162692, 3, 1507381, 2162692, 4, 1572917, 2162692, 5, 1441846, 2228228, 3, 1507382, 2228228, 4, 1572918, 2228228, 5, 1376308, 2228228, 3, 1376309, 2162692, 2, 1376310, 2228228, 2, 1310770, 2228228, 3, 1310771, 2162692, 2, 1310772, 2228228, 2, 1245232, 2228228, 3, 1310768, 2228228, 4, 1245233, 2162692, 2, 1310769, 2162692, 3, 1245234, 2228228, 2, 1245229, 2097156, 4, 1310765, 2162692, 4, 1245230, 2162692, 4, 1310766, 2228228, 4, 1245231, 2228228, 4, 1310767, 2162692, 4, 1179694, 2162692, 3, 1179695, 2228228, 3, 1179696, 2228228, 2, 1179692, 2162692, 4, 1245228, 2228228, 4, 1179693, 2228228, 4, 1114157, 2228228, 3, 1114158, 2162692, 2, 1114159, 2228228, 2, 1114154, 2162692, 4, 1114155, 2228228, 4, 1179691, 2097156, 4, 1114156, 2162692, 3, 1048619, 2228228, 3, 1048620, 2162692, 2, 1048621, 2228228, 2, 983082, 2162692, 2, 1048618, 2162692, 3, 983083, 2228228, 2, 917542, 2031620, 1, 983078, 2031620, 3, 1048614, 2031620, 5, 917543, 2097156, 1, 917544, 2228228, 1, 917545, 2293764, 1, 1572919, 2359300, 5)
 
 [node name="Player" parent="." instance=ExtResource("4_v1oj0")]
-position = Vector2(12, 138)
+position = Vector2(40, 148)
 
-[node name="collisions" type="StaticBody2D" parent="."]
-visible = false
+[node name="Enemy" type="Node2D" parent="."]
 
-[node name="1" type="CollisionPolygon2D" parent="collisions"]
+[node name="Vampire_Female" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(508, 128)
+
+[node name="Vampire_Female7" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(373, 171)
+
+[node name="Vampire_Female8" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(603, 346)
+
+[node name="Vampire_Female9" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(870, 47)
+
+[node name="Vampire_Female10" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(1065, 51)
+
+[node name="Vampire_Female11" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(577, 447)
+
+[node name="Vampire_Female12" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(851, 554)
+
+[node name="Vampire_Female13" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(373, 572)
+
+[node name="Enemy_Slime" parent="Enemy" instance=ExtResource("5_8c2ny")]
+position = Vector2(269, 223)
+
+[node name="Enemy_Slime2" parent="Enemy" instance=ExtResource("5_8c2ny")]
+position = Vector2(502, 255)
+
+[node name="Enemy_Slime3" parent="Enemy" instance=ExtResource("5_8c2ny")]
+position = Vector2(311, 96)
+
+[node name="Enemy_Slime7" parent="Enemy" instance=ExtResource("5_8c2ny")]
+position = Vector2(140, 164)
+
+[node name="Enemy_Slime4" parent="Enemy" instance=ExtResource("5_8c2ny")]
+position = Vector2(616, 122)
+
+[node name="Enemy_Slime5" parent="Enemy" instance=ExtResource("5_8c2ny")]
+position = Vector2(220, 554)
+
+[node name="Vampire_Female2" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(144, 631)
+
+[node name="Vampire_Female3" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(475, 470)
+
+[node name="Vampire_Female4" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(908, 447)
+
+[node name="Enemy_Slime6" parent="Enemy" instance=ExtResource("5_8c2ny")]
+position = Vector2(727, 398)
+
+[node name="Vampire_Female5" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(744, 32)
+
+[node name="Vampire_Female6" parent="Enemy" instance=ExtResource("9_1njd1")]
+position = Vector2(969, 110)
+
+[node name="NPC" type="Node2D" parent="."]
+
+[node name="Dwarf_King" parent="NPC" instance=ExtResource("11_vcvh7")]
+position = Vector2(101, 117)
+
+[node name="Anak_Kecil" parent="NPC" instance=ExtResource("12_orknk")]
+position = Vector2(161, 257)
+
+[node name="Anak_Kecil_Cewe" parent="NPC" instance=ExtResource("13_s70an")]
+position = Vector2(173, 257)
+
+[node name="Oranf_Mabok" parent="NPC" instance=ExtResource("14_vg0ue")]
+position = Vector2(232, 443)
+
+[node name="Orang_Tua" parent="NPC" instance=ExtResource("15_5l8vb")]
+position = Vector2(308, 358)
+
+[node name="Collision" type="StaticBody2D" parent="."]
+
+[node name="1" type="CollisionPolygon2D" parent="Collision"]
 polygon = PackedVector2Array(0, 0, 0, 95, 29, 94, 31, 79, 90, 79, 94, 75, 95, 63, 109, 62, 111, 56, 110, 32, 123, 30, 128, 26, 126, 15, 140, 13, 143, 11, 144, 0, 1, -1)
 
-[node name="2" type="CollisionPolygon2D" parent="collisions"]
+[node name="2" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(144, 0)
 polygon = PackedVector2Array(0, -1, 164, 0, 164, 26, 167, 29, 178, 30, 185, 30, 194, 30, 196, 59, 199, 61, 274, 62, 276, 74, 279, 77, 291, 79, 292, 92, 297, 94, 339, 95, 340, 107, 343, 110, 457, 110, 463, 106, 462, 63, 493, 62, 495, 57, 495, 16, 493, 10, 487, 3, 447, 3, 446, -75, 439, -78, 391, -76, 388, -64, 381, -61, 322, -61, 313, -78, 248, -77, 245, -73, 243, -68, 242, -47, 234, -45, 185, -44, 179, -35, 177, -30, 169, -27, 164, -22, 162, -11, 162, -2)
 
-[node name="3" type="CollisionPolygon2D" parent="collisions"]
+[node name="3" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(0, 229)
 polygon = PackedVector2Array(0, -1, 5, -1, 5, -8, 8, -15, 13, -16, 89, -17, 94, -3, 94, -1, 201, -1, 205, 12, 208, 14, 216, 15, 217, 15, 221, 59, 226, 61, 272, 62, 276, 56, 281, 47, 306, 47, 313, 32, 433, 31, 436, 22, 440, 15, 449, 13, 454, 12, 456, 14, 459, 18, 460, 27, 462, 38, 463, 46, 506, 47, 511, 57, 512, 105, 506, 107, 415, 105, 415, 150, 410, 153, 351, 154, 353, 235, 383, 235, 385, 266, -1, 268)
 
-[node name="4" type="CollisionPolygon2D" parent="collisions"]
+[node name="4" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(935, 653)
 polygon = PackedVector2Array(-1, -1, -6, 2, -27, 3, -27, 42, -99, 41, -99, 19, -104, 18, -100, 68, 19, 67)
 
-[node name="5" type="CollisionPolygon2D" parent="collisions"]
+[node name="5" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(403, 673)
 polygon = PackedVector2Array(-1, -3, -1, -21, 4, -27, 7, -28, 30, -29, 33, -31, 32, -53, 34, -58, 38, -61, 111, -61, 112, -68, 114, -72, 119, -76, 128, -77, 132, -91, 134, -92, 143, -94, 144, -119, 148, -121, 150, -124, 175, -125, 176, -162, 178, -165, 181, -172, 189, -173, 191, -179, 195, -184, 199, -189, 207, -190, 212, -206, 218, -206, 310, -206, 315, -198, 316, -194, 319, -190, 375, -189, 378, -185, 379, -177, 383, -176, 390, -174, 394, -169, 396, -94, 404, -94, 406, -93, 413, -88, 413, -64, 421, -61, 422, -60, 427, -54, 427, -47, 429, -29, 427, -19, 428, -5, 429, -1)
 
-[node name="6" type="CollisionPolygon2D" parent="collisions"]
+[node name="6" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(856, 53)
 polygon = PackedVector2Array(2, -1, 16, -2, 26, -4, 30, -1, 32, 0, 35, 4, 37, 14, 38, 23, 40, 30, 81, 30, 85, 44, 85, 52, 88, 61, 125, 62, 132, 60, 130, 67, 137, 68, 140, 63, 139, 18, 144, 15, 192, 14, 196, 20, 201, 28, 200, 34, 199, 43, 204, 47, 212, 47, 211, 51, 215, 59, 220, 61, 227, 62, 227, 67, 232, 73, 234, 78, 296, 79, 297, 620, 59, 619, 59, 566, 62, 561, 68, 557, 73, 557, 76, 501, 84, 496, 88, 494, 92, 411, 77, 410, 72, 403, 74, 377, 60, 378, 57, 367, 59, 346, 46, 347, 43, 337, 44, 331, 27, 330, 27, 282, 0, 283, -5, 278, -5, 271, -5, 267, -33, 266, -37, 262, -38, 250, -66, 250, -68, 248, -69, 245, -69, 240, -70, 235, -83, 233, -87, 226, -84, 219, -115, 218, -118, 201, -147, 202, -149, 193, -151, 185, -179, 186, -182, 182, -183, 175, -182, 172, -195, 168, -197, 139, -196, 134, -191, 130, -184, 130, -171, 126, -166, 126, -163, 120, -164, 101, -158, 96, -151, 95, -148, 92, -148, 69, -146, 65, -142, 62, -130, 61, -117, 63, -115, 49, -110, 47, -87, 47, -85, 45, -83, 38, -77, 31, -72, 32, -41, 32, -37, 28, -32, 14, -27, 15, -9, 14, -4, 13, -3, 5, -2, 1, 1, -1, 3, -2)
 
-[node name="7" type="CollisionPolygon2D" parent="collisions"]
+[node name="7" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(639, 16)
 polygon = PackedVector2Array(0, -1, 464, 0, 465, 15, 481, 16, 480, 31, 496, 32, 498, 48, 558, 48, 559, 110, 560, 112, 513, 111, 515, 657, 816, -1, 452, -90, 6, -63)
 
-[node name="8" type="CollisionPolygon2D" parent="collisions"]
+[node name="8" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(0, 116)
 polygon = PackedVector2Array(0, 1, 1, 559, 409, 557, 406, 616, -181, 597, -81, -274, 248, -282, 290, -261, 307, -98, 126, -99, -13, -109, 2, -25)
 
-[node name="9" type="CollisionPolygon2D" parent="collisions"]
+[node name="9" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(2, 626)
 polygon = PackedVector2Array(-14, 42, -14, 5, -15, 3, 259, 3, 259, -13, 355, -13, 355, -28, 355, -30, 356, -29, 442, -28, 442, -5, 436, 114)
 
-[node name="10" type="CollisionPolygon2D" parent="collisions"]
+[node name="10" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(0, 559)
 polygon = PackedVector2Array(1, 1, 209, 1, 209, -15, 352, -15, 354, -16, 353, -32, 401, -32, 402, -62, 385, -63, 1, -63, 0, 0)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collisions"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collision"]
 position = Vector2(608, 224)
 polygon = PackedVector2Array(1, -1, 1, 45, 1, 47, 17, 47, 17, 64, 33, 63, 32, 112, 49, 111, 49, 128, 65, 127, 65, 145, 81, 144, 81, 160, 176, 160, 176, 177, 271, 176, 275, 175, 259, 47, 69, -16, 49, -16, 49, -1)
 
@@ -1329,63 +1413,49 @@ shape = SubResource("RectangleShape2D_yuv18")
 position = Vector2(-3, 594)
 shape = SubResource("RectangleShape2D_pb4s1")
 
-[node name="Enemy" type="Node2D" parent="."]
-
-[node name="Vampire_Female" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(508, 128)
-
-[node name="Enemy_Slime" parent="Enemy" instance=ExtResource("5_8c2ny")]
-position = Vector2(271, 262)
-
-[node name="Enemy_Slime2" parent="Enemy" instance=ExtResource("5_8c2ny")]
-position = Vector2(502, 255)
-
-[node name="Enemy_Slime3" parent="Enemy" instance=ExtResource("5_8c2ny")]
-position = Vector2(292, 60)
-
-[node name="Enemy_Slime4" parent="Enemy" instance=ExtResource("5_8c2ny")]
-position = Vector2(616, 122)
-
-[node name="Enemy_Slime5" parent="Enemy" instance=ExtResource("5_8c2ny")]
-position = Vector2(220, 554)
-
-[node name="Vampire_Female2" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(144, 631)
-
-[node name="Vampire_Female3" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(483, 482)
-
-[node name="Vampire_Female4" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(908, 447)
-
-[node name="Enemy_Slime6" parent="Enemy" instance=ExtResource("5_8c2ny")]
-position = Vector2(727, 398)
-
-[node name="Vampire_Female5" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(744, 32)
-
-[node name="Vampire_Female6" parent="Enemy" instance=ExtResource("9_1njd1")]
-position = Vector2(969, 110)
-
-[node name="NPC" type="Node2D" parent="."]
-
-[node name="Dwarf_King" parent="NPC" instance=ExtResource("11_vcvh7")]
-position = Vector2(25, 123)
-
-[node name="Anak_Kecil" parent="NPC" instance=ExtResource("12_orknk")]
-position = Vector2(161, 257)
-
-[node name="Anak_Kecil_Cewe" parent="NPC" instance=ExtResource("13_s70an")]
-position = Vector2(173, 257)
-
-[node name="Oranf_Mabok" parent="NPC" instance=ExtResource("14_vg0ue")]
-position = Vector2(232, 443)
-
-[node name="Orang_Tua" parent="NPC" instance=ExtResource("15_5l8vb")]
-position = Vector2(308, 358)
-
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(15, 594)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Score" type="Label" parent="CanvasLayer/Control"]
+top_level = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.939236
+anchor_top = 0.0617284
+anchor_right = 0.939236
+anchor_bottom = 0.0617284
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 2
+script = ExtResource("16_rqoq8")
+metadata/_edit_use_anchors_ = true
+
+[node name="Highscore" type="Label" parent="CanvasLayer/Control"]
+top_level = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.939236
+anchor_top = 0.0941358
+anchor_right = 0.939236
+anchor_bottom = 0.0941358
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 2
+script = ExtResource("17_swat5")
+metadata/_edit_use_anchors_ = true
 
 [connection signal="body_entered" from="Cliff_side" to="." method="_on_cliff_side_body_entered"]
 [connection signal="body_exited" from="Cliff_side" to="." method="_on_cliff_side_body_exited"]

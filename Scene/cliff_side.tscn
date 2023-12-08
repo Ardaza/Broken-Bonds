@@ -67,6 +67,18 @@ position = Vector2(139, 927)
 [node name="Vampire_Female2" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(355, 745)
 
+[node name="Vampire_Female13" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(350, 895)
+
+[node name="Vampire_Female14" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(146, 731)
+
+[node name="Vampire_Female15" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(426, 591)
+
+[node name="Vampire_Female16" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(198, 525)
+
 [node name="Vampire_Female3" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(214, 600)
 
@@ -78,6 +90,9 @@ position = Vector2(549, 481)
 
 [node name="Vampire_Female6" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(745, 275)
+
+[node name="Vampire_Female18" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(790, 398)
 
 [node name="Vampire_Female7" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(894, 495)
@@ -93,6 +108,9 @@ position = Vector2(306, 109)
 
 [node name="Vampire_Female11" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(390, 129)
+
+[node name="Vampire_Female17" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
+position = Vector2(282, 203)
 
 [node name="Vampire_Female12" parent="Karakter Enemies" instance=ExtResource("1_qmj3i")]
 position = Vector2(45, 437)
@@ -123,6 +141,12 @@ position = Vector2(125, 430)
 
 [node name="Enemy_Slime9" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
 position = Vector2(58, 215)
+
+[node name="Enemy_Slime21" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(185, 294)
+
+[node name="Enemy_Slime22" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
+position = Vector2(449, 274)
 
 [node name="Enemy_Slime10" parent="Karakter Enemies" instance=ExtResource("5_c3rgu")]
 position = Vector2(47, 119)

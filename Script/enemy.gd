@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var kecepatan = 30
+var kecepatan = 65
 var kejar = false
 var player = null
 @onready var pukul = $pukul

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var kecepatan = 40
+var kecepatan = 75
 var kejar = false
 var player = null
 

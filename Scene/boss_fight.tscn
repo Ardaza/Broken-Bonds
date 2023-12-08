@@ -43,13 +43,13 @@ position = Vector2(568, 290)
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Vampire_Female" parent="Enemies" instance=ExtResource("4_yik1a")]
-position = Vector2(525, 295)
+position = Vector2(495, 325)
 
 [node name="Vampire_Female2" parent="Enemies" instance=ExtResource("4_yik1a")]
-position = Vector2(608, 292)
+position = Vector2(635, 331)
 
 [node name="Vampire_Female3" parent="Enemies" instance=ExtResource("4_yik1a")]
-position = Vector2(568, 337)
+position = Vector2(569, 360)
 
 [node name="Enemy_Slime" parent="Enemies" instance=ExtResource("3_27rim")]
 position = Vector2(349, 195)

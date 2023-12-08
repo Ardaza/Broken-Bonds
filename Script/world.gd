@@ -19,8 +19,6 @@ func _process(delta):
 	change_scene1()
 	change_scene2()
 	change_scene3()
-	change_scene4()
-	goals_achieved()
 
 func _on_cliff_side_body_entered(body):
 	if body.has_method("player"):
@@ -56,11 +54,9 @@ func change_scene2():
 			global.kiri_loading = false
 			global.finish_changescenes()
 
-
 func _on_cliff_kiri_body_entered(body):
 	if body.has_method("player"):
 		global.transition_scene3 = true
-
 
 func _on_cliff_kiri_body_exited(body):
 	if body.has_method("player"):
@@ -75,16 +71,3 @@ func change_scene3():
 			global.bawah_loading = false
 			global.finish_changescenes()
 
-func goals_achieved():
-	if global.progress_point == 1200 and global.potion_ingredient == 6:
-		global.transition_scene4 = true
-		print("Objective Done")
-
-func change_scene4():
-	if global.transition_scene4 == true:
-		get_tree().change_scene_to_file("res://Scene/boss_fight.tscn")
-		global.first_loading = false
-		global.side_loading = false
-		global.bawah_loading = false
-		global.kiri_loading = false
-		global.finish_changescenes()
